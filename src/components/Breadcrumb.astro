@@ -1,0 +1,38 @@
+---
+import { SITE } from '../site.config.mjs';
+
+export interface Crumb { label: string; href: string }
+interface Props { items: Crumb[] }
+
+const { items } = Astro.props;
+const trail: Crumb[] = [{ label: 'Inicio', href: '/' }, ...items];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: trail.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.label,
+    item: new URL(c.href, SITE.url).href,
+  })),
+};
+---
+<nav class="breadcrumb" aria-label="Ruta de navegación">
+  <ol>
+    {trail.map((c, i) => (
+      <li>
+        {i === trail.length - 1
+          ? <span aria-current="page">{c.label}</span>
+          : <a href={c.href}>{c.label}</a>}
+      </li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<style>
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0; margin: 0 0 var(--space-4); font-size: var(--text-small); color: var(--color-ink-soft); }
+  .breadcrumb li + li::before { content: '/'; margin-right: var(--space-2); color: var(--color-border); }
+  .breadcrumb a { color: var(--color-ink-soft); }
+</style>

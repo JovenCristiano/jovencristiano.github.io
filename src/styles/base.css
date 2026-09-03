@@ -1,0 +1,66 @@
+@import './tokens.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-ink);
+  background: var(--color-surface);
+}
+
+h1, h2, h3, h4 { line-height: 1.25; margin: 0 0 var(--space-4); text-wrap: balance; }
+h1 { font-size: var(--text-h1); font-weight: 700; }
+h2 { font-size: var(--text-h2); font-weight: 700; }
+h3 { font-size: var(--text-h3); font-weight: 600; }
+p, ul, ol { margin: 0 0 var(--space-4); }
+
+a { color: var(--color-brand-dark); text-underline-offset: 3px; }
+a:hover { color: var(--color-brand); }
+
+img { max-width: 100%; height: auto; }
+
+:focus-visible { outline: 3px solid var(--color-brand); outline-offset: 2px; border-radius: var(--radius-sm); }
+
+/* Objetivos táctiles ≥ 44px */
+a, button, summary { min-height: 44px; display: inline-flex; align-items: center; }
+p a, li a, .prose a { min-height: 0; display: inline; }
+
+.wrap { width: min(100% - var(--space-5) * 2); max-width: var(--wrap); margin-inline: auto; }
+.prose { max-width: var(--measure); }
+
+.skip-link {
+  position: absolute; left: var(--space-4); top: calc(var(--space-4) * -4);
+  background: var(--color-surface); color: var(--color-ink);
+  padding: var(--space-2) var(--space-4); border-radius: var(--radius-sm);
+  z-index: 10; transition: top .15s;
+}
+.skip-link:focus { top: var(--space-4); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md); font-weight: 600; text-decoration: none;
+  background: var(--color-brand); color: #fff; border: 2px solid var(--color-brand);
+}
+.btn:hover { background: var(--color-brand-dark); border-color: var(--color-brand-dark); color: #fff; }
+.btn--secondary { background: transparent; color: var(--color-brand-dark); }
+.btn--secondary:hover { background: var(--color-surface-alt); color: var(--color-brand-dark); }
+
+.section { padding-block: var(--space-7); }
+.section--alt { background: var(--color-surface-alt); }
+
+.grid-cards {
+  display: grid; gap: var(--space-5);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  list-style: none; padding: 0; margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

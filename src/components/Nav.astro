@@ -1,0 +1,49 @@
+---
+import { NAV, SITE } from '../site.config.mjs';
+const current = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/">{SITE.name}</a>
+
+    <!-- Menú móvil sin JavaScript: <details> nativo. -->
+    <details class="menu">
+      <summary aria-label="Abrir menú">Menú</summary>
+      <nav aria-label="Navegación principal">
+        <ul>
+          {NAV.map((item) => (
+            <li>
+              <a href={item.href} aria-current={current === item.href ? 'page' : undefined}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header { border-bottom: 1px solid var(--color-border); background: var(--color-surface); }
+  .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 64px; }
+  .brand { font-weight: 700; font-size: 1.125rem; color: var(--color-ink); text-decoration: none; }
+
+  .menu summary { cursor: pointer; list-style: none; font-weight: 600; padding-inline: var(--space-2); }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu ul { list-style: none; margin: 0; padding: var(--space-3) 0; display: grid; gap: var(--space-1); }
+  .menu a { text-decoration: none; color: var(--color-ink); font-weight: 500; padding: var(--space-2); border-radius: var(--radius-sm); }
+  .menu a[aria-current='page'] { color: var(--color-brand-dark); background: var(--color-surface-alt); }
+
+  @media (max-width: 47.99rem) {
+    .menu[open] nav {
+      position: absolute; left: 0; right: 0; z-index: 5;
+      background: var(--color-surface); border-bottom: 1px solid var(--color-border);
+      padding-inline: var(--space-5); box-shadow: var(--shadow-card);
+    }
+    .site-header__inner { position: relative; }
+  }
+
+  @media (min-width: 48rem) {
+    .menu summary { display: none; }
+    .menu ul { display: flex; gap: var(--space-5); padding: 0; }
+  }
+</style>

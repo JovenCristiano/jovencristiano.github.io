@@ -1,0 +1,19 @@
+---
+interface Item { href: string; title: string }
+interface Props { items: Item[]; title?: string }
+const { items, title = 'Recursos relacionados' } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="related">
+    <h2>{title}</h2>
+    <ul>
+      {items.map((item) => <li><a href={item.href}>{item.title}</a></li>)}
+    </ul>
+  </section>
+)}
+
+<style>
+  .related h2 { font-size: var(--text-h3); }
+  .related ul { list-style: none; padding: 0; display: grid; gap: var(--space-2); }
+  .related a { font-weight: 500; }
+</style>

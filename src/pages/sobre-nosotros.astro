@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<BaseLayout
+  title="Sobre nosotros"
+  description="Joven Cristiano es una biblioteca de recursos cristianos para líderes juveniles: dinámicas, juegos bíblicos y temas prácticos, pensados para usarse tal cual."
+>
+  <div class="wrap section prose">
+    <Breadcrumb items={[{ label: 'Sobre nosotros', href: '/sobre-nosotros/' }]} />
+    <h1>Sobre nosotros</h1>
+    <p>
+      Joven Cristiano nace de una necesidad concreta: quien dirige un grupo juvenil casi nunca
+      tiene tiempo. Busca una dinámica el sábado por la noche y encuentra artículos largos que no
+      dicen cuántos participantes hacen falta, cuánto dura ni qué materiales se necesitan.
+    </p>
+    <h2>Qué encontrarás</h2>
+    <p>
+      Recursos con ficha práctica: edad, participantes, duración, materiales, instrucciones paso a
+      paso, variantes y reflexión bíblica. Material que puedes llevar a la reunión sin adaptarlo.
+    </p>
+    <h2>Nuestro criterio</h2>
+    <p>
+      Preferimos cincuenta recursos realmente útiles a quinientos genéricos. Cada pieza pasa por
+      una revisión humana antes de publicarse: instrucciones comprobadas, citas bíblicas
+      verificadas en su contexto y ningún relleno.
+    </p>
+  </div>
+</BaseLayout>

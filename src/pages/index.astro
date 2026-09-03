@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ResourceCard from '../components/ResourceCard.astro';
+import { SITE } from '../site.config.mjs';
+import { CLUSTERS, getPublished, urlFor } from '../utils/clusters.ts';
+
+// Orden de la Home según §7 del MASTER_PLAN. El buscador y los productos
+// entran cuando el contenido y la oferta los justifiquen (§16, §17).
+const dinamicas = await getPublished('dinamicas');
+const juegos = await getPublished('juegos');
+const destacados = [
+  ...dinamicas.map((e) => ({ cluster: 'dinamicas' as const, entry: e })),
+  ...juegos.map((e) => ({ cluster: 'juegos' as const, entry: e })),
+]
+  .sort((a, b) => Number(b.entry.data.featured) - Number(a.entry.data.featured))
+  .slice(0, 6);
+
+const faqs = [
+  {
+    q: '¿Los recursos son gratuitos?',
+    a: 'Sí. Todas las dinámicas, juegos bíblicos y temas publicados en la web se pueden usar libremente en tu grupo juvenil o iglesia.',
+  },
+  {
+    q: '¿Para qué edades sirven?',
+    a: 'Cada recurso indica su edad recomendada, normalmente entre los 12 y los 18 años, además del número de participantes y la duración.',
+  },
+  {
+    q: '¿Necesito materiales especiales?',
+    a: 'No siempre. Cada ficha lista los materiales necesarios y muchas dinámicas están pensadas para hacerse sin material alguno.',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE.name,
+    url: SITE.url,
+    description: SITE.description,
+    inLanguage: 'es',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+<BaseLayout title={SITE.title} description={SITE.description} jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Recursos cristianos para transformar tus reuniones con jóvenes</h1>
+      <p class="hero__sub">
+        Dinámicas, juegos bíblicos, actividades, temas y recursos prácticos para líderes,
+        iglesias y jóvenes cristianos.
+      </p>
+      <p class="hero__actions">
+        <a class="btn" href="/dinamicas/">Explorar recursos</a>
+        <a class="btn btn--secondary" href="/juegos-biblicos/">Ver juegos bíblicos</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <h2>Categorías</h2>
+    <ul class="grid-cards">
+      {Object.values(CLUSTERS).map((cluster) => (
+        <li class="cat">
+          <h3><a href={cluster.base}>{cluster.label}</a></h3>
+          <p>{cluster.intro}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {destacados.length > 0 && (
+    <section class="section section--alt">
+      <div class="wrap">
+        <h2>Recursos destacados</h2>
+        <ul class="grid-cards">
+          {destacados.map(({ cluster, entry }) => (
+            <ResourceCard
+              href={urlFor(cluster, entry.id)}
+              title={entry.data.title}
+              category={entry.data.category}
+              age_range={entry.data.age_range}
+              duration={entry.data.duration}
+              participants={entry.data.participants}
+              materials={entry.data.materials}
+            />
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="section wrap">
+    <h2>Preguntas frecuentes</h2>
+    <div class="prose">
+      {faqs.map((f) => (
+        <details class="faq">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: var(--space-8); background: var(--color-surface-alt); border-bottom: 1px solid var(--color-border); }
+  .hero h1 { max-width: 20ch; }
+  .hero__sub { max-width: var(--measure); color: var(--color-ink-soft); font-size: 1.125em; }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
+  .cat { padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+  .cat h3 { margin-bottom: var(--space-2); }
+  .cat a { text-decoration: none; }
+  .cat p { margin: 0; color: var(--color-ink-soft); font-size: var(--text-small); }
+  .faq { border-bottom: 1px solid var(--color-border); padding-block: var(--space-3); }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq p { margin: var(--space-2) 0 0; color: var(--color-ink-soft); }
+</style>

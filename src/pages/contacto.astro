@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<BaseLayout
+  title="Contacto"
+  description="Escríbenos si quieres proponer un recurso, señalar un error o colaborar con Joven Cristiano. Respondemos a líderes juveniles, iglesias y educadores."
+>
+  <div class="wrap section prose">
+    <Breadcrumb items={[{ label: 'Contacto', href: '/contacto/' }]} />
+    <h1>Contacto</h1>
+    <p>
+      ¿Quieres proponer una dinámica, señalar un error o colaborar? Escríbenos y te respondemos.
+    </p>
+    <!-- PENDIENTE: dirección de correo definitiva del proyecto. -->
+    <p><strong>Correo:</strong> pendiente de configurar.</p>
+  </div>
+</BaseLayout>

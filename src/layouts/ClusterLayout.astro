@@ -1,0 +1,42 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import ResourceCard from '../components/ResourceCard.astro';
+import { CLUSTERS, getPublished, urlFor, type ClusterId } from '../utils/clusters.ts';
+
+interface Props { cluster: ClusterId }
+const { cluster } = Astro.props;
+
+const meta = CLUSTERS[cluster];
+const entries = await getPublished(cluster);
+---
+<BaseLayout title={meta.title} description={meta.description}>
+  <div class="wrap section">
+    <Breadcrumb items={[{ label: meta.label, href: meta.base }]} />
+    <h1>{meta.title}</h1>
+    <p class="prose">{meta.intro}</p>
+
+    {entries.length === 0 ? (
+      <p class="empty">Estamos preparando los primeros recursos de esta sección.</p>
+    ) : (
+      <ul class="grid-cards">
+        {entries.map((entry) => (
+          <ResourceCard
+            href={urlFor(cluster, entry.id)}
+            title={entry.data.title}
+            category={entry.data.category}
+            age_range={entry.data.age_range}
+            duration={entry.data.duration}
+            participants={entry.data.participants}
+            materials={entry.data.materials}
+          />
+        ))}
+      </ul>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .grid-cards { margin-top: var(--space-6); }
+  .empty { color: var(--color-ink-soft); }
+</style>

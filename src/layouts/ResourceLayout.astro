@@ -1,0 +1,69 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import ResourceMeta from '../components/ResourceMeta.astro';
+import RelatedResources from '../components/RelatedResources.astro';
+import CTA from '../components/CTA.astro';
+import { SITE } from '../site.config.mjs';
+import type { Crumb } from '../components/Breadcrumb.astro';
+
+interface Props {
+  data: {
+    title: string;
+    description: string;
+    category: string;
+    age_range: string;
+    duration: string;
+    participants: string;
+    difficulty: string;
+    materials: string[];
+    publishedAt: Date;
+    updatedAt?: Date;
+  };
+  crumbs: Crumb[];
+  related: { href: string; title: string }[];
+}
+
+const { data, crumbs, related } = Astro.props;
+const path = Astro.url.pathname;
+
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  datePublished: data.publishedAt.toISOString(),
+  ...(data.updatedAt && { dateModified: data.updatedAt.toISOString() }),
+  mainEntityOfPage: new URL(path, SITE.url).href,
+  publisher: { '@type': 'Organization', name: SITE.name },
+  inLanguage: 'es',
+};
+---
+<BaseLayout title={data.title} description={data.description} type="article" jsonLd={[article]}>
+  <div class="wrap section">
+    <Breadcrumb items={crumbs} />
+    <article class="prose">
+      <h1>{data.title}</h1>
+      <p class="lead">{data.description}</p>
+      <ResourceMeta
+        age_range={data.age_range}
+        participants={data.participants}
+        duration={data.duration}
+        difficulty={data.difficulty}
+        materials={data.materials}
+      />
+      <slot />
+      <RelatedResources items={related} />
+      <CTA
+        title="¿Preparando tu próxima reunión?"
+        text="Explora más dinámicas y juegos bíblicos listos para usar con tu grupo."
+        href="/dinamicas/"
+        label="Ver más dinámicas"
+      />
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .lead { font-size: 1.125em; color: var(--color-ink-soft); }
+</style>
