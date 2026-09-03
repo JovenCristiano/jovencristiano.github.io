@@ -30,6 +30,7 @@ decisiones tomadas y las pendientes.
 | [ROADMAP.md](docs/ROADMAP.md) | Checkpoints y criterios de salida |
 | [CONTENT_PLAN.md](docs/CONTENT_PLAN.md) | Modelo de contenido y control de calidad |
 | [SEO_MASTER_MAP.md](docs/SEO_MASTER_MAP.md) | Mapa de keywords y clusters |
+| [KEYWORD_RESEARCH.md](docs/KEYWORD_RESEARCH.md) | Cómo investigar keywords y rellenar el mapa |
 | [MONETIZATION_PLAN.md](docs/MONETIZATION_PLAN.md) | Escalera de productos |
 | [DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Tokens y componentes |
 | [CHANGELOG.md](docs/CHANGELOG.md) | Historial de cambios |

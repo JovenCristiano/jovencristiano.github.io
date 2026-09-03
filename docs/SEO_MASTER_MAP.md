@@ -1,6 +1,8 @@
 # SEO_MASTER_MAP
 
-Mapa maestro de keywords. **Estado: vacío — pendiente de investigación real.**
+Mapa maestro de keywords. **Estado: pendiente de rellenar con datos de Keyword Planner.**
+
+> Procedimiento paso a paso, lista semilla y criterios: **[KEYWORD_RESEARCH.md](KEYWORD_RESEARCH.md)**.
 
 > ⚠️ Las keywords de abajo son **hipótesis de partida**, no datos. Ninguna pieza de contenido se
 > escribe contra esta tabla hasta que las columnas de volumen y dificultad estén rellenadas con
@@ -22,17 +24,19 @@ Se evita compitir de frente por frases devocionales genéricas.
 
 ## Tabla maestra
 
-| keyword | intención | cluster | URL objetivo | prioridad | dificultad | oportunidad | estado | enlaces internos | producto |
+Columna `volumen`: media mensual de Keyword Planner. `estado`: pendiente · escribiendo · publicado.
+
+| keyword | intención | cluster | URL objetivo | volumen | prioridad | dificultad | oportunidad | estado | producto |
 |---|---|---|---|---|---|---|---|---|---|
-| dinámicas para jóvenes cristianos | informacional | dinamicas | `/dinamicas/` | P0 | ? | ? | pendiente | — | 365 Dinámicas |
-| dinámicas de integración para jóvenes | informacional | dinamicas | `/dinamicas/integracion/` | P0 | ? | ? | pendiente | — | 365 Dinámicas |
-| dinámicas sin materiales para jóvenes | informacional | dinamicas | `/dinamicas/sin-materiales/` | P1 | ? | ? | pendiente | — | 365 Dinámicas |
-| juegos bíblicos para jóvenes | informacional | juegos | `/juegos-biblicos/` | P0 | ? | ? | pendiente | — | 100 Juegos |
-| rompehielos para grupos juveniles | informacional | juegos | `/juegos-biblicos/rompehielos/` | P1 | ? | ? | pendiente | — | 100 Juegos |
-| cómo preparar una reunión juvenil | informacional | recursos | `/recursos-para-lideres/preparar-reunion-juvenil/` | P0 | ? | ? | pendiente | — | 52 Reuniones |
-| temas para jóvenes cristianos | informacional | temas | `/temas/` | P1 | ? | ? | pendiente | — | 52 Reuniones |
-| actividades para retiro juvenil | informacional | actividades | `/actividades/retiros/` | P2 | ? | ? | pendiente | — | Kit anual |
-| preguntas bíblicas para jóvenes | informacional | preguntas | `/preguntas-biblicas/` | P2 | ? | ? | pendiente | — | — |
+| dinámicas para jóvenes cristianos | informacional | dinamicas | `/dinamicas/` | ? | P0 | ? | ? | pendiente | 365 Dinámicas |
+| dinámicas de integración para jóvenes | informacional | dinamicas | `/dinamicas/integracion/` | ? | P0 | ? | ? | pendiente | 365 Dinámicas |
+| dinámicas sin materiales para jóvenes | informacional | dinamicas | `/dinamicas/sin-materiales/` | ? | P1 | ? | ? | pendiente | 365 Dinámicas |
+| juegos bíblicos para jóvenes | informacional | juegos | `/juegos-biblicos/` | ? | P0 | ? | ? | pendiente | 100 Juegos |
+| rompehielos para grupos juveniles | informacional | juegos | `/juegos-biblicos/rompehielos/` | ? | P1 | ? | ? | pendiente | 100 Juegos |
+| cómo preparar una reunión juvenil | informacional | recursos | `/recursos-para-lideres/preparar-reunion-juvenil/` | ? | P0 | ? | ? | pendiente | 52 Reuniones |
+| temas para jóvenes cristianos | informacional | temas | `/temas/` | ? | P1 | ? | ? | pendiente | 52 Reuniones |
+| actividades para retiro juvenil | informacional | actividades | `/actividades/retiros/` | ? | P2 | ? | ? | pendiente | Kit anual |
+| preguntas bíblicas para jóvenes | informacional | preguntas | `/preguntas-biblicas/` | ? | P2 | ? | ? | pendiente | — |
 
 ## Clusters previstos
 

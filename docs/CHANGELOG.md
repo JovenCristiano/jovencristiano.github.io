@@ -10,6 +10,11 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 - Repositorio remoto `JovenCristiano/jovencristiano.github.io`, GitHub Pages con Source
   «GitHub Actions».
 
+- `docs/KEYWORD_RESEARCH.md`: procedimiento de investigación con Keyword Planner y Search Console,
+  lista semilla de ~55 keywords por cluster y criterios de priorización.
+- `SEO_MASTER_MAP.md`: columna `volumen` añadida; `enlaces internos` retirada (se gestiona en cada
+  pieza, no en la tabla).
+
 ### Corregido — 2026-09-03
 
 - El workflow fallaba: `withastro/action@v3` arrancaba con Node 20 y Astro 7 exige >= 22.12.
