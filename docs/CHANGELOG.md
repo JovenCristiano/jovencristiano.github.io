@@ -15,6 +15,19 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 - `SEO_MASTER_MAP.md`: columna `volumen` añadida; `enlaces internos` retirada (se gestiona en cada
   pieza, no en la tabla).
 
+- `SEO_MASTER_MAP.md` **rellenado con datos reales** de Keyword Planner (450 keywords).
+  CSV original archivado en `docs/data/keyword-planner-2026-09-02.csv`.
+
+### Hallazgos de la investigación de keywords — 2026-09-03
+
+- El público **adulto** (47 850 de volumen en 75 keywords) pesa tanto como el juvenil (47 250 en
+  266). Decisión de negocio abierta en §4 del mapa SEO.
+- El modificador dominante es **«divertidas»** (23 150), por delante de «integración» (12 400).
+- **«Sin materiales» queda descartado como objetivo SEO** (150 de volumen): sigue siendo filtro de
+  usabilidad, no keyword. Retiros y campamentos se posponen (50).
+- Lead magnet **validado**: 6 keywords con «pdf» y 1 200 de volumen.
+- Sub-nicho adventista desatendido: 26 keywords, 3 550 de volumen.
+
 ### Corregido — 2026-09-03
 
 - El workflow fallaba: `withastro/action@v3` arrancaba con Node 20 y Astro 7 exige >= 22.12.
