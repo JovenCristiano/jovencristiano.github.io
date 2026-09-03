@@ -7,24 +7,24 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 
 ---
 
-## 🟡 CHECKPOINT 0 — Fundación
+## ✅ CHECKPOINT 0 — Fundación
 
 **Objetivo:** proyecto ejecutable y arquitectura aprobada.
 
 - ✅ Documentación base en `docs/`
 - ✅ Arquitectura aprobada · cuenta de GitHub confirmada: `JovenCristiano`
-- 🟡 `git init` hecho · falta crear `JovenCristiano/JovenCristiano.github.io` y hacer push
+- ✅ Repositorio `JovenCristiano/jovencristiano.github.io` + push a `main`
 - ✅ Astro 7 + TypeScript strict instalado
 - ✅ Content Collections (`dinamicas`, `juegos`) con esquema Zod
 - ✅ Sistema visual base (`tokens.css`, `base.css`)
 - ✅ `BaseLayout` + componente `SEO`
-- ✅ Workflow de deploy a GitHub Pages (sin ejecutar hasta tener remoto)
+- ✅ Workflow de deploy a GitHub Pages **ejecutado con éxito**
 
-**Criterio de salida:** `npm run build` sin errores y sitio desplegado, aunque tenga poco contenido.
+**Criterio de salida:** ✅ cumplido el 2026-09-03 — https://jovencristiano.github.io en línea.
 
 ---
 
-## ⬜ CHECKPOINT 1 — MVP web
+## 🟡 CHECKPOINT 1 — MVP web
 
 - ⬜ Home según el orden del §7 del MASTER_PLAN
 - ⬜ Navegación y footer

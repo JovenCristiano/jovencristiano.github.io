@@ -17,14 +17,16 @@ biblioteca premium y plataforma interactiva.
 
 | Elemento | Estado |
 |---|---|
-| Repositorio git | Inicializado en local · remoto `JovenCristiano/JovenCristiano.github.io` **pendiente de crear** |
+| Repositorio git | `JovenCristiano/jovencristiano.github.io`, rama `main` |
 | Astro | 7.x instalado, `npm run build` correcto |
 | Documentación | Completa para CHECKPOINT 0 |
 | Contenido | 3 recursos de muestra (2 dinámicas, 1 juego) |
-| Dominio | `https://jovencristiano.github.io` (cuenta `JovenCristiano`) |
+| Sitio en producción | ✅ https://jovencristiano.github.io |
 
-Checkpoint actual: **CHECKPOINT 0 — Fundación**, implementada. Falta crear el repositorio remoto,
-activar Pages (Settings → Pages → Source: GitHub Actions) y el primer despliegue para cerrarla.
+Checkpoint actual: **CHECKPOINT 1 — MVP web**. El CHECKPOINT 0 se cerró el 2026-09-03 con el
+primer despliegue correcto.
+
+El despliegue es automático: todo push a `main` publica el sitio en 2–3 minutos.
 
 ### Cómo arrancar
 

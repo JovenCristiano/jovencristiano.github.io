@@ -4,6 +4,20 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-03
+
+- **Primer despliegue en producción:** https://jovencristiano.github.io
+- Repositorio remoto `JovenCristiano/jovencristiano.github.io`, GitHub Pages con Source
+  «GitHub Actions».
+
+### Corregido — 2026-09-03
+
+- El workflow fallaba: `withastro/action@v3` arrancaba con Node 20 y Astro 7 exige >= 22.12.
+  Sustituido por pasos explícitos (`setup-node@v5` con Node 24 → `npm ci` → `npm run build` →
+  `upload-pages-artifact`). Así el error señala siempre la línea exacta.
+
+**CHECKPOINT 0 cerrado.**
+
 ### Añadido — 2026-09-02 (implementación CHECKPOINT 0)
 
 - Proyecto Astro 7 con TypeScript `strict`, `@astrojs/sitemap` y `@astrojs/mdx`.

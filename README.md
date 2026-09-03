@@ -3,10 +3,9 @@
 Biblioteca digital de recursos cristianos para jóvenes y líderes juveniles: dinámicas, juegos
 bíblicos, actividades, temas y material listo para usar.
 
-**Estado:** CHECKPOINT 0 implementado — sitio Astro compilando, 3 recursos de muestra.
-Pendiente: crear el repositorio remoto y el primer despliegue.
+**Estado:** CHECKPOINT 0 cerrado. Sitio en producción con 3 recursos.
 
-**URL prevista:** https://jovencristiano.github.io
+**En línea:** https://jovencristiano.github.io — cada push a `main` despliega automáticamente.
 
 ## Arrancar
 
