@@ -4,7 +4,9 @@ Biblioteca digital de recursos cristianos para jóvenes y líderes juveniles: di
 bíblicos, actividades, temas y material listo para usar.
 
 **Estado:** CHECKPOINT 0 implementado — sitio Astro compilando, 3 recursos de muestra.
-Pendiente: usuario de GitHub y primer despliegue.
+Pendiente: crear el repositorio remoto y el primer despliegue.
+
+**URL prevista:** https://jovencristiano.github.io
 
 ## Arrancar
 
@@ -14,7 +16,7 @@ npm run dev     # http://localhost:4321
 npm run build
 ```
 
-> El dominio en `src/site.config.mjs` es un **placeholder**. Cámbialo ahí y solo ahí.
+> El dominio vive en `src/site.config.mjs`. Si algún día hay dominio propio, se cambia ahí y solo ahí.
 
 ## Documentación
 

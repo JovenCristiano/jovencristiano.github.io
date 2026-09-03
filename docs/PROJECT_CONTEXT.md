@@ -17,14 +17,14 @@ biblioteca premium y plataforma interactiva.
 
 | Elemento | Estado |
 |---|---|
-| Repositorio git | Inicializado en local · **sin remoto todavía** |
+| Repositorio git | Inicializado en local · remoto `JovenCristiano/JovenCristiano.github.io` **pendiente de crear** |
 | Astro | 7.x instalado, `npm run build` correcto |
 | Documentación | Completa para CHECKPOINT 0 |
 | Contenido | 3 recursos de muestra (2 dinámicas, 1 juego) |
-| Dominio | `https://jovencristiano.github.io` — **PLACEHOLDER** en `src/site.config.mjs` |
+| Dominio | `https://jovencristiano.github.io` (cuenta `JovenCristiano`) |
 
-Checkpoint actual: **CHECKPOINT 0 — Fundación**, implementada. Falta el remoto de GitHub y el
-primer despliegue para cerrarla.
+Checkpoint actual: **CHECKPOINT 0 — Fundación**, implementada. Falta crear el repositorio remoto,
+activar Pages (Settings → Pages → Source: GitHub Actions) y el primer despliegue para cerrarla.
 
 ### Cómo arrancar
 
@@ -55,11 +55,12 @@ npm run build   # genera dist/
 
 ## 4. Decisiones pendientes (bloquean trabajo)
 
-1. **Usuario/organización de GitHub** → define `SITE.url` en `src/site.config.mjs` y todas las URLs
-   canónicas. Es el único punto a cambiar; nada más lo duplica.
-2. Nombre de marca definitivo y logotipo.
+1. Nombre de marca definitivo y logotipo.
+2. Correo de contacto del proyecto (la página `/contacto/` lo declara pendiente).
 3. Herramienta de analítica (§23) y de email marketing (Etapa 2 de monetización).
 4. Plataforma de venta del primer producto digital (Etapa 3).
+
+**Resuelto:** cuenta de GitHub → `JovenCristiano`; `SITE.url` = `https://jovencristiano.github.io`.
 
 ## 5. Documentos del proyecto
 

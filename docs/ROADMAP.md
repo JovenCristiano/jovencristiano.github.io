@@ -12,8 +12,8 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 **Objetivo:** proyecto ejecutable y arquitectura aprobada.
 
 - ✅ Documentación base en `docs/`
-- 🟡 Arquitectura aprobada · usuario de GitHub **pendiente** (placeholder en `src/site.config.mjs`)
-- 🟡 `git init` hecho · repositorio remoto pendiente
+- ✅ Arquitectura aprobada · cuenta de GitHub confirmada: `JovenCristiano`
+- 🟡 `git init` hecho · falta crear `JovenCristiano/JovenCristiano.github.io` y hacer push
 - ✅ Astro 7 + TypeScript strict instalado
 - ✅ Content Collections (`dinamicas`, `juegos`) con esquema Zod
 - ✅ Sistema visual base (`tokens.css`, `base.css`)

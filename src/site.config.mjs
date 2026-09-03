@@ -1,8 +1,9 @@
 /**
  * Configuración de sitio en un único lugar.
  *
- * PENDIENTE: `url` es un placeholder hasta confirmar el usuario/organización de GitHub
- * (o el dominio propio). Cambiar SOLO aquí; nada más en el código la duplica.
+ * `url` corresponde al sitio de usuario de GitHub Pages de la cuenta `JovenCristiano`
+ * (repositorio `JovenCristiano.github.io`). Al migrar a dominio propio se cambia SOLO aquí:
+ * ningún otro archivo duplica el dominio y `base: '/'` mantiene intactas las rutas internas.
  */
 export const SITE = {
   url: 'https://jovencristiano.github.io',

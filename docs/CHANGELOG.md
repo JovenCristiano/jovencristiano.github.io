@@ -8,7 +8,7 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 - Proyecto Astro 7 con TypeScript `strict`, `@astrojs/sitemap` y `@astrojs/mdx`.
 - `src/site.config.mjs`: configuración de sitio y navegación en un único lugar.
-  `SITE.url` es un **placeholder** hasta confirmar el usuario de GitHub o el dominio propio.
+  `SITE.url` = `https://jovencristiano.github.io` (cuenta de GitHub `JovenCristiano`, confirmada).
 - `src/content.config.ts`: colecciones `dinamicas` y `juegos` con el esquema Zod cerrado de
   `CONTENT_PLAN.md` (Content Layer API con `glob` loader).
 - Sistema visual: `src/styles/tokens.css` y `base.css` según `DESIGN_SYSTEM.md`.
@@ -57,6 +57,6 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ### Pendiente de decisión
 
-- Usuario/organización de GitHub (bloquea `site` en `astro.config.mjs`).
+- Correo de contacto del proyecto.
 - Herramienta de analítica y de email marketing.
 - Plataforma de venta del primer producto digital.
