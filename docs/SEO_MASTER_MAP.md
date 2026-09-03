@@ -99,9 +99,9 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | juegos para jóvenes cristianos | 5 000 | juegos | `/juegos-biblicos/` | pendiente |
 | actividades para jóvenes cristianos | 5 000 | actividades | `/actividades/` | pendiente |
 | enseñanza para jóvenes cristianos | 5 000 | temas | `/temas/` | pendiente |
-| dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | **decisión pendiente** |
-| juegos cristianos para adultos | 5 000 | adultos | `/juegos-biblicos/adultos/` | **decisión pendiente** |
-| dinámicas de integración para adultos | 5 000 | adultos | `/dinamicas/integracion-adultos/` | **decisión pendiente** |
+| dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | escribiendo |
+| juegos cristianos para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` (sección) | pendiente |
+| dinámicas de integración para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` | escribiendo |
 | dinámicas cristianas cortas divertidas | 5 000 | dinamicas | `/dinamicas/cortas/` | pendiente |
 
 ## 3. Tabla maestra — prioridad P1
@@ -121,9 +121,9 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | actividades cristianas para adolescentes | 500 | actividades | `/actividades/adolescentes/` | pendiente |
 | enseñanza dinámica para jóvenes cristianos | 500 | temas | `/temas/dinamicas-con-ensenanza/` | pendiente |
 
-## 4. Decisión de negocio pendiente
+## 4. Decisión de negocio — RESUELTA (2026-09-03)
 
-**¿Se abre el público adulto?**
+**Se abre el público adulto como sección secundaria.**
 
 A favor: duplica el mercado con el mismo contenido, y el volumen ya está demostrado. Muchas
 dinámicas juveniles sirven tal cual en un grupo de adultos cambiando la reflexión.
@@ -131,10 +131,14 @@ dinámicas juveniles sirven tal cual en un grupo de adultos cambiando la reflexi
 En contra: el `MASTER_PLAN` (§3) posiciona el sitio en «jóvenes»; incluso el nombre lo hace.
 Diluir el foco tiene coste de marca.
 
-**Recomendación:** abrirlo como **sección secundaria**, no como eje. Un cluster
-`/dinamicas-para-adultos/` que capte el tráfico sin tocar la Home ni la promesa central. Se prueba
-con 3–4 piezas y se mide en Search Console a los dos meses. Si funciona, se amplía; si no, se
-mantiene pequeño y no ha costado nada.
+**Ejecución acordada:**
+
+- Cluster `/dinamicas-para-adultos/`, enlazado desde la navegación y desde las fichas juveniles.
+- **No aparece en la Home ni en el hero**: la promesa central sigue siendo «jóvenes». El cluster se
+  marca como `secondary` en `src/utils/clusters.ts` y queda excluido de las categorías de portada.
+- Se prueba con 3 piezas y se mide en Search Console a los dos meses.
+- Criterio de ampliación: si el cluster genera ≥ 15 % de las impresiones del sitio, se amplía a 10
+  piezas. Si no llega al 5 %, se congela y no se le dedica más tiempo.
 
 ## 5. Método para el resto
 

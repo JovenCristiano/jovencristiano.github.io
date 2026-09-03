@@ -40,4 +40,11 @@ const juegos = defineCollection({
   schema: resourceSchema,
 });
 
-export const collections = { dinamicas, juegos };
+// Cluster secundario (§4 SEO_MASTER_MAP): capta el volumen del público adulto
+// sin entrar en la Home ni en la promesa central del sitio.
+const adultos = defineCollection({
+  loader: glob({ pattern, base: './src/content/adultos' }),
+  schema: resourceSchema,
+});
+
+export const collections = { dinamicas, juegos, adultos };

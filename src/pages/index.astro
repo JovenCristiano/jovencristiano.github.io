@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ResourceCard from '../components/ResourceCard.astro';
 import { SITE } from '../site.config.mjs';
-import { CLUSTERS, getPublished, urlFor } from '../utils/clusters.ts';
+import { PRIMARY_CLUSTERS, getPublished, urlFor } from '../utils/clusters.ts';
 
 // Orden de la Home según §7 del MASTER_PLAN. El buscador y los productos
 // entran cuando el contenido y la oferta los justifiquen (§16, §17).
@@ -68,7 +68,7 @@ const jsonLd = [
   <section class="section wrap">
     <h2>Categorías</h2>
     <ul class="grid-cards">
-      {Object.values(CLUSTERS).map((cluster) => (
+      {PRIMARY_CLUSTERS.map((cluster) => (
         <li class="cat">
           <h3><a href={cluster.base}>{cluster.label}</a></h3>
           <p>{cluster.intro}</p>

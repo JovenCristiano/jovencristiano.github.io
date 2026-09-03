@@ -4,7 +4,7 @@ import ResourceLayout from '../../layouts/ResourceLayout.astro';
 import { CLUSTERS, getPublished, resolveRelated } from '../../utils/clusters.ts';
 
 export async function getStaticPaths() {
-  const entries = await getPublished('dinamicas');
+  const entries = await getPublished('adultos');
   return entries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const meta = CLUSTERS.dinamicas;
+const meta = CLUSTERS.adultos;
 const related = await resolveRelated(entry.data.related);
 ---
 <ResourceLayout

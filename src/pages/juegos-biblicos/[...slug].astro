@@ -7,14 +7,14 @@ export async function getStaticPaths() {
   const entries = await getPublished('juegos');
   return entries.map((entry) => ({
     params: { slug: entry.id },
-    props: { entry, entries },
+    props: { entry },
   }));
 }
 
-const { entry, entries } = Astro.props;
+const { entry } = Astro.props;
 const { Content } = await render(entry);
 const meta = CLUSTERS.juegos;
-const related = resolveRelated('juegos', entry.data.related, entries);
+const related = await resolveRelated(entry.data.related);
 ---
 <ResourceLayout
   data={entry.data}

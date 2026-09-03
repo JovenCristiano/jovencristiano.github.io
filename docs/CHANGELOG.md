@@ -4,6 +4,24 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-03 (contenido y cluster de adultos)
+
+- **Decisión de negocio resuelta:** se abre el público adulto como cluster **secundario**
+  `/dinamicas-para-adultos/`. No aparece en la Home ni en el hero; la promesa central sigue siendo
+  «jóvenes». Criterio de ampliación y de congelación en §4 de `SEO_MASTER_MAP.md`.
+- Colección `adultos` y marca `secondary` en los clusters, que los excluye de las categorías de
+  portada (`PRIMARY_CLUSTERS`).
+- **5 recursos nuevos** (total: 8), escritos contra las keywords P0 del mapa SEO:
+  - Adultos: dos verdades y una mentira · la telaraña de la comunidad · la caja de las cargas
+  - Jóvenes: el lazarillo · la torre más alta
+- Enlazado interno cruzado: `resolveRelated()` ahora busca en **todos** los clusters, no solo en el
+  propio. Un slug inexistente se descarta en vez de generar un enlace roto.
+
+### Corregido — 2026-09-03 (contenido)
+
+- Dos descripciones superaban los 158 caracteres de meta description. El esquema Zod las rechazó en
+  el build, como estaba previsto.
+
 ### Añadido — 2026-09-03
 
 - **Primer despliegue en producción:** https://jovencristiano.github.io

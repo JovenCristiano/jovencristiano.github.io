@@ -39,9 +39,11 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 
 ---
 
-## ⬜ CHECKPOINT 2 — Contenido
+## 🟡 CHECKPOINT 2 — Contenido
 
 **Objetivo: 50 recursos de alta calidad.**
+
+Progreso: **8 / 50** — 5 dinámicas juveniles · 1 juego bíblico · 3 dinámicas para adultos.
 
 Hitos intermedios: 10 → 25 → 50. Revisión de calidad en cada hito.
 

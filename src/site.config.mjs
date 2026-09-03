@@ -19,5 +19,6 @@ export const SITE = {
 export const NAV = [
   { href: '/dinamicas/', label: 'Dinámicas' },
   { href: '/juegos-biblicos/', label: 'Juegos bíblicos' },
+  { href: '/dinamicas-para-adultos/', label: 'Para adultos' },
   { href: '/sobre-nosotros/', label: 'Sobre nosotros' },
 ];

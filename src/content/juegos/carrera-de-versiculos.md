@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Una Biblia impresa por equipo', 'Lista de referencias preparada', 'Pizarra o papel para el marcador']
 featured: true
 publishedAt: 2026-09-02
-related: []
+related: ['el-nudo-humano', 'la-torre-mas-alta', 'la-silla-de-la-verdad']
 draft: false
 ---
 
