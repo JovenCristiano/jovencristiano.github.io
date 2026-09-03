@@ -2,7 +2,9 @@
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import ResourceCard from '../components/ResourceCard.astro';
+import { Image } from 'astro:assets';
 import { CLUSTERS, getPublished, urlFor, type ClusterId } from '../utils/clusters.ts';
+import { CLUSTER_IMAGE, CLUSTER_ALT } from '../utils/images.ts';
 
 interface Props { cluster: ClusterId }
 const { cluster } = Astro.props;
@@ -11,10 +13,26 @@ const meta = CLUSTERS[cluster];
 const entries = await getPublished(cluster);
 ---
 <BaseLayout title={meta.title} description={meta.description}>
+  <header class="cluster-head">
+    <Image
+      class="cluster-head__img"
+      src={CLUSTER_IMAGE[cluster]}
+      alt={CLUSTER_ALT[cluster]}
+      widths={[640, 1200]}
+      sizes="100vw"
+      loading="eager"
+      quality={70}
+    />
+    <div class="cluster-head__veil"></div>
+    <div class="wrap cluster-head__content">
+      <Breadcrumb items={[{ label: meta.label, href: meta.base }]} />
+      <h1>{meta.title}</h1>
+      <p>{meta.intro}</p>
+      <p class="cluster-head__count">{entries.length} {entries.length === 1 ? 'recurso disponible' : 'recursos disponibles'}</p>
+    </div>
+  </header>
+
   <div class="wrap section">
-    <Breadcrumb items={[{ label: meta.label, href: meta.base }]} />
-    <h1>{meta.title}</h1>
-    <p class="prose">{meta.intro}</p>
 
     {entries.length === 0 ? (
       <p class="empty">Estamos preparando los primeros recursos de esta sección.</p>
@@ -37,6 +55,23 @@ const entries = await getPublished(cluster);
 </BaseLayout>
 
 <style>
-  .grid-cards { margin-top: var(--space-6); }
+  .cluster-head { position: relative; isolation: isolate; }
+  .cluster-head__img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+  .cluster-head__veil {
+    position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, rgb(15 23 42 / 0.55) 0%, rgb(15 23 42 / 0.8) 100%);
+  }
+  .cluster-head__content { padding-block: var(--space-7); color: #fff; }
+  .cluster-head h1 { color: #fff; max-width: 20ch; }
+  .cluster-head p { color: rgb(248 250 252 / 0.9); max-width: var(--measure); margin-bottom: 0; }
+  .cluster-head__count {
+    margin-top: var(--space-4) !important; font-size: var(--text-small); font-weight: 600;
+    color: rgb(248 250 252 / 0.75) !important;
+  }
+  /* Migas sobre imagen: hay que aclararlas o no se leen. */
+  .cluster-head :global(.breadcrumb a),
+  .cluster-head :global(.breadcrumb span),
+  .cluster-head :global(.breadcrumb ol) { color: rgb(248 250 252 / 0.8); }
+
   .empty { color: var(--color-ink-soft); }
 </style>

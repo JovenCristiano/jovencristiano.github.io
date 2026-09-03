@@ -38,6 +38,13 @@
   --radius-lg: 20px;
   --shadow-card: 0 1px 3px rgb(15 23 42 / 0.08);
   --shadow-hover: 0 8px 24px rgb(15 23 42 / 0.12);
+  --shadow-lift: 0 16px 40px rgb(15 23 42 / 0.16);
+
+  /* Superficies de apoyo */
+  --color-brand-soft: #eff6ff;   /* fondo suave de marca */
+  --color-accent-soft: #fffbeb;  /* fondo suave de acento */
+  --color-ink-inverse: #f8fafc;  /* texto sobre fondo oscuro */
+  --color-overlay: rgb(15 23 42 / 0.55); /* velo sobre imagen, garantiza contraste AA */
 
   /* Layout */
   --wrap: 1120px;

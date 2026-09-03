@@ -13,8 +13,8 @@ body {
   background: var(--color-surface);
 }
 
-h1, h2, h3, h4 { line-height: 1.25; margin: 0 0 var(--space-4); text-wrap: balance; }
-h1 { font-size: var(--text-h1); font-weight: 700; }
+h1, h2, h3, h4 { line-height: 1.2; margin: 0 0 var(--space-4); text-wrap: balance; letter-spacing: -0.02em; }
+h1 { font-size: var(--text-h1); font-weight: 800; }
 h2 { font-size: var(--text-h2); font-weight: 700; }
 h3 { font-size: var(--text-h3); font-weight: 600; }
 p, ul, ol { margin: 0 0 var(--space-4); }
@@ -32,6 +32,28 @@ p a, li a, .prose a { min-height: 0; display: inline; }
 
 .wrap { width: min(100% - var(--space-5) * 2); max-width: var(--wrap); margin-inline: auto; }
 .prose { max-width: var(--measure); }
+.prose h2 {
+  margin-top: var(--space-7); padding-top: var(--space-2);
+  border-top: 3px solid var(--color-brand-soft);
+}
+.prose h3 { margin-top: var(--space-6); }
+.prose ol, .prose ul { padding-left: var(--space-5); }
+.prose li { margin-bottom: var(--space-2); }
+.prose li::marker { color: var(--color-brand); font-weight: 700; }
+.prose strong { color: var(--color-ink); font-weight: 700; }
+
+/* La cita bíblica es el elemento con más peso visual de cada recurso. */
+.prose blockquote {
+  margin: var(--space-5) 0; padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6);
+  border-left: 4px solid var(--color-accent);
+  background: var(--color-accent-soft); border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 1.0625em; line-height: 1.6;
+}
+.prose blockquote p { margin: 0; }
+
+.prose table { width: 100%; border-collapse: collapse; margin-bottom: var(--space-5); font-size: var(--text-small); }
+.prose th, .prose td { border: 1px solid var(--color-border); padding: var(--space-3); text-align: left; }
+.prose th { background: var(--color-surface-alt); }
 
 .skip-link {
   position: absolute; left: var(--space-4); top: calc(var(--space-4) * -4);
@@ -43,15 +65,37 @@ p a, li a, .prose a { min-height: 0; display: inline; }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
-  padding: var(--space-3) var(--space-5);
+  padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-md); font-weight: 600; text-decoration: none;
   background: var(--color-brand); color: #fff; border: 2px solid var(--color-brand);
+  box-shadow: 0 4px 14px rgb(37 99 235 / 0.28);
+  transition: transform .15s, box-shadow .15s, background .15s;
 }
-.btn:hover { background: var(--color-brand-dark); border-color: var(--color-brand-dark); color: #fff; }
-.btn--secondary { background: transparent; color: var(--color-brand-dark); }
-.btn--secondary:hover { background: var(--color-surface-alt); color: var(--color-brand-dark); }
+.btn:hover { background: var(--color-brand-dark); border-color: var(--color-brand-dark); color: #fff; transform: translateY(-1px); box-shadow: 0 8px 20px rgb(37 99 235 / 0.34); }
+.btn--secondary { background: var(--color-surface); color: var(--color-brand-dark); border-color: var(--color-border); box-shadow: var(--shadow-card); }
+.btn--secondary:hover { background: var(--color-surface); color: var(--color-brand-dark); border-color: var(--color-brand); }
+/* Sobre imagen: borde claro y fondo translúcido para mantener contraste. */
+.btn--ghost { background: rgb(255 255 255 / 0.12); color: #fff; border-color: rgb(255 255 255 / 0.7); box-shadow: none; }
+.btn--ghost:hover { background: rgb(255 255 255 / 0.22); color: #fff; border-color: #fff; }
 
-.section { padding-block: var(--space-7); }
+/* Etiqueta de categoría reutilizable. */
+.chip {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  padding: var(--space-1) var(--space-3); border-radius: 999px;
+  background: var(--color-brand-soft); color: var(--color-brand-dark);
+  font-size: var(--text-small); font-weight: 600; letter-spacing: .01em;
+  min-height: 0;
+}
+.chip--accent { background: var(--color-accent-soft); color: #92400e; }
+
+.section__head { max-width: var(--measure); margin-bottom: var(--space-6); }
+.section__head p { color: var(--color-ink-soft); margin: 0; }
+.eyebrow {
+  display: block; font-size: var(--text-small); font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--color-brand); margin-bottom: var(--space-2);
+}
+
+.section { padding-block: var(--space-8); }
 .section--alt { background: var(--color-surface-alt); }
 
 .grid-cards {

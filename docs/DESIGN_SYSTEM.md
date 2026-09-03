@@ -64,6 +64,27 @@ Expuesta como `--space-1` … `--space-9`. No se usan valores fuera de la escala
 
 Sombras suaves. Sin bordes duros ni degradados llamativos.
 
+### Superficies de apoyo
+
+```css
+--color-brand-soft:  #EFF6FF;  /* fondo suave de marca: fichas, chips, pasos */
+--color-accent-soft: #FFFBEB;  /* fondo suave de acento: citas bíblicas */
+--color-ink-inverse: #F8FAFC;  /* texto sobre fondo oscuro (pie) */
+--color-overlay:     rgb(15 23 42 / .55);
+```
+
+## 2 bis. Imágenes
+
+Fotografías de **Unsplash** (licencia libre, uso comercial, sin atribución obligatoria). Viven en
+`src/assets/` y se sirven con `<Image>` de `astro:assets`: WebP y variantes responsive automáticas.
+
+- **Nunca** en `public/`: ahí no se optimizan.
+- El `alt` describe la escena; solo es `alt=""` cuando la imagen es decorativa (el hero, porque el
+  titular ya comunica el mensaje).
+- Toda imagen sobre la que haya texto lleva velo (`--color-overlay` o degradado) para garantizar
+  contraste AA.
+- La imagen del hero es el LCP: `loading="eager"` y `fetchpriority="high"`.
+
 ## 3. Componentes base
 
 | Componente | Función |
@@ -76,10 +97,15 @@ Sombras suaves. Sin bordes duros ni degradados llamativos.
 | `ResourceMeta` | Ficha práctica del recurso |
 | `RelatedResources` | Bloque de 3–6 enlaces relacionados |
 | `CTA` | Llamada a la acción reutilizable |
+| `Hero` | Portada con imagen, velo y doble CTA |
+| `CategoryCard` | Tarjeta de cluster con foto y número de recursos |
 | `FAQ` | Preguntas plegables (`<details>`) + `FAQPage` |
 
 **Regla:** ningún componente introduce JavaScript de cliente sin justificación escrita. Menú y
 acordeones se resuelven con HTML nativo.
+
+**Descartado:** `backdrop-filter`. Es caro en gama baja y rompe la captura de pantalla en algunos
+motores. Se sustituye por fondos sólidos.
 
 ## 4. Tarjetas de recurso
 

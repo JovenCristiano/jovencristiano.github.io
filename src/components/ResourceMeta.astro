@@ -12,20 +12,21 @@ const DIFFICULTY: Record<string, string> = { facil: 'Fácil', media: 'Media', al
 ---
 <!-- La ficha práctica es el diferencial frente a un blog: nunca se oculta tras un clic. -->
 <dl class="meta">
-  <div><dt>Edad</dt><dd>{age_range}</dd></div>
+  <div><dt>Edad</dt><dd>{age_range} años</dd></div>
   <div><dt>Participantes</dt><dd>{participants}</dd></div>
   <div><dt>Duración</dt><dd>{duration}</dd></div>
   <div><dt>Dificultad</dt><dd>{DIFFICULTY[difficulty] ?? difficulty}</dd></div>
-  <div><dt>Materiales</dt><dd>{materials.length ? materials.join(', ') : 'Ninguno'}</dd></div>
+  <div class="meta__wide"><dt>Materiales</dt><dd>{materials.length ? materials.join(' · ') : 'Ninguno'}</dd></div>
 </dl>
 
 <style>
   .meta {
-    display: grid; gap: var(--space-4); margin: 0 0 var(--space-6);
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    padding: var(--space-5); background: var(--color-surface-alt);
-    border: 1px solid var(--color-border); border-radius: var(--radius-md);
+    display: grid; gap: var(--space-4) var(--space-5); margin: 0 0 var(--space-7);
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    padding: var(--space-5); background: var(--color-brand-soft);
+    border: 1px solid #dbeafe; border-radius: var(--radius-lg);
   }
-  dt { font-size: var(--text-small); color: var(--color-ink-soft); text-transform: uppercase; letter-spacing: .03em; }
-  dd { margin: var(--space-1) 0 0; font-weight: 600; }
+  .meta__wide { grid-column: 1 / -1; border-top: 1px solid #dbeafe; padding-top: var(--space-4); }
+  dt { font-size: 0.75rem; font-weight: 700; color: var(--color-brand-dark); text-transform: uppercase; letter-spacing: .06em; }
+  dd { margin: var(--space-1) 0 0; font-weight: 600; font-size: 1.0625rem; }
 </style>

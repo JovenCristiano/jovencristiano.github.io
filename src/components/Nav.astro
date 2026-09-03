@@ -4,7 +4,10 @@ const current = Astro.url.pathname;
 ---
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="/">{SITE.name}</a>
+    <a class="brand" href="/">
+      <img src="/logo.svg" alt="" width="32" height="32" />
+      <span>{SITE.name}</span>
+    </a>
 
     <!-- Menú móvil sin JavaScript: <details> nativo. -->
     <details class="menu">
@@ -23,15 +26,25 @@ const current = Astro.url.pathname;
 </header>
 
 <style>
-  .site-header { border-bottom: 1px solid var(--color-border); background: var(--color-surface); }
+  .site-header {
+    position: sticky; top: 0; z-index: 20;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
   .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 64px; }
-  .brand { font-weight: 700; font-size: 1.125rem; color: var(--color-ink); text-decoration: none; }
+  .brand {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-weight: 800; font-size: 1.125rem; color: var(--color-ink);
+    text-decoration: none; letter-spacing: -0.02em;
+  }
+  .brand img { width: 32px; height: 32px; border-radius: 8px; }
 
   .menu summary { cursor: pointer; list-style: none; font-weight: 600; padding-inline: var(--space-2); }
   .menu summary::-webkit-details-marker { display: none; }
   .menu ul { list-style: none; margin: 0; padding: var(--space-3) 0; display: grid; gap: var(--space-1); }
   .menu a { text-decoration: none; color: var(--color-ink); font-weight: 500; padding: var(--space-2); border-radius: var(--radius-sm); }
-  .menu a[aria-current='page'] { color: var(--color-brand-dark); background: var(--color-surface-alt); }
+  .menu a[aria-current='page'] { color: var(--color-brand-dark); background: var(--color-brand-soft); }
+  .menu a:hover { color: var(--color-brand-dark); }
 
   @media (max-width: 47.99rem) {
     .menu[open] nav {

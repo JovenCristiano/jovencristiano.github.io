@@ -1,25 +1,73 @@
 ---
-import { NAV, SITE } from '../site.config.mjs';
+import { SITE } from '../site.config.mjs';
+import { CLUSTERS } from '../utils/clusters.ts';
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
-  <div class="wrap">
-    <p class="site-footer__brand">{SITE.name}</p>
-    <p class="site-footer__claim">Recursos cristianos listos para usar con jóvenes.</p>
-    <nav aria-label="Navegación del pie">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="brandline" href="/">
+        <img src="/logo.svg" alt="" width="36" height="36" />
+        <span>{SITE.name}</span>
+      </a>
+      <p class="claim">
+        Biblioteca de recursos cristianos para líderes juveniles: dinámicas, juegos bíblicos y
+        material listo para usar en tu próxima reunión.
+      </p>
+    </div>
+
+    <nav aria-label="Recursos">
+      <h2>Recursos</h2>
       <ul>
-        {NAV.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+        {Object.values(CLUSTERS).map((c) => <li><a href={c.base}>{c.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <nav aria-label="Sitio">
+      <h2>El sitio</h2>
+      <ul>
+        <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
         <li><a href="/contacto/">Contacto</a></li>
       </ul>
     </nav>
-    <p class="site-footer__legal">© {year} {SITE.name}</p>
+  </div>
+
+  <div class="wrap site-footer__legal">
+    <p>© {year} {SITE.name}</p>
+    <p>Hecho para quien prepara la reunión del domingo.</p>
   </div>
 </footer>
 
 <style>
-  .site-footer { background: var(--color-surface-alt); border-top: 1px solid var(--color-border); padding-block: var(--space-7); margin-top: var(--space-8); }
-  .site-footer__brand { font-weight: 700; margin-bottom: var(--space-1); }
-  .site-footer__claim { color: var(--color-ink-soft); }
-  .site-footer ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-5); }
-  .site-footer__legal { color: var(--color-ink-soft); font-size: var(--text-small); margin: 0; }
+  .site-footer {
+    background: var(--color-ink); color: var(--color-ink-inverse);
+    padding-block: var(--space-8) var(--space-5); margin-top: var(--space-9);
+  }
+  .site-footer__grid {
+    display: grid; gap: var(--space-6);
+    grid-template-columns: 1fr;
+  }
+  .brandline {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-weight: 800; font-size: 1.125rem; color: #fff; text-decoration: none;
+  }
+  .brandline img { border-radius: 8px; }
+  .claim { margin: var(--space-3) 0 0; color: rgb(248 250 252 / 0.7); font-size: var(--text-small); max-width: 42ch; }
+
+  .site-footer h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .08em; color: rgb(248 250 252 / 0.55); margin-bottom: var(--space-3); }
+  .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
+  .site-footer a { color: rgb(248 250 252 / 0.9); text-decoration: none; }
+  .site-footer a:hover { color: #fff; text-decoration: underline; }
+
+  .site-footer__legal {
+    margin-top: var(--space-7); padding-top: var(--space-5);
+    border-top: 1px solid rgb(248 250 252 / 0.15);
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2);
+    font-size: var(--text-small); color: rgb(248 250 252 / 0.55);
+  }
+  .site-footer__legal p { margin: 0; }
+
+  @media (min-width: 48rem) {
+    .site-footer__grid { grid-template-columns: 2fr 1fr 1fr; gap: var(--space-7); }
+  }
 </style>

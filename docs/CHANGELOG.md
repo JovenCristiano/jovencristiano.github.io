@@ -4,6 +4,28 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Cambiado — 2026-09-03 (rediseño visual)
+
+Motivo: el sitio funcionaba pero tenía acabado de esqueleto — sin imágenes, sin logo, con la
+tipografía declarada pero no cargada y sin uso del color de acento.
+
+- **Fotografía**: 4 imágenes de Unsplash en `src/assets/`, servidas con `<Image>` (WebP +
+  responsive). Hero de 82 KB.
+- **Tipografía**: Inter cargada de verdad, con `preconnect` y `display=swap`.
+- **Logo** `public/logo.svg`, en cabecera y pie.
+- **Hero** nuevo con imagen, velo de contraste, doble CTA y señales de confianza.
+- **Home**: sección «Cómo funciona» en tres pasos, tarjetas de categoría con foto y contador de
+  recursos, FAQ rediseñada con cuarta pregunta sobre adultos.
+- **Cabecera de cluster** con imagen y número de recursos disponibles.
+- **Ficha de recurso**: ficha práctica sobre fondo de marca, citas bíblicas destacadas en ámbar,
+  jerarquía de encabezados y listas con marcador de color.
+- **Pie de página** oscuro a tres columnas.
+- Cabecera fija (`sticky`) al hacer scroll.
+- `backdrop-filter` retirado: coste en gama baja y problemas de renderizado.
+
+**Presupuesto verificado tras el rediseño:** 0 KB de JavaScript · CSS 13,4 KB (límite: 20) ·
+`astro check` sin errores.
+
 ### Añadido — 2026-09-03 (tanda P1 y Search Console)
 
 - **5 recursos nuevos** (total: 13), contra las keywords P1 del mapa SEO:
