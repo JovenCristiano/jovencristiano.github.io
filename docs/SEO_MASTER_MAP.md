@@ -97,7 +97,7 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 |---|---|---|---|---|
 | dinámicas para jóvenes cristianos | 5 000 | dinamicas | `/dinamicas/` | pendiente |
 | juegos para jóvenes cristianos | 5 000 | juegos | `/juegos-biblicos/` | pendiente |
-| actividades para jóvenes cristianos | 5 000 | actividades | `/actividades/` | pendiente |
+| actividades para jóvenes cristianos | 5 000 | actividades | `/actividades/` | **publicado** |
 | enseñanza para jóvenes cristianos | 5 000 | temas | `/temas/` | **publicado** |
 | dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
 | juegos cristianos para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` (sección) | **publicado** |

@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Lista de preguntas impresa', 'Pizarra para el marcador', 'Un objeto por equipo para pulsar']
 featured: true
 publishedAt: 2026-09-03
-related: ['carrera-de-versiculos', 'el-personaje-misterioso', 'la-torre-mas-alta']
+related: ['carrera-de-versiculos', 'escape-room-biblico', 'el-personaje-misterioso']
 draft: false
 ---
 

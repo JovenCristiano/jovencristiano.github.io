@@ -4,6 +4,25 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-03 (cluster de Actividades)
+
+- **Cluster `/actividades/`**, que cubre la keyword P0 «actividades para jóvenes cristianos»
+  (5 000 búsquedas/mes). **Con esto quedan cubiertas las cuatro keywords P0 del mapa SEO.**
+- **4 actividades** (total: 21 recursos), de mayor recorrido que una dinámica —ocupan una reunión
+  entera o una tarde—, con preparación, desarrollo por fases y cierre reflexivo:
+  - La cápsula del tiempo
+  - El mapa de mi vida
+  - Escape room bíblico (con los cuatro enigmas resueltos y la combinación comprobada)
+  - Tarde de servicio en el barrio
+- Color de categoría nuevo: **cian neón `#22D3EE`**. Con esto se agotan los colores de la paleta
+  original; un sexto cluster exigiría ampliarla o agrupar categorías.
+
+**Recursos con requisitos de seguridad.** «Tarde de servicio» exige autorización escrita de los
+padres, un adulto por cada seis jóvenes, llamada previa al destino y prohibición de fotografiar a
+personas vulnerables. «El mapa de mi vida» incluye protocolo ante revelaciones de abuso o
+autolesión. Todo recurso futuro que saque a menores del local o toque su historia personal debe
+mantener ese nivel de advertencia.
+
 ### Añadido — 2026-09-03 (cluster de Temas)
 
 - **Cluster `/temas/`**, que ataca la keyword P0 «enseñanza para jóvenes cristianos» (5 000

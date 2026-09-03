@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Papel', 'Bolígrafos', 'Pizarra o cartulina']
 featured: true
 publishedAt: 2026-09-03
-related: ['identidad-en-cristo', 'ansiedad-y-fe', 'el-lazarillo']
+related: ['identidad-en-cristo', 'tarde-de-servicio', 'capsula-del-tiempo', 'ansiedad-y-fe']
 draft: false
 ---
 

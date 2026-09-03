@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Espejo pequeño', 'Tarjetas', 'Bolígrafos']
 featured: true
 publishedAt: 2026-09-03
-related: ['proposito-para-que-estoy-aqui', 'ansiedad-y-fe', 'la-silla-de-la-verdad']
+related: ['proposito-para-que-estoy-aqui', 'capsula-del-tiempo', 'el-mapa-de-mi-vida', 'ansiedad-y-fe']
 draft: false
 ---
 

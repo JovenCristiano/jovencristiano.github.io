@@ -12,17 +12,20 @@ import { CLUSTER_IMAGE, CLUSTER_ALT } from '../utils/images.ts';
 const dinamicas = await getPublished('dinamicas');
 const juegos = await getPublished('juegos');
 const temas = await getPublished('temas');
+const actividades = await getPublished('actividades');
 
 const counts: Record<string, number> = {
   dinamicas: dinamicas.length,
   juegos: juegos.length,
   temas: temas.length,
+  actividades: actividades.length,
 };
 
 const destacados = [
   ...dinamicas.map((e) => ({ cluster: 'dinamicas' as const, entry: e })),
   ...juegos.map((e) => ({ cluster: 'juegos' as const, entry: e })),
   ...temas.map((e) => ({ cluster: 'temas' as const, entry: e })),
+  ...actividades.map((e) => ({ cluster: 'actividades' as const, entry: e })),
 ]
   .sort((a, b) => Number(b.entry.data.featured) - Number(a.entry.data.featured))
   .slice(0, 6);

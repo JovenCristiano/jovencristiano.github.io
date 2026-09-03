@@ -29,6 +29,7 @@ tiene el suyo, lo que permite orientarse sin leer.
 --color-juegos:    #E93BD3;  /* fucsia */
 --color-adultos:   #FF4D9D;  /* rosa */
 --color-temas:     #7B61FF;  /* violeta eléctrico */
+--color-actividades: #22D3EE; /* cian neón */
 
 --color-bg:          #0A0A0F;  /* fondo general */
 --color-surface:     #15151F;  /* tarjetas */

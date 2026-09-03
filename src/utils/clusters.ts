@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-export type ClusterId = 'dinamicas' | 'juegos' | 'adultos' | 'temas';
+export type ClusterId = 'dinamicas' | 'juegos' | 'adultos' | 'temas' | 'actividades';
 
 interface Cluster {
   id: ClusterId;
@@ -38,6 +38,17 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
     intro:
       'Juegos con reglas claras, variantes y una reflexión bíblica que cierra la actividad. Filtrables por edad, duración y materiales.',
     color: 'var(--color-juegos)',
+  },
+  actividades: {
+    id: 'actividades',
+    base: '/actividades/',
+    label: 'Actividades',
+    title: 'Actividades para jóvenes cristianos',
+    description:
+      'Actividades para jóvenes cristianos más largas y estructuradas: identidad, propósito, servicio y fe. Con preparación, desarrollo por fases y cierre reflexivo.',
+    intro:
+      'Actividades de mayor recorrido que una dinámica: ocupan una reunión entera o una tarde, y trabajan un tema a fondo con varias fases.',
+    color: 'var(--color-actividades)',
   },
   temas: {
     id: 'temas',
