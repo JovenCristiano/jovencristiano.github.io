@@ -4,6 +4,18 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-03 (tanda P1 y Search Console)
+
+- **5 recursos nuevos** (total: 13), contra las keywords P1 del mapa SEO:
+  - Juegos: preguntas y respuestas bíblicas (30 preguntas en 3 niveles) · el personaje misterioso
+  - Dinámicas: el mural de oración · la cadena de nombres
+  - Adultos: encuentra a alguien que… (rompehielos)
+- `SITE.googleSiteVerification` en `src/site.config.mjs` + etiqueta `<meta>` en `BaseLayout`, para
+  verificar la propiedad en Google Search Console.
+  **Nota:** el método de registro TXT en DNS no es viable en `github.io` (el DNS es de GitHub); la
+  propiedad debe crearse como «Prefijo de la URL» y verificarse por etiqueta HTML.
+- Enlazado interno revisado: todas las piezas nuevas entran en el `related` de las anteriores.
+
 ### Añadido — 2026-09-03 (contenido y cluster de adultos)
 
 - **Decisión de negocio resuelta:** se abre el público adulto como cluster **secundario**

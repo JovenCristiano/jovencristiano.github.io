@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Un ovillo de lana grueso']
 featured: true
 publishedAt: 2026-09-03
-related: ['dos-verdades-y-una-mentira', 'la-caja-de-las-cargas']
+related: ['dos-verdades-y-una-mentira', 'encuentra-a-alguien-que', 'la-caja-de-las-cargas']
 draft: false
 ---
 

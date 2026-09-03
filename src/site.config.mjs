@@ -13,6 +13,16 @@ export const SITE = {
     'Dinámicas, juegos bíblicos, actividades y temas cristianos listos para usar con jóvenes. Recursos prácticos para líderes juveniles, iglesias y padres.',
   locale: 'es',
   ogImage: '/images/og-default.png',
+  /**
+   * Token de verificación de Google Search Console (método «Etiqueta HTML»).
+   *
+   * OJO: el método de registro TXT en DNS **no sirve** aquí. Requiere controlar el DNS de
+   * `github.io`, que pertenece a GitHub. En Search Console hay que crear la propiedad como
+   * «Prefijo de la URL» y copiar aquí el token de la opción «Etiqueta HTML».
+   *
+   * Cadena vacía = no se imprime ninguna etiqueta.
+   */
+  googleSiteVerification: 'jWxoHw50nGbBUBoC-LXITfbioE9pHFsx4nM3IjUBH0I',
 };
 
 /** Navegación principal. Un cluster solo entra aquí cuando tiene contenido publicado. */

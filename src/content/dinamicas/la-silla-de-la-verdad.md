@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Una silla', 'Tarjetas con preguntas', 'Cronómetro o móvil']
 featured: true
 publishedAt: 2026-09-02
-related: ['el-nudo-humano', 'el-lazarillo', 'la-caja-de-las-cargas']
+related: ['el-nudo-humano', 'el-lazarillo', 'el-mural-de-oracion', 'la-caja-de-las-cargas']
 draft: false
 ---
 

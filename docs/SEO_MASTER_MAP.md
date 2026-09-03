@@ -48,7 +48,7 @@ Solo trece keywords alcanzan el cubo alto, y describen exactamente el negocio:
 Con **una cuarta parte de las keywords, «adultos» genera más volumen que «jóvenes»**. Son grupos
 pequeños, células y reuniones de adultos de la misma iglesia, y buscan el mismo material.
 
-**Decisión pendiente del negocio.** Ver sección 4.
+**Decisión tomada** (2026-09-03): se abre como cluster secundario. Ver sección 4.
 
 ### 1.3 El modificador que manda es «divertidas»
 
@@ -99,22 +99,22 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | juegos para jóvenes cristianos | 5 000 | juegos | `/juegos-biblicos/` | pendiente |
 | actividades para jóvenes cristianos | 5 000 | actividades | `/actividades/` | pendiente |
 | enseñanza para jóvenes cristianos | 5 000 | temas | `/temas/` | pendiente |
-| dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | escribiendo |
-| juegos cristianos para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` (sección) | pendiente |
-| dinámicas de integración para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` | escribiendo |
-| dinámicas cristianas cortas divertidas | 5 000 | dinamicas | `/dinamicas/cortas/` | pendiente |
+| dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
+| juegos cristianos para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` (sección) | **publicado** |
+| dinámicas de integración para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
+| dinámicas cristianas cortas divertidas | 5 000 | dinamicas | `/dinamicas/cortas/` | **publicado** (la torre más alta, la cadena de nombres) |
 
 ## 3. Tabla maestra — prioridad P1
 
 | keyword | volumen | cluster | URL objetivo | estado |
 |---|---|---|---|---|
-| dinámicas de integración para jóvenes | 500 | dinamicas | `/dinamicas/integracion/` | pendiente |
+| dinámicas de integración para jóvenes | 500 | dinamicas | `/dinamicas/integracion/` | **publicado** (la cadena de nombres) |
 | dinámicas bíblicas para adolescentes | 500 | dinamicas | `/dinamicas/adolescentes/` | pendiente |
 | dinámicas para jóvenes cristianos con reflexión | 500 | dinamicas | `/dinamicas/con-reflexion/` | pendiente |
 | juegos bíblicos para jóvenes | 500 | juegos | `/juegos-biblicos/` | pendiente |
-| juegos bíblicos para adolescentes | 500 | juegos | `/juegos-biblicos/adolescentes/` | pendiente |
-| juegos bíblicos preguntas y respuestas | 500 | juegos | `/juegos-biblicos/preguntas-respuestas/` | pendiente |
-| dinámica de oración para jóvenes | 500 | dinamicas | `/dinamicas/oracion/` | pendiente |
+| juegos bíblicos para adolescentes | 500 | juegos | `/juegos-biblicos/adolescentes/` | **publicado** (el personaje misterioso) |
+| juegos bíblicos preguntas y respuestas | 500 | juegos | `/juegos-biblicos/preguntas-respuestas/` | **publicado** |
+| dinámica de oración para jóvenes | 500 | dinamicas | `/dinamicas/oracion/` | **publicado** (el mural de oración) |
 | dinámicas para células con enseñanza | 500 | dinamicas | `/dinamicas/celulas/` | pendiente |
 | juegos para jóvenes adventistas | 500 | adventista | `/juegos-biblicos/sociedad-de-jovenes/` | pendiente |
 | dinámicas para jóvenes cristianos pdf | 500 | lead magnet | `/recursos/descarga-dinamicas/` | pendiente |
