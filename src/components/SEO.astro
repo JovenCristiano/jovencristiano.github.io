@@ -38,5 +38,5 @@ const fullTitle = title === SITE.title ? title : `${title} | ${SITE.name}`;
 <meta name="twitter:image" content={ogImage} />
 
 {jsonLd.map((block) => (
-  <script type="application/ld+json" set:html={JSON.stringify(block)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(block)} />
 ))}

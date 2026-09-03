@@ -27,8 +27,6 @@ const resourceSchema = z.object({
   draft: z.boolean().default(false),
 });
 
-export type Resource = z.infer<typeof resourceSchema>;
-
 const pattern = '**/*.{md,mdx}';
 
 // Solo se activan las colecciones con contenido real (§3 ARCHITECTURE).
