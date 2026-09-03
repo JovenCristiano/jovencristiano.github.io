@@ -14,6 +14,9 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   verificar la propiedad en Google Search Console.
   **Nota:** el método de registro TXT en DNS no es viable en `github.io` (el DNS es de GitHub); la
   propiedad debe crearse como «Prefijo de la URL» y verificarse por etiqueta HTML.
+- `public/google02704c519b649822.html`: archivo de verificación de Search Console (segundo método,
+  complementario a la etiqueta `<meta>`). **No borrar:** Google lo revisa periódicamente y su
+  desaparición retira la propiedad verificada.
 - Enlazado interno revisado: todas las piezas nuevas entran en el `related` de las anteriores.
 
 ### Añadido — 2026-09-03 (contenido y cluster de adultos)
