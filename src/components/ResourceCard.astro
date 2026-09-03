@@ -7,10 +7,11 @@ interface Props {
   duration: string;
   participants: string;
   materials: string[];
+  color: string;
 }
-const { href, title, category, age_range, duration, participants, materials } = Astro.props;
+const { href, title, category, age_range, duration, participants, materials, color } = Astro.props;
 ---
-<li class="card">
+<li class="card" style={`--color-cat: ${color}`}>
   <p class="card__cat"><span class="chip">{category}</span></p>
   <h3 class="card__title"><a href={href}>{title}</a></h3>
   <ul class="card__facts">
@@ -28,10 +29,19 @@ const { href, title, category, age_range, duration, participants, materials } = 
     border: 1px solid var(--color-border); border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card); transition: box-shadow .2s, transform .2s, border-color .2s;
   }
-  .card:hover { box-shadow: var(--shadow-lift); transform: translateY(-3px); border-color: #cbd5e1; }
+  .card:hover {
+    box-shadow: var(--shadow-lift); transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--color-cat) 45%, var(--color-border));
+  }
+  /* Filo de color: identifica la categoría de un vistazo. */
+  .card::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--color-cat); border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
   .card__cat { margin: 0; }
   .card__title { margin: 0; font-size: var(--text-h3); }
   .card__title a { color: var(--color-ink); text-decoration: none; }
+  .card:hover .card__title a { color: color-mix(in srgb, var(--color-cat) 72%, #fff); }
   /* Toda la tarjeta es clicable sin JavaScript. */
   .card__title a::after { content: ''; position: absolute; inset: 0; }
   .card { position: relative; }
@@ -41,5 +51,5 @@ const { href, title, category, age_range, duration, participants, materials } = 
     display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3);
     font-size: var(--text-small); color: var(--color-ink-soft);
   }
-  .card__facts li + li::before { content: '·'; margin-right: var(--space-3); color: var(--color-border); }
+  .card__facts li + li::before { content: '·'; margin-right: var(--space-3); color: var(--color-ink-faint); }
 </style>

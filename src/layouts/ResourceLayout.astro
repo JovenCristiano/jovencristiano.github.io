@@ -8,6 +8,8 @@ import { SITE } from '../site.config.mjs';
 import type { Crumb } from '../components/Breadcrumb.astro';
 
 interface Props {
+  /** Color de la categoría; tiñe ficha, citas y marcadores de lista. */
+  color: string;
   data: {
     title: string;
     description: string;
@@ -24,7 +26,7 @@ interface Props {
   related: { href: string; title: string }[];
 }
 
-const { data, crumbs, related } = Astro.props;
+const { data, crumbs, related, color } = Astro.props;
 const path = Astro.url.pathname;
 
 const article = {
@@ -40,7 +42,7 @@ const article = {
 };
 ---
 <BaseLayout title={data.title} description={data.description} type="article" jsonLd={[article]}>
-  <div class="wrap section">
+  <div class="wrap section" style={`--color-cat: ${color}`}>
     <Breadcrumb items={crumbs} />
     <article class="prose">
       <h1>{data.title}</h1>

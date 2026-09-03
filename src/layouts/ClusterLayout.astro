@@ -13,6 +13,7 @@ const meta = CLUSTERS[cluster];
 const entries = await getPublished(cluster);
 ---
 <BaseLayout title={meta.title} description={meta.description}>
+  <div class="cluster" style={`--color-cat: ${meta.color}`}>
   <header class="cluster-head">
     <Image
       class="cluster-head__img"
@@ -47,31 +48,38 @@ const entries = await getPublished(cluster);
             duration={entry.data.duration}
             participants={entry.data.participants}
             materials={entry.data.materials}
+            color={meta.color}
           />
         ))}
       </ul>
     )}
   </div>
+  </div>
 </BaseLayout>
 
 <style>
   .cluster-head { position: relative; isolation: isolate; }
-  .cluster-head__img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+  .cluster-head__img {
+    position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%;
+    object-fit: cover; filter: saturate(.8) brightness(.7);
+  }
   .cluster-head__veil {
     position: absolute; inset: 0; z-index: -1;
-    background: linear-gradient(180deg, rgb(15 23 42 / 0.55) 0%, rgb(15 23 42 / 0.8) 100%);
+    background:
+      linear-gradient(180deg, rgb(10 10 15 / 0.62) 0%, var(--color-bg) 100%),
+      linear-gradient(100deg, color-mix(in srgb, var(--color-cat) 30%, transparent) 0%, transparent 70%);
   }
   .cluster-head__content { padding-block: var(--space-7); color: #fff; }
   .cluster-head h1 { color: #fff; max-width: 20ch; }
-  .cluster-head p { color: rgb(248 250 252 / 0.9); max-width: var(--measure); margin-bottom: 0; }
+  .cluster-head p { color: var(--color-ink-soft); max-width: var(--measure); margin-bottom: 0; }
   .cluster-head__count {
     margin-top: var(--space-4) !important; font-size: var(--text-small); font-weight: 600;
-    color: rgb(248 250 252 / 0.75) !important;
+    color: color-mix(in srgb, var(--color-cat) 72%, #fff) !important;
   }
   /* Migas sobre imagen: hay que aclararlas o no se leen. */
   .cluster-head :global(.breadcrumb a),
   .cluster-head :global(.breadcrumb span),
-  .cluster-head :global(.breadcrumb ol) { color: rgb(248 250 252 / 0.8); }
+  .cluster-head :global(.breadcrumb ol) { color: var(--color-ink-soft); }
 
   .empty { color: var(--color-ink-soft); }
 </style>

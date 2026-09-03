@@ -23,10 +23,18 @@ const DIFFICULTY: Record<string, string> = { facil: 'Fácil', media: 'Media', al
   .meta {
     display: grid; gap: var(--space-4) var(--space-5); margin: 0 0 var(--space-7);
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-    padding: var(--space-5); background: var(--color-brand-soft);
-    border: 1px solid #dbeafe; border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    background: color-mix(in srgb, var(--color-cat) 8%, var(--color-surface));
+    border: 1px solid color-mix(in srgb, var(--color-cat) 30%, transparent);
+    border-radius: var(--radius-lg);
   }
-  .meta__wide { grid-column: 1 / -1; border-top: 1px solid #dbeafe; padding-top: var(--space-4); }
-  dt { font-size: 0.75rem; font-weight: 700; color: var(--color-brand-dark); text-transform: uppercase; letter-spacing: .06em; }
-  dd { margin: var(--space-1) 0 0; font-weight: 600; font-size: 1.0625rem; }
+  .meta__wide {
+    grid-column: 1 / -1; padding-top: var(--space-4);
+    border-top: 1px solid color-mix(in srgb, var(--color-cat) 25%, transparent);
+  }
+  dt {
+    font-family: var(--font-display); font-size: 0.6875rem; font-weight: 800;
+    color: color-mix(in srgb, var(--color-cat) 72%, #fff); text-transform: uppercase; letter-spacing: .1em;
+  }
+  dd { margin: var(--space-1) 0 0; font-weight: 600; font-size: 1.0625rem; color: #fff; }
 </style>

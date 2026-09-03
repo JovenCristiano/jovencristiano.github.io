@@ -10,6 +10,8 @@ interface Cluster {
   title: string;
   description: string;
   intro: string;
+  /** Color de la categoría. El verde de marca queda reservado para acciones. */
+  color: string;
   /** Secundario: no aparece en las categorías de la Home (§4 SEO_MASTER_MAP). */
   secondary?: boolean;
 }
@@ -24,6 +26,7 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
       'Dinámicas para jóvenes cristianos listas para usar: objetivo, materiales, instrucciones paso a paso y reflexión bíblica para tu próxima reunión juvenil.',
     intro:
       'Cada dinámica incluye edad recomendada, número de participantes, duración, materiales e instrucciones paso a paso, con su reflexión bíblica.',
+    color: 'var(--color-dinamicas)',
   },
   juegos: {
     id: 'juegos',
@@ -34,6 +37,7 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
       'Juegos bíblicos para jóvenes con reglas claras y reflexión: rompehielos, competencias por equipos, preguntas y memoria de versículos para grupos juveniles.',
     intro:
       'Juegos con reglas claras, variantes y una reflexión bíblica que cierra la actividad. Filtrables por edad, duración y materiales.',
+    color: 'var(--color-juegos)',
   },
   adultos: {
     id: 'adultos',
@@ -44,6 +48,7 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
       'Dinámicas cristianas para adultos: divertidas, cortas y con reflexión bíblica. Ideales para células, grupos pequeños y reuniones de adultos en la iglesia.',
     intro:
       'Las mismas fichas prácticas, pensadas para grupos de adultos: células, grupos pequeños y reuniones de iglesia. Cada dinámica indica duración, participantes y materiales.',
+    color: 'var(--color-adultos)',
     secondary: true,
   },
 };

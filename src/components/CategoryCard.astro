@@ -9,10 +9,11 @@ interface Props {
   image: ImageMetadata;
   alt: string;
   count: number;
+  color: string;
 }
-const { href, label, text, image, alt, count } = Astro.props;
+const { href, label, text, image, alt, count, color } = Astro.props;
 ---
-<li class="cat">
+<li class="cat" style={`--color-cat: ${color}`}>
   <div class="cat__media">
     <Image src={image} alt={alt} widths={[400, 800]} sizes="(min-width: 48rem) 30vw, 100vw" quality={70} />
   </div>
@@ -30,15 +31,33 @@ const { href, label, text, image, alt, count } = Astro.props;
     border-radius: var(--radius-lg); overflow: hidden;
     box-shadow: var(--shadow-card); transition: box-shadow .2s, transform .2s;
   }
-  .cat:hover { box-shadow: var(--shadow-lift); transform: translateY(-3px); }
-  .cat__media { aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-surface-alt); }
+  .cat:hover {
+    box-shadow: var(--shadow-lift); transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--color-cat) 45%, var(--color-border));
+  }
+  .cat::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--color-cat); z-index: 2;
+  }
+  .cat__media { aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-surface-alt); position: relative; }
+  /* Velo del color de la categoría sobre la foto. */
+  .cat__media::after {
+    content: ''; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg,
+      color-mix(in srgb, var(--color-cat) 22%, transparent) 0%,
+      rgb(21 21 31 / 0.85) 100%);
+  }
   .cat__media :global(img) { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
   .cat:hover .cat__media :global(img) { transform: scale(1.04); }
   .cat__body { padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-2); flex: 1; }
   .cat__body h3 { margin: 0; font-size: var(--text-h3); }
   .cat__body h3 a { color: var(--color-ink); text-decoration: none; }
+  .cat:hover .cat__body h3 a { color: color-mix(in srgb, var(--color-cat) 72%, #fff); }
   /* La tarjeta entera es clicable, sin JavaScript. */
   .cat__body h3 a::after { content: ''; position: absolute; inset: 0; }
   .cat__body p { margin: 0; color: var(--color-ink-soft); font-size: var(--text-small); }
-  .cat__count { margin-top: auto; padding-top: var(--space-3); font-size: var(--text-small); font-weight: 600; color: var(--color-brand-dark); }
+  .cat__count {
+    margin-top: auto; padding-top: var(--space-3);
+    font-size: var(--text-small); font-weight: 700; color: color-mix(in srgb, var(--color-cat) 72%, #fff);
+  }
 </style>

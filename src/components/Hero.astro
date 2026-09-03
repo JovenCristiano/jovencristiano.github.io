@@ -25,7 +25,7 @@ import heroImage from '../assets/hero.jpg';
     </p>
     <p class="hero__actions">
       <a class="btn" href="/dinamicas/">Explorar recursos</a>
-      <a class="btn btn--ghost" href="/juegos-biblicos/">Ver juegos bíblicos</a>
+      <a class="btn btn--secondary" href="/juegos-biblicos/">Ver juegos bíblicos</a>
     </p>
     <ul class="hero__facts">
       <li>Gratis y sin registro</li>
@@ -37,6 +37,8 @@ import heroImage from '../assets/hero.jpg';
 
 <style>
   .hero { position: relative; isolation: isolate; display: grid; min-height: 32rem; align-content: center; }
+  /* La foto se apaga: sobre negro compite con el texto si va a plena luz. */
+  .hero__img { filter: saturate(.85) brightness(.75); }
   .hero__img {
     position: absolute; inset: 0; z-index: -2;
     width: 100%; height: 100%; object-fit: cover; object-position: center bottom;
@@ -45,28 +47,30 @@ import heroImage from '../assets/hero.jpg';
   .hero__veil {
     position: absolute; inset: 0; z-index: -1;
     background:
-      linear-gradient(180deg, rgb(15 23 42 / 0.35) 0%, rgb(15 23 42 / 0.72) 100%),
-      linear-gradient(90deg, rgb(29 78 216 / 0.45) 0%, rgb(15 23 42 / 0.15) 70%);
+      linear-gradient(180deg, rgb(10 10 15 / 0.55) 0%, rgb(10 10 15 / 0.96) 100%),
+      linear-gradient(100deg, rgb(61 255 162 / 0.14) 0%, rgb(168 85 247 / 0.18) 55%, transparent 85%);
   }
   .hero__content { padding-block: var(--space-8) var(--space-7); color: #fff; }
   .hero__eyebrow {
     display: inline-block; margin: 0 0 var(--space-4);
     padding: var(--space-1) var(--space-3); border-radius: 999px;
-    background: rgb(255 255 255 / 0.16); border: 1px solid rgb(255 255 255 / 0.28);
-    font-size: var(--text-small); font-weight: 600;
+    background: var(--color-brand-soft); border: 1px solid color-mix(in srgb, var(--color-brand) 40%, transparent);
+    color: var(--color-brand);
+    font-family: var(--font-display); font-size: var(--text-small); font-weight: 700;
+    letter-spacing: .04em; text-transform: uppercase;
   }
   .hero h1 { color: #fff; max-width: 16ch; font-size: clamp(2rem, 6vw, 3.5rem); }
-  .hero__sub { max-width: 52ch; color: rgb(248 250 252 / 0.92); font-size: 1.0625rem; }
+  .hero__sub { max-width: 52ch; color: var(--color-ink-soft); font-size: 1.0625rem; }
   .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin: var(--space-6) 0 0; }
   .hero__facts {
     list-style: none; padding: 0; margin: var(--space-6) 0 0;
     display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-5);
-    font-size: var(--text-small); color: rgb(248 250 252 / 0.85);
+    font-size: var(--text-small); color: var(--color-ink-soft);
   }
   .hero__facts li { display: flex; align-items: center; gap: var(--space-2); }
   .hero__facts li::before {
     content: ''; width: 8px; height: 8px; border-radius: 50%;
-    background: var(--color-accent); flex: none;
+    background: var(--color-brand); flex: none;
   }
 
   @media (min-width: 48rem) {

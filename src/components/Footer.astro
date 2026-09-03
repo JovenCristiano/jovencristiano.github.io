@@ -40,7 +40,8 @@ const year = new Date().getFullYear();
 
 <style>
   .site-footer {
-    background: var(--color-ink); color: var(--color-ink-inverse);
+    background: var(--color-surface-alt); border-top: 1px solid var(--color-border);
+    color: var(--color-ink);
     padding-block: var(--space-8) var(--space-5); margin-top: var(--space-9);
   }
   .site-footer__grid {
@@ -49,21 +50,22 @@ const year = new Date().getFullYear();
   }
   .brandline {
     display: inline-flex; align-items: center; gap: var(--space-2);
-    font-weight: 800; font-size: 1.125rem; color: #fff; text-decoration: none;
+    font-family: var(--font-display); font-weight: 800; font-size: 1.125rem;
+    color: var(--color-ink); text-decoration: none;
   }
   .brandline img { border-radius: 8px; }
-  .claim { margin: var(--space-3) 0 0; color: rgb(248 250 252 / 0.7); font-size: var(--text-small); max-width: 42ch; }
+  .claim { margin: var(--space-3) 0 0; color: var(--color-ink-soft); font-size: var(--text-small); max-width: 42ch; }
 
-  .site-footer h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .08em; color: rgb(248 250 252 / 0.55); margin-bottom: var(--space-3); }
+  .site-footer h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: .1em; color: var(--color-ink-faint); margin-bottom: var(--space-3); }
   .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
-  .site-footer a { color: rgb(248 250 252 / 0.9); text-decoration: none; }
-  .site-footer a:hover { color: #fff; text-decoration: underline; }
+  .site-footer a { color: var(--color-ink-soft); text-decoration: none; }
+  .site-footer a:hover { color: var(--color-brand); }
 
   .site-footer__legal {
     margin-top: var(--space-7); padding-top: var(--space-5);
-    border-top: 1px solid rgb(248 250 252 / 0.15);
+    border-top: 1px solid var(--color-border);
     display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-2);
-    font-size: var(--text-small); color: rgb(248 250 252 / 0.55);
+    font-size: var(--text-small); color: var(--color-ink-faint);
   }
   .site-footer__legal p { margin: 0; }
 

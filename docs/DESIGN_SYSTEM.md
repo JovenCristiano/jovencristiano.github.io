@@ -7,6 +7,9 @@ Transmitir **juventud, confianza, espiritualidad, modernidad, energía y clarida
 Evitar: estética de iglesia tradicional, exceso de dorado, aire infantil, plantilla de blog
 genérica.
 
+**Identidad:** negro con neón. El logo es una figura en salto (Phosphor Icons, MIT) en verde neón
+sobre negro.
+
 **Mobile-first, sin excepciones.** El líder juvenil consulta el sitio desde el móvil, muchas veces
 minutos antes de la reunión.
 
@@ -15,29 +18,48 @@ minutos antes de la reunión.
 Definidos en `src/styles/tokens.css` como custom properties. Ningún valor de color, espacio o
 tamaño se escribe suelto en un componente.
 
-### Color
+### Color — tema oscuro
+
+El sitio es **oscuro por defecto**. El verde neón es el color de marca y de acción; cada categoría
+tiene el suyo, lo que permite orientarse sin leer.
 
 ```css
---color-brand:        #2563EB;  /* azul — confianza, energía, no litúrgico */
---color-brand-dark:   #1D4ED8;
---color-accent:       #F59E0B;  /* ámbar — CTA y destacados, uso escaso */
---color-ink:          #0F172A;  /* texto principal */
---color-ink-soft:     #475569;  /* texto secundario */
---color-surface:      #FFFFFF;
---color-surface-alt:  #F8FAFC;  /* fondo de tarjetas y secciones alternas */
---color-border:       #E2E8F0;
+--color-brand:     #3DFFA2;  /* verde neón — logo, botones, enlaces, foco */
+--color-dinamicas: #A855F7;  /* morado */
+--color-juegos:    #E93BD3;  /* fucsia */
+--color-adultos:   #FF4D9D;  /* rosa */
+
+--color-bg:          #0A0A0F;  /* fondo general */
+--color-surface:     #15151F;  /* tarjetas */
+--color-surface-alt: #101018;  /* secciones alternas */
+--color-border:      #26263A;
+
+--color-ink:       #FFFFFF;
+--color-ink-soft:  #A0A0BC;   /* 7,8:1 sobre el fondo */
+--color-ink-faint: #8A8AA3;
+--color-on-brand:  #0A0A0F;   /* texto sobre verde: SIEMPRE negro */
 ```
 
-Contraste mínimo AA (4.5:1) en todo el texto. El ámbar nunca se usa como color de texto sobre
-blanco.
+**Regla del verde:** es de la marca y de las acciones. Nunca identifica una categoría, o dejaría de
+señalar nada.
+
+**Color de categoría.** Cada cluster declara su color en `src/utils/clusters.ts` y lo inyecta como
+`--color-cat`. Los componentes lo consumen; no conocen la categoría concreta.
+
+**Texto en color de categoría.** Nunca el color puro: el morado sobre negro se queda en 4,17:1 y AA
+exige 4,5. Se usa `color-mix(in srgb, var(--color-cat) 72%, #fff)` **en el propio componente**, no
+como token en `:root` — allí se resolvería contra el valor de la raíz y no heredaría el del cluster.
 
 ### Tipografía
 
 ```css
---font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+--font-display: 'Montserrat', system-ui, sans-serif;  /* titulares, botones, rótulos */
+--font-sans:    'Figtree',    system-ui, sans-serif;  /* texto de lectura */
 ```
 
-Una sola familia. Se sirve como fuente local o `font-display: swap`; nunca bloquea el render.
+Elegidas a partir de lo que usan de verdad las webs líderes del nicho: **ministrytoyouth.com**
+(Montserrat + Figtree), elevationchurch.org (DM Sans) y catholic-link.com (Open Sans). Montserrat
+es además el equivalente libre de Proxima Nova, la de Hillsong y Life.Church. Se sirve como fuente local o `font-display: swap`; nunca bloquea el render.
 
 | Rol | Tamaño móvil | Tamaño desktop | Peso |
 |---|---|---|---|

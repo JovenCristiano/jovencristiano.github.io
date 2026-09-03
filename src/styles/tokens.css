@@ -1,19 +1,39 @@
 /* Tokens del sistema visual — fuente única: docs/DESIGN_SYSTEM.md.
-   Ningún valor de color, espacio o tamaño se escribe suelto en un componente. */
+   Tema oscuro. Ningún color, espacio o tamaño se escribe suelto en un componente. */
 :root {
-  /* Color */
-  --color-brand: #2563eb;
-  --color-brand-dark: #1d4ed8;
-  --color-accent: #f59e0b;
-  --color-ink: #0f172a;
-  --color-ink-soft: #475569;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f8fafc;
-  --color-border: #e2e8f0;
+  /* --- Marca --- */
+  --color-brand: #3DFFA2;        /* verde neón: logo, botones, enlaces */
+  --color-brand-dark: #21D983;   /* estados hover sobre fondo claro */
+  --color-brand-soft: #0F2A20;   /* fondo tenue de marca */
 
-  /* Tipografía */
-  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --text-h1: 1.875rem;
+  /* --- Colores de categoría (§4 SEO_MASTER_MAP) --- */
+  --color-dinamicas: #A855F7;    /* morado */
+  --color-juegos: #E93BD3;       /* fucsia */
+  --color-adultos: #FF4D9D;      /* rosa */
+  /* Color activo del contexto. Cada cluster lo redefine. */
+  --color-cat: var(--color-brand);
+  /* Para TEXTO en color de categoría se usa `color-mix(in srgb, var(--color-cat) 72%, #fff)`
+     directamente en cada componente: el morado puro sobre negro se queda en 4,17:1 y AA exige
+     4,5. No se declara aquí como token porque se resolvería contra el valor de :root, no
+     contra el color que cada cluster hereda. */
+
+  /* --- Superficies --- */
+  --color-bg: #0A0A0F;           /* fondo general */
+  --color-surface: #15151F;      /* tarjetas y bloques */
+  --color-surface-alt: #101018;  /* secciones alternas */
+  --color-border: #26263A;
+
+  /* --- Texto --- */
+  --color-ink: #FFFFFF;
+  --color-ink-soft: #A0A0BC;     /* 7.0:1 sobre el fondo: cumple AA con holgura */
+  --color-ink-faint: #8A8AA3;
+  --color-on-brand: #0A0A0F;     /* texto sobre verde neón: siempre negro */
+  --color-overlay: rgb(10 10 15 / 0.72);
+
+  /* --- Tipografía --- */
+  --font-display: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-h1: 2rem;
   --text-h2: 1.5rem;
   --text-h3: 1.25rem;
   --text-body: 1.0625rem;
@@ -21,39 +41,24 @@
   --leading-body: 1.7;
   --measure: 68ch;
 
-  /* Espacio — escala de 4px */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
-  --space-7: 48px;
-  --space-8: 64px;
-  --space-9: 96px;
+  /* --- Espacio: escala de 4px --- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
 
-  /* Radios y sombras */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
-  --shadow-card: 0 1px 3px rgb(15 23 42 / 0.08);
-  --shadow-hover: 0 8px 24px rgb(15 23 42 / 0.12);
-  --shadow-lift: 0 16px 40px rgb(15 23 42 / 0.16);
+  /* --- Radios y sombras --- */
+  --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.4);
+  --shadow-hover: 0 8px 24px rgb(0 0 0 / 0.5);
+  --shadow-lift: 0 16px 40px rgb(0 0 0 / 0.6);
 
-  /* Superficies de apoyo */
-  --color-brand-soft: #eff6ff;   /* fondo suave de marca */
-  --color-accent-soft: #fffbeb;  /* fondo suave de acento */
-  --color-ink-inverse: #f8fafc;  /* texto sobre fondo oscuro */
-  --color-overlay: rgb(15 23 42 / 0.55); /* velo sobre imagen, garantiza contraste AA */
-
-  /* Layout */
+  /* --- Layout --- */
   --wrap: 1120px;
 }
 
 @media (min-width: 48rem) {
   :root {
-    --text-h1: 2.5rem;
-    --text-h2: 1.875rem;
+    --text-h1: 2.75rem;
+    --text-h2: 2rem;
     --text-h3: 1.5rem;
     --text-body: 1.125rem;
   }

@@ -4,6 +4,27 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Cambiado — 2026-09-03 (identidad: negro y neón)
+
+Motivo: la identidad azul sobre blanco era indistinguible de cualquier web genérica.
+
+- **Tema oscuro** en todo el sitio. Fondo `#0A0A0F`.
+- **Verde neón `#3DFFA2`** como color de marca y de acción.
+- **Color por categoría**: morado en Dinámicas, fucsia en Juegos, rosa en Adultos. Cada cluster lo
+  declara en `clusters.ts` y los componentes lo consumen vía `--color-cat`: aparece en el filo de
+  las tarjetas, las etiquetas, la ficha práctica, las citas y los marcadores de lista.
+- **Logo nuevo**: figura en salto de Phosphor Icons (MIT) en verde sobre negro. Sustituye a la cruz
+  azul genérica. Mismo icono en `favicon.svg`.
+- **Tipografía**: Montserrat en titulares y Figtree en lectura, en lugar de Inter. Elegidas a
+  partir de las que usan realmente ministrytoyouth.com, elevationchurch.org y catholic-link.com.
+- Fotografías atenuadas (`brightness .7`) para que no compitan con el texto sobre fondo negro.
+
+**Accesibilidad:** el texto en color de categoría usa una mezcla con blanco al 72 %. El morado puro
+sobre negro daba 4,17:1 y AA exige 4,5. La mezcla se resuelve en cada componente, no en `:root`,
+porque allí no heredaría el color del cluster.
+
+**Presupuesto:** 0 KB de JavaScript · CSS 14,8 KB (límite 20) · `astro check` sin errores.
+
 ### Cambiado — 2026-09-03 (rediseño visual)
 
 Motivo: el sitio funcionaba pero tenía acabado de esqueleto — sin imágenes, sin logo, con la

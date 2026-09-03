@@ -4,7 +4,7 @@ import Hero from '../components/Hero.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import ResourceCard from '../components/ResourceCard.astro';
 import { SITE } from '../site.config.mjs';
-import { PRIMARY_CLUSTERS, getPublished, urlFor, type ClusterId } from '../utils/clusters.ts';
+import { CLUSTERS, PRIMARY_CLUSTERS, getPublished, urlFor, type ClusterId } from '../utils/clusters.ts';
 import { CLUSTER_IMAGE, CLUSTER_ALT } from '../utils/images.ts';
 
 // Orden de la Home según §7 del MASTER_PLAN. El buscador y los productos
@@ -99,6 +99,7 @@ const jsonLd = [
           image={CLUSTER_IMAGE[cluster.id as ClusterId]}
           alt={CLUSTER_ALT[cluster.id as ClusterId]}
           count={counts[cluster.id] ?? 0}
+          color={cluster.color}
         />
       ))}
     </ul>
@@ -138,6 +139,7 @@ const jsonLd = [
             duration={entry.data.duration}
             participants={entry.data.participants}
             materials={entry.data.materials}
+            color={CLUSTERS[cluster].color}
           />
         ))}
       </ul>
@@ -171,13 +173,13 @@ const jsonLd = [
   }
   .steps li {
     background: var(--color-surface); border: 1px solid var(--color-border);
-    border-radius: var(--radius-md); padding: var(--space-5);
+    border-radius: var(--radius-lg); padding: var(--space-5);
   }
   .steps__n {
     display: inline-flex; align-items: center; justify-content: center;
     width: 2.5rem; height: 2.5rem; border-radius: var(--radius-md);
-    background: var(--color-brand-soft); color: var(--color-brand-dark);
-    font-weight: 800; margin-bottom: var(--space-3);
+    background: var(--color-brand-soft); color: var(--color-brand);
+    font-family: var(--font-display); font-weight: 800; margin-bottom: var(--space-3);
   }
   .steps h3 { font-size: 1.125rem; margin-bottom: var(--space-2); }
   .steps p { margin: 0; color: var(--color-ink-soft); font-size: var(--text-small); }
@@ -188,9 +190,11 @@ const jsonLd = [
     background: var(--color-surface); border: 1px solid var(--color-border);
     border-radius: var(--radius-md); padding: var(--space-4) var(--space-5);
   }
+  .faq[open] { border-color: color-mix(in srgb, var(--color-brand) 35%, var(--color-border)); }
   .faq summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: var(--space-4); }
   .faq summary::-webkit-details-marker { display: none; }
   .faq summary::after { content: '+'; color: var(--color-brand); font-size: 1.5rem; line-height: 1; font-weight: 400; }
   .faq[open] summary::after { content: '−'; }
   .faq p { margin: var(--space-3) 0 0; color: var(--color-ink-soft); }
+  .steps h3 { color: #fff; }
 </style>

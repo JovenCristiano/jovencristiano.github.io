@@ -20,6 +20,7 @@ const related = await resolveRelated(entry.data.related);
   data={entry.data}
   crumbs={[{ label: meta.label, href: meta.base }, { label: entry.data.title, href: `${meta.base}${entry.id}/` }]}
   related={related}
+  color={meta.color}
 >
   <Content />
 </ResourceLayout>
