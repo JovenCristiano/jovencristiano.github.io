@@ -4,6 +4,25 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-03 (cluster de Temas)
+
+- **Cluster `/temas/`**, que ataca la keyword P0 «enseñanza para jóvenes cristianos» (5 000
+  búsquedas/mes), la última de las cuatro grandes que quedaba sin cubrir.
+- **4 temas completos** (total: 17 recursos), con la plantilla del §5.D del MASTER_PLAN —objetivo,
+  texto bíblico, idea principal, introducción, desarrollo, preguntas, actividad, aplicación,
+  conclusión y oración:
+  - Identidad: quién dice Dios que eres
+  - Propósito: para qué estoy aquí
+  - Ansiedad y fe: cuando todo agobia
+  - Redes sociales y comparación
+- Color de categoría nuevo: **violeta eléctrico `#7B61FF`** para Temas.
+- Enlazado cruzado: las dinámicas de confianza, oración y del lazarillo enlazan ahora a los temas
+  correspondientes.
+
+**Nota sobre «Ansiedad y fe»:** el recurso incluye avisos explícitos para el líder —no tratar la
+ansiedad como falta de fe, y derivar a ayuda profesional ante señales de autolesión o ideas de
+suicidio—. Cualquier recurso futuro sobre salud mental debe mantener ese criterio.
+
 ### Cambiado — 2026-09-03 (identidad: negro y neón)
 
 Motivo: la identidad azul sobre blanco era indistinguible de cualquier web genérica.

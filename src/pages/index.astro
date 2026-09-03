@@ -11,15 +11,18 @@ import { CLUSTER_IMAGE, CLUSTER_ALT } from '../utils/images.ts';
 // entran cuando el contenido y la oferta los justifiquen (§16, §17).
 const dinamicas = await getPublished('dinamicas');
 const juegos = await getPublished('juegos');
+const temas = await getPublished('temas');
 
 const counts: Record<string, number> = {
   dinamicas: dinamicas.length,
   juegos: juegos.length,
+  temas: temas.length,
 };
 
 const destacados = [
   ...dinamicas.map((e) => ({ cluster: 'dinamicas' as const, entry: e })),
   ...juegos.map((e) => ({ cluster: 'juegos' as const, entry: e })),
+  ...temas.map((e) => ({ cluster: 'temas' as const, entry: e })),
 ]
   .sort((a, b) => Number(b.entry.data.featured) - Number(a.entry.data.featured))
   .slice(0, 6);

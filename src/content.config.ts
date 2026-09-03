@@ -47,4 +47,10 @@ const adultos = defineCollection({
   schema: resourceSchema,
 });
 
-export const collections = { dinamicas, juegos, adultos };
+// Cluster P0: «enseñanza para jóvenes cristianos» (5 000 búsquedas/mes).
+const temas = defineCollection({
+  loader: glob({ pattern, base: './src/content/temas' }),
+  schema: resourceSchema,
+});
+
+export const collections = { dinamicas, juegos, adultos, temas };

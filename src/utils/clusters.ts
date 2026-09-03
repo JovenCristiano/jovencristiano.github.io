@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-export type ClusterId = 'dinamicas' | 'juegos' | 'adultos';
+export type ClusterId = 'dinamicas' | 'juegos' | 'adultos' | 'temas';
 
 interface Cluster {
   id: ClusterId;
@@ -38,6 +38,17 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
     intro:
       'Juegos con reglas claras, variantes y una reflexión bíblica que cierra la actividad. Filtrables por edad, duración y materiales.',
     color: 'var(--color-juegos)',
+  },
+  temas: {
+    id: 'temas',
+    base: '/temas/',
+    label: 'Temas',
+    title: 'Temas y enseñanzas para jóvenes cristianos',
+    description:
+      'Temas para jóvenes cristianos con la enseñanza completa: texto bíblico, desarrollo, preguntas para el grupo, actividad y oración. Listos para dirigir una reunión.',
+    intro:
+      'Cada tema trae la enseñanza entera: idea principal, desarrollo, preguntas para el grupo, una actividad y la oración de cierre. No hay que preparar nada más.',
+    color: 'var(--color-temas)',
   },
   adultos: {
     id: 'adultos',

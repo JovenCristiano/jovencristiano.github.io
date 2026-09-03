@@ -10,6 +10,7 @@
   --color-dinamicas: #A855F7;    /* morado */
   --color-juegos: #E93BD3;       /* fucsia */
   --color-adultos: #FF4D9D;      /* rosa */
+  --color-temas: #7B61FF;        /* violeta eléctrico */
   /* Color activo del contexto. Cada cluster lo redefine. */
   --color-cat: var(--color-brand);
   /* Para TEXTO en color de categoría se usa `color-mix(in srgb, var(--color-cat) 72%, #fff)`

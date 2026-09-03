@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Papel continuo o cartulinas grandes', 'Rotuladores', 'Notas adhesivas', 'Cinta']
 featured: true
 publishedAt: 2026-09-03
-related: ['la-silla-de-la-verdad', 'el-lazarillo', 'la-caja-de-las-cargas']
+related: ['la-silla-de-la-verdad', 'ansiedad-y-fe', 'el-lazarillo', 'la-caja-de-las-cargas']
 draft: false
 ---
 

@@ -43,7 +43,7 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 
 **Objetivo: 50 recursos de alta calidad.**
 
-Progreso: **13 / 50** — 6 dinámicas juveniles · 3 juegos bíblicos · 4 dinámicas para adultos.
+Progreso: **17 / 50** — 6 dinámicas juveniles · 3 juegos bíblicos · 4 dinámicas para adultos · 4 temas.
 
 Hitos intermedios: 10 → 25 → 50. Revisión de calidad en cada hito.
 

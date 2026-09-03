@@ -14,7 +14,7 @@ Un recurso solo se publica si un líder juvenil puede **usarlo tal cual el domin
 |---|---|---|
 | `dinamicas` | `/dinamicas/` | Desde el inicio |
 | `juegos` | `/juegos-biblicos/` | Desde el inicio |
-| `temas` | `/temas/` | Con 5 piezas listas |
+| `temas` | `/temas/` | **Activa** — cluster P0 «enseñanza para jóvenes cristianos» |
 | `actividades` | `/actividades/` | Con 5 piezas listas |
 | `reflexiones` | `/reflexiones/` | Con 5 piezas listas |
 | `estudios` | `/estudios-biblicos/` | Con 5 piezas listas |
