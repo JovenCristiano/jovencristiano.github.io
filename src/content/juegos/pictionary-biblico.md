@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Pizarra o cartulinas', 'Rotuladores', 'Papeles con las palabras', 'Cronómetro']
 featured: false
 publishedAt: 2026-09-04
-related: ['mimica-biblica', 'tabu-biblico', 'el-personaje-misterioso']
+related: ['mimica-biblica', 'tabu-biblico', 'el-personaje-misterioso', 'telefono-descompuesto-biblico']
 draft: false
 ---
 

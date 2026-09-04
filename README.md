@@ -11,8 +11,9 @@ bíblicos, actividades, temas y material listo para usar.
 
 ```bash
 npm install
-npm run dev     # http://localhost:4321
+npm run dev            # http://localhost:4321
 npm run build
+npm run audit:enlaces  # audita el enlazado interno
 ```
 
 > El dominio vive en `src/site.config.mjs`. Si algún día hay dominio propio, se cambia ahí y solo ahí.

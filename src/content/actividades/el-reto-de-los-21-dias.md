@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Tarjetas de seguimiento impresas', 'Bolígrafos', 'Grupo de mensajería']
 featured: false
 publishedAt: 2026-09-04
-related: ['el-taller-de-lectura-biblica', 'capsula-del-tiempo', 'proposito-para-que-estoy-aqui']
+related: ['el-taller-de-lectura-biblica', 'capsula-del-tiempo', 'proposito-para-que-estoy-aqui', 'tarde-de-servicio']
 draft: false
 ---
 

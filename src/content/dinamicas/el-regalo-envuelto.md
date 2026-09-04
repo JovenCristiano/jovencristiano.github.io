@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Dos cajas', 'Papel de regalo bonito', 'Papel de periódico', 'Un premio bueno', 'Un objeto sin valor']
 featured: false
 publishedAt: 2026-09-04
-related: ['los-zapatos-del-otro', 'identidad-en-cristo', 'la-torre-mas-alta']
+related: ['los-zapatos-del-otro', 'identidad-en-cristo', 'la-torre-mas-alta', 'el-naufragio']
 draft: false
 ---
 

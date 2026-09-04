@@ -11,7 +11,7 @@ difficulty: 'alta'
 materials: ['Piedras pequeñas', 'Una mochila', 'Papel', 'Bolígrafos']
 featured: false
 publishedAt: 2026-09-04
-related: ['amistades-y-presion-de-grupo', 'ansiedad-y-fe', 'la-caja-de-las-cargas']
+related: ['amistades-y-presion-de-grupo', 'ansiedad-y-fe', 'la-caja-de-las-cargas', 'el-naufragio']
 draft: false
 ---
 

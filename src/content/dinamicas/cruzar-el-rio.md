@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Folios o cartulinas (uno menos que participantes por equipo)', 'Cinta para marcar las orillas']
 featured: false
 publishedAt: 2026-09-04
-related: ['el-nudo-humano', 'la-torre-mas-alta', 'el-lazarillo']
+related: ['el-nudo-humano', 'la-torre-mas-alta', 'el-lazarillo', 'la-caida-de-confianza', 'las-sillas-cooperativas']
 draft: false
 ---
 

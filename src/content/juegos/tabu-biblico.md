@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Tarjetas impresas', 'Cronómetro', 'Pizarra para el marcador']
 featured: false
 publishedAt: 2026-09-04
-related: ['mimica-biblica', 'pictionary-biblico', 'preguntas-y-respuestas-biblicas']
+related: ['mimica-biblica', 'pictionary-biblico', 'preguntas-y-respuestas-biblicas', 'bingo-biblico']
 draft: false
 ---
 

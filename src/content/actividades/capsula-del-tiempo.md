@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Sobres', 'Folios', 'Bolígrafos', 'Una caja resistente', 'Cinta de embalar']
 featured: true
 publishedAt: 2026-09-03
-related: ['identidad-en-cristo', 'organizar-un-retiro-juvenil', 'el-mapa-de-mi-vida']
+related: ['identidad-en-cristo', 'organizar-un-retiro-juvenil', 'el-mapa-de-mi-vida', 'el-reto-de-los-21-dias']
 draft: false
 ---
 

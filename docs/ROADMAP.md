@@ -73,10 +73,26 @@ explicación de en qué consiste la actividad.
 
 ## 🟡 CHECKPOINT 3 — SEO
 
-- ⬜ `SEO_MASTER_MAP.md` poblado con keywords investigadas
-- ⬜ Clusters definidos y enlazado interno completo (3–6 enlaces por pieza)
-- ⬜ Google Search Console verificado y sitemap enviado
-- ⬜ Primera revisión de indexación
+- ✅ `SEO_MASTER_MAP.md` poblado con datos reales de Keyword Planner (450 keywords)
+- ✅ Clusters definidos: 6 activos, las 4 keywords P0 cubiertas
+- ✅ Enlazado interno completo y auditado — ver más abajo
+- ✅ Google Search Console verificado y sitemap enviado
+- ⬜ **Primera revisión de indexación** ← depende del tiempo, no del trabajo
+
+### Auditoría de enlazado interno (2026-09-04)
+
+| Métrica | Valor |
+|---|---|
+| Enlaces internos totales | 177 |
+| Media por pieza | 3,5 |
+| Piezas fuera del rango 3-6 | **0** |
+| Páginas huérfanas (sin enlaces entrantes) | **0** |
+| Páginas con un solo enlace entrante | **0** |
+| Enlaces rotos | **0** |
+| Enlaces que cruzan de cluster | 42 (23 %) |
+
+Se audita con `npm run audit:enlaces`, que comprueba las cuatro cosas a la vez y devuelve código
+de error si algo falla. **Ejecutarlo tras cada tanda de contenido.**
 
 **Criterio de salida:** ≥ 80 % de las URLs indexadas y primeras impresiones en Search Console.
 

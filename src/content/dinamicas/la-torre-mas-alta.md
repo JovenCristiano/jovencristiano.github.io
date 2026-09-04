@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Hojas de papel (20 por equipo)', 'Cinta adhesiva', 'Cronómetro']
 featured: false
 publishedAt: 2026-09-03
-related: ['cruzar-el-rio', 'el-nudo-humano', 'la-cadena-de-nombres', 'el-regalo-envuelto']
+related: ['cruzar-el-rio', 'el-nudo-humano', 'la-cadena-de-nombres', 'el-regalo-envuelto', 'las-sillas-cooperativas']
 draft: false
 ---
 

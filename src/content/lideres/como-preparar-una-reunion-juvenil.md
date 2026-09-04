@@ -6,7 +6,7 @@ tags: ['reuniones', 'planificacion', 'liderazgo']
 audience: 'lideres'
 featured: true
 publishedAt: 2026-09-04
-related: ['planificar-el-ano-del-grupo-juvenil', 'integrar-a-los-que-llegan-nuevos', 'como-dirigir-un-grupo-pequeno']
+related: ['planificar-el-ano-del-grupo-juvenil', 'integrar-a-los-que-llegan-nuevos', 'como-dirigir-un-grupo-pequeno', 'tarde-de-servicio']
 draft: false
 ---
 

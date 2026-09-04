@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Papeles adhesivos o cinta', 'Bolígrafo']
 featured: false
 publishedAt: 2026-09-03
-related: ['mimica-biblica', 'tabu-biblico', 'preguntas-y-respuestas-biblicas', 'pictionary-biblico']
+related: ['mimica-biblica', 'tabu-biblico', 'preguntas-y-respuestas-biblicas', 'pictionary-biblico', 'bingo-biblico']
 draft: false
 ---
 

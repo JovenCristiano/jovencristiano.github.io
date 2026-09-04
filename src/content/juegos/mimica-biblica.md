@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Papeles con las escenas', 'Cronómetro']
 featured: true
 publishedAt: 2026-09-04
-related: ['tabu-biblico', 'pictionary-biblico', 'preguntas-y-respuestas-biblicas']
+related: ['tabu-biblico', 'pictionary-biblico', 'preguntas-y-respuestas-biblicas', 'telefono-descompuesto-biblico']
 draft: false
 ---
 

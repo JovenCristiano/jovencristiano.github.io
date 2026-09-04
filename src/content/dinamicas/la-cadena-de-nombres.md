@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: []
 featured: false
 publishedAt: 2026-09-03
-related: ['las-sillas-cooperativas', 'el-nudo-humano', 'integrar-a-los-que-llegan-nuevos']
+related: ['las-sillas-cooperativas', 'el-nudo-humano', 'integrar-a-los-que-llegan-nuevos', 'los-globos-con-preguntas']
 draft: false
 ---
 

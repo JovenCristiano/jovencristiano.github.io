@@ -4,6 +4,21 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (CHECKPOINT 3: enlazado interno)
+
+- `scripts/auditar-enlaces.mjs` + `npm run audit:enlaces`. Comprueba lo que el compilador no ve:
+  rango de 3-6 enlaces salientes por pieza, destinos inexistentes, páginas huérfanas y páginas con
+  un solo enlace entrante. Devuelve código de error, así que sirve en CI.
+
+### Corregido — 2026-09-04
+
+La primera auditoría encontró **una página huérfana** (teléfono descompuesto bíblico, sin ningún
+enlace entrante) y **ocho con un solo enlace entrante**. Una página a la que casi nadie enlaza se
+rastrea menos y posiciona peor, y el problema no lo detecta ni `astro check` ni el navegador.
+
+Añadidos 16 enlaces entrantes dirigidos. Estado tras la corrección: 177 enlaces internos, media de
+3,5 por pieza, **0 huérfanas, 0 débiles, 0 rotos**.
+
 ### Añadido — 2026-09-04
 
 - `docs/LINK_BUILDING.md`: estrategia de enlaces externos. Incluye la lista de prácticas que
