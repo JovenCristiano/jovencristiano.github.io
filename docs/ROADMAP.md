@@ -26,16 +26,21 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 
 ## 🟡 CHECKPOINT 1 — MVP web
 
-- ⬜ Home según el orden del §7 del MASTER_PLAN
-- ⬜ Navegación y footer
-- ⬜ Página de índice de cluster
-- ⬜ Plantilla de recurso completa (§8)
-- ⬜ Responsive mobile-first verificado
-- ⬜ SEO técnico: canonical, OG, Twitter Cards, JSON-LD
-- ⬜ `sitemap-index.xml` + `robots.txt`
-- ⬜ Página 404
+- ✅ Home según el orden del §7 del MASTER_PLAN
+- ✅ Navegación y footer
+- ✅ Página de índice de cluster (5 clusters)
+- ✅ Plantilla de recurso completa (§8)
+- ✅ Responsive mobile-first verificado
+- ✅ SEO técnico: canonical, OG, Twitter Cards, JSON-LD
+- ✅ `sitemap-index.xml` + `robots.txt`
+- ✅ Página 404
+- ✅ Identidad visual completa (negro y neón, color por categoría)
+- ⬜ **Medir Lighthouse en móvil** ← único punto pendiente
 
 **Criterio de salida:** Lighthouse móvil ≥ 95 en Performance y ≥ 95 en SEO; 0 KB de JS en Home.
+
+Verificado por medición directa: **0 KB de JavaScript** y CSS de 14,9 KB. Falta pasar Lighthouse
+sobre el sitio en producción para confirmar la puntuación.
 
 ---
 
@@ -49,10 +54,12 @@ Progreso: **21 / 50** — 6 dinámicas · 3 juegos bíblicos · 4 para adultos �
 
 Hitos intermedios: 10 → 25 → 50. Revisión de calidad en cada hito.
 
-- ⬜ 20 dinámicas
-- ⬜ 15 juegos bíblicos
-- ⬜ 10 temas
-- ⬜ 5 recursos para líderes
+- 🟡 20 dinámicas — **6**
+- 🟡 15 juegos bíblicos — **3**
+- 🟡 10 temas — **4**
+- 🟡 10 actividades — **4**
+- 🟡 10 para adultos — **4**
+- ⬜ 5 recursos para líderes — **0** (cluster sin abrir)
 
 Cada pieza pasa el checklist de `CONTENT_PLAN.md` antes de publicarse.
 
