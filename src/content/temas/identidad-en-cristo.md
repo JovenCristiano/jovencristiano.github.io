@@ -118,3 +118,6 @@ Deja después un minuto de silencio para que cada uno ore por su tarjeta.
 - No conviertas esto en «quiérete más». El mensaje no es «eres genial», sino «eres de alguien».
 - Prepara el tema con la dinámica de la silla de la verdad la semana anterior: el grupo llega mucho
   más abierto.
+- Si buscas una lectura breve para abrir o cerrar, funcionan bien los
+  [poemas cristianos para adolescentes](https://poemasbiblicos.github.io/poemas/poemas-cristianos-para-adolescentes/):
+  dicen en diez versos lo que a nosotros nos cuesta veinte minutos.

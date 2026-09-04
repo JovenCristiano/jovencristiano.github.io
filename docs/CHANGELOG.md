@@ -4,6 +4,24 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (enlaces con poemasbiblicos.github.io)
+
+Cuatro enlaces contextuales hacia el sitio hermano, colocados solo donde un poema aporta algo real
+—una lectura de cierre, una lectura previa que da permiso para nombrar lo que duele—, no como
+enlaces de relleno:
+
+| Recurso | Destino |
+|---|---|
+| El mural de oración | poemas de reflexión para jóvenes |
+| La caja de las cargas | poemas cristianos de consuelo |
+| El ovillo de las cualidades | poemas cristianos de ánimo |
+| Identidad: quién dice Dios que eres | poemas cristianos para adolescentes |
+
+**Nota estratégica:** esta dirección de enlace aporta valor al lector, pero **no acelera la
+indexación de este sitio**. Lo que la acelera es el enlace inverso, desde poemasbiblicos —que ya
+está indexada y se rastrea con frecuencia— hacia aquí. Esa parte se gestiona en el otro
+repositorio.
+
 ### Añadido — 2026-09-04 (tanda 5: CHECKPOINT 2 cerrado)
 
 **5 recursos** que completan los 50:

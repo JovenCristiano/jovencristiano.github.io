@@ -52,6 +52,9 @@ parecen mucho más entre sí de lo que imaginaban.
   meses, se revisa qué se ha respondido. Muy potente para grupos que dudan de que Dios escuche.
 - **Por grupos pequeños:** cada equipo hace su mural y luego lo presenta en una frase.
 - **Digital:** para grupos que se reúnen a distancia, funciona con un tablero compartido.
+- **Con lectura de cierre:** terminar leyendo en voz alta un
+  [poema de reflexión para jóvenes](https://poemasbiblicos.github.io/poemas/poemas-de-reflexion-para-jovenes/)
+  mientras el grupo mira el mural. Baja el ritmo y cierra el momento mejor que un discurso.
 
 ## Reflexión
 

@@ -54,6 +54,9 @@ en la cara lo que normalmente solo se piensa.
 - **Con el líder al final:** el grupo termina diciéndote cosas a ti. Prepárate, porque suele ser el
   momento más emotivo, y el que más ánimo te da para el curso siguiente.
 - **De agradecimiento:** en vez de cualidades, se agradece algo concreto que esa persona hizo.
+- **Con lectura final:** cerrar con un
+  [poema cristiano de ánimo](https://poemasbiblicos.github.io/poemas/poemas-cristianos-de-animo/)
+  leído por alguien del grupo, con la red de lana todavía montada.
 
 ## Reflexión
 

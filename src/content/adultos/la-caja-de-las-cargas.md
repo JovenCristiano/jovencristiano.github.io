@@ -55,6 +55,9 @@ practicando de forma concreta lo que Gálatas 6:2 pide.
   entregar la carga a Dios. Hazlo con seguridad y al aire libre.
 - **Con seguimiento:** cada persona escribe dos papeles idénticos, deja uno en la caja y se lleva el
   otro. A las cuatro semanas se revisa qué ha pasado con esa carga.
+- **Con lectura previa:** antes de escribir, leer un
+  [poema cristiano de consuelo](https://poemasbiblicos.github.io/poemas/poemas-cristianos-de-consuelo/).
+  Da permiso para nombrar lo que duele y ayuda a que las cargas escritas sean más sinceras.
 
 ## Reflexión
 
