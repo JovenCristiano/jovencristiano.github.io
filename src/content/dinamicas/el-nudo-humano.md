@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: []
 featured: true
 publishedAt: 2026-09-02
-related: ['la-cadena-de-nombres', 'la-silla-de-la-verdad', 'la-torre-mas-alta', 'el-lazarillo', 'carrera-de-versiculos']
+related: ['la-cadena-de-nombres', 'cruzar-el-rio', 'la-torre-mas-alta', 'el-lazarillo', 'la-silla-de-la-verdad']
 draft: false
 ---
 

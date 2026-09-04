@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Sus propios móviles', 'Papel', 'Bolígrafos']
 featured: true
 publishedAt: 2026-09-03
-related: ['identidad-en-cristo', 'ansiedad-y-fe', 'la-silla-de-la-verdad']
+related: ['identidad-en-cristo', 'los-zapatos-del-otro', 'ansiedad-y-fe']
 draft: false
 ---
 

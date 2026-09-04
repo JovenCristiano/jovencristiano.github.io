@@ -4,6 +4,23 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (tanda 3: dinámicas)
+
+**6 dinámicas nuevas** (total: 39 de 50). Elegidas por los modificadores que dominan el mapa SEO
+—divertidas, integración, cortas, con reflexión—, no por variedad temática:
+
+- El naufragio — debate sobre a quién salvar, con 10 personajes
+- Los globos con preguntas — 21 preguntas en tres niveles
+- Los zapatos del otro — 12 situaciones para defender en primera persona
+- Cruzar el río — trabajo en equipo, con la regla de que si uno cae vuelven todos
+- El regalo envuelto — apariencias, en 10 minutos
+- El ovillo de las cualidades — cierre de curso o retiro
+
+**Advertencias incluidas.** «El naufragio» avisa de adaptar la lista si en el grupo hay alguien con
+discapacidad, adicciones en la familia o un familiar en prisión. «Los zapatos del otro» exige
+revisar que ninguna situación sea reconocible como la de un joven concreto: la dinámica dejaría de
+ser ficción y pasaría a exponer a alguien en público.
+
 ### Añadido — 2026-09-04 (tanda 2: cluster de líderes)
 
 - **Cluster `/recursos-para-lideres/`**, que cubre la keyword P0 «cómo preparar una reunión
