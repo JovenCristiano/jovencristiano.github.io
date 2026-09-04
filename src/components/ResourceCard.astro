@@ -3,23 +3,30 @@ interface Props {
   href: string;
   title: string;
   category: string;
-  age_range: string;
-  duration: string;
-  participants: string;
-  materials: string[];
+  age_range?: string;
+  duration?: string;
+  participants?: string;
+  materials?: string[];
   color: string;
 }
 const { href, title, category, age_range, duration, participants, materials, color } = Astro.props;
+
+// Una guía para líderes no tiene edad ni participantes: la tarjeta muestra solo lo que hay.
+const datos = [
+  age_range && `${age_range} años`,
+  participants && `${participants} personas`,
+  duration,
+  materials && (materials.length ? `${materials.length} materiales` : 'Sin materiales'),
+].filter(Boolean) as string[];
 ---
 <li class="card" style={`--color-cat: ${color}`}>
   <p class="card__cat"><span class="chip">{category}</span></p>
   <h3 class="card__title"><a href={href}>{title}</a></h3>
-  <ul class="card__facts">
-    <li>{age_range} años</li>
-    <li>{participants} personas</li>
-    <li>{duration}</li>
-    <li>{materials.length ? `${materials.length} materiales` : 'Sin materiales'}</li>
-  </ul>
+  {datos.length > 0 && (
+    <ul class="card__facts">
+      {datos.map((d) => <li>{d}</li>)}
+    </ul>
+  )}
 </li>
 
 <style>

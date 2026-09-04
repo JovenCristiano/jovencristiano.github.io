@@ -1,0 +1,26 @@
+---
+import { render } from 'astro:content';
+import ResourceLayout from '../../layouts/ResourceLayout.astro';
+import { CLUSTERS, getPublished, resolveRelated } from '../../utils/clusters.ts';
+
+export async function getStaticPaths() {
+  const entries = await getPublished('lideres');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const meta = CLUSTERS.lideres;
+const related = await resolveRelated(entry.data.related);
+---
+<ResourceLayout
+  data={entry.data}
+  crumbs={[{ label: meta.label, href: meta.base }, { label: entry.data.title, href: `${meta.base}${entry.id}/` }]}
+  related={related}
+  color={meta.color}
+>
+  <Content />
+</ResourceLayout>

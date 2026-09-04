@@ -1,6 +1,12 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-export type ClusterId = 'dinamicas' | 'juegos' | 'adultos' | 'temas' | 'actividades';
+export type ClusterId =
+  | 'dinamicas'
+  | 'juegos'
+  | 'adultos'
+  | 'temas'
+  | 'actividades'
+  | 'lideres';
 
 interface Cluster {
   id: ClusterId;
@@ -38,6 +44,17 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
     intro:
       'Juegos con reglas claras, variantes y una reflexión bíblica que cierra la actividad. Filtrables por edad, duración y materiales.',
     color: 'var(--color-juegos)',
+  },
+  lideres: {
+    id: 'lideres',
+    base: '/recursos-para-lideres/',
+    label: 'Para líderes',
+    title: 'Recursos para líderes de grupos juveniles',
+    description:
+      'Guías prácticas para líderes juveniles: cómo preparar una reunión, planificar el año, organizar un retiro, integrar a los nuevos y sostenerte sin quemarte.',
+    intro:
+      'Guías de planificación y liderazgo. No son actividades para el grupo: son el trabajo previo que casi nadie te enseña a hacer.',
+    color: 'var(--color-lideres)',
   },
   actividades: {
     id: 'actividades',

@@ -53,10 +53,30 @@ const temas = defineCollection({
   schema: resourceSchema,
 });
 
+/**
+ * Esquema de GUÍA para el cluster de líderes.
+ *
+ * Una guía de planificación no tiene edad, participantes ni materiales: forzar esos campos
+ * llenaría la ficha práctica de datos falsos. Se reutiliza el esquema base y se hacen
+ * opcionales los cuatro campos de ficha. Justificado en docs/CHANGELOG.md.
+ */
+const guiaSchema = resourceSchema.extend({
+  age_range: z.string().optional(),
+  participants: z.string().optional(),
+  duration: z.string().optional(),
+  difficulty: z.enum(['facil', 'media', 'alta']).optional(),
+  materials: z.array(z.string()).optional(),
+});
+
+const lideres = defineCollection({
+  loader: glob({ pattern, base: './src/content/lideres' }),
+  schema: guiaSchema,
+});
+
 // Cluster P0: «actividades para jóvenes cristianos» (5 000 búsquedas/mes).
 const actividades = defineCollection({
   loader: glob({ pattern, base: './src/content/actividades' }),
   schema: resourceSchema,
 });
 
-export const collections = { dinamicas, juegos, adultos, temas, actividades };
+export const collections = { dinamicas, juegos, adultos, temas, actividades, lideres };

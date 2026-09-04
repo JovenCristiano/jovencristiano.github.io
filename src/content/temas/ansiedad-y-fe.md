@@ -11,7 +11,7 @@ difficulty: 'alta'
 materials: ['Papeles', 'Bolígrafos', 'Una mochila', 'Objetos pesados (libros, botellas)']
 featured: false
 publishedAt: 2026-09-03
-related: ['identidad-en-cristo', 'el-mural-de-oracion', 'proposito-para-que-estoy-aqui']
+related: ['identidad-en-cristo', 'el-mural-de-oracion', 'evitar-el-desgaste-del-lider']
 draft: false
 ---
 

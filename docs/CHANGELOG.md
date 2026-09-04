@@ -4,6 +4,31 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (tanda 2: cluster de líderes)
+
+- **Cluster `/recursos-para-lideres/`**, que cubre la keyword P0 «cómo preparar una reunión
+  juvenil». Con esto no queda ninguna keyword P0 sin atender.
+- **6 guías** (total: 33 de 50): preparar una reunión · planificar el año · dirigir un grupo
+  pequeño · organizar un retiro · integrar a los nuevos · no quemarte como líder.
+- Color de categoría: **naranja neón `#FF8A3D`**.
+
+### Cambiado — 2026-09-04 (esquema de contenido)
+
+**Los campos de ficha práctica pasan a ser opcionales en el cluster de líderes.** Justificación
+exigida por el §3 de `CONTENT_PLAN.md`:
+
+Una guía de planificación no tiene edad recomendada, número de participantes, duración ni
+materiales. Rellenar esos campos habría metido datos falsos en la ficha práctica, que es
+precisamente el elemento diferencial del sitio. Se añade `guiaSchema` —el esquema base con esos
+cuatro campos opcionales— y `ResourceMeta` y `ResourceCard` pintan solo lo que existe; si no hay
+ningún dato, la ficha no se dibuja.
+
+El resto de colecciones mantiene el esquema cerrado y obligatorio.
+
+**Nota de contenido:** «Organizar un retiro juvenil» incluye el protocolo de seguridad con menores
+(autorizaciones, ratio de un adulto por cada seis jóvenes, nunca a solas con un menor) y «Cómo no
+quemarte» recomienda ayuda profesional ante señales de desgaste que afecten al sueño o al ánimo.
+
 ### Añadido — 2026-09-04 (tanda 1 hacia el CHECKPOINT 2)
 
 **6 juegos bíblicos nuevos** (total: 27 de 50). Todos con su contenido ya preparado, que es lo que

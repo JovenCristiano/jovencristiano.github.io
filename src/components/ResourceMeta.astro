@@ -1,23 +1,40 @@
 ---
+// Las guías para líderes no tienen edad ni participantes: los campos son opcionales
+// y la ficha solo muestra los que existen. Si no hay ninguno, no se pinta nada.
 interface Props {
-  age_range: string;
-  participants: string;
-  duration: string;
-  difficulty: string;
-  materials: string[];
+  age_range?: string;
+  participants?: string;
+  duration?: string;
+  difficulty?: string;
+  materials?: string[];
 }
 const { age_range, participants, duration, difficulty, materials } = Astro.props;
 
 const DIFFICULTY: Record<string, string> = { facil: 'Fácil', media: 'Media', alta: 'Alta' };
+
+const campos = [
+  age_range && { t: 'Edad', v: `${age_range} años` },
+  participants && { t: 'Participantes', v: participants },
+  duration && { t: 'Duración', v: duration },
+  difficulty && { t: 'Dificultad', v: DIFFICULTY[difficulty] ?? difficulty },
+].filter(Boolean) as { t: string; v: string }[];
+
+const hayMateriales = materials !== undefined;
 ---
 <!-- La ficha práctica es el diferencial frente a un blog: nunca se oculta tras un clic. -->
-<dl class="meta">
-  <div><dt>Edad</dt><dd>{age_range} años</dd></div>
-  <div><dt>Participantes</dt><dd>{participants}</dd></div>
-  <div><dt>Duración</dt><dd>{duration}</dd></div>
-  <div><dt>Dificultad</dt><dd>{DIFFICULTY[difficulty] ?? difficulty}</dd></div>
-  <div class="meta__wide"><dt>Materiales</dt><dd>{materials.length ? materials.join(' · ') : 'Ninguno'}</dd></div>
-</dl>
+{(campos.length > 0 || hayMateriales) && (
+  <dl class="meta">
+    {campos.map((c) => (
+      <div><dt>{c.t}</dt><dd>{c.v}</dd></div>
+    ))}
+    {hayMateriales && (
+      <div class="meta__wide">
+        <dt>Materiales</dt>
+        <dd>{materials!.length ? materials!.join(' · ') : 'Ninguno'}</dd>
+      </div>
+    )}
+  </dl>
+)}
 
 <style>
   .meta {

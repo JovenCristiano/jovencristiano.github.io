@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: []
 featured: false
 publishedAt: 2026-09-03
-related: ['el-nudo-humano', 'la-torre-mas-alta', 'el-mural-de-oracion']
+related: ['el-nudo-humano', 'integrar-a-los-que-llegan-nuevos', 'la-torre-mas-alta']
 draft: false
 ---
 

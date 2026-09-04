@@ -12,6 +12,7 @@
   --color-adultos: #FF4D9D;      /* rosa */
   --color-temas: #7B61FF;        /* violeta eléctrico */
   --color-actividades: #22D3EE;  /* cian neón */
+  --color-lideres: #FF8A3D;      /* naranja neón */
   /* Color activo del contexto. Cada cluster lo redefine. */
   --color-cat: var(--color-brand);
   /* Para TEXTO en color de categoría se usa `color-mix(in srgb, var(--color-cat) 72%, #fff)`
