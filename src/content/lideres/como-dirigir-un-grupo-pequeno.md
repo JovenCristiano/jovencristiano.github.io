@@ -6,7 +6,7 @@ tags: ['grupos-pequenos', 'discipulado', 'liderazgo', 'conversacion']
 audience: 'lideres'
 featured: true
 publishedAt: 2026-09-04
-related: ['como-preparar-una-reunion-juvenil', 'integrar-a-los-que-llegan-nuevos', 'evitar-el-desgaste-del-lider']
+related: ['como-preparar-una-reunion-juvenil', 'la-noche-de-preguntas-dificiles', 'el-taller-de-lectura-biblica']
 draft: false
 ---
 

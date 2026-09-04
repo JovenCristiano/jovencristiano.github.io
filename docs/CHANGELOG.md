@@ -4,6 +4,28 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (tanda 4: temas y actividades)
+
+**3 temas y 3 actividades** (total: 45 de 50):
+
+- Amistades y presión de grupo — con el caso de Daniel y tres preguntas de criterio
+- Noviazgo cristiano — con caja de preguntas anónimas y señales de relación que hace daño
+- Perdonar cuando duele — centrado en qué **no** es perdonar
+- La noche de preguntas difíciles — guion para las diez dudas más frecuentes
+- Taller: leer la Biblia por tu cuenta — método de tres preguntas y plan de cuatro semanas
+- El reto de los 21 días — hábito sostenido con acompañamiento del grupo
+
+**Criterio editorial en los temas delicados.** Tres de estas piezas tocan asuntos donde el
+tratamiento habitual en ambientes de iglesia puede hacer daño, y se han escrito en contra de ese
+tratamiento:
+
+- **Noviazgo** no promete que la espera garantice un matrimonio feliz —la Biblia no lo promete— e
+  incluye una lista de señales de relación abusiva con instrucción de actuar en privado.
+- **Perdón** dedica su bloque central a qué *no* es perdonar, y establece que perdonar nunca obliga
+  a volver a una situación de peligro.
+- **Preguntas difíciles** incluye pautas para la pregunta sobre el suicidio y para la de
+  orientación sexual, con el criterio de no humillar a nadie que pueda estar en la sala.
+
 ### Añadido — 2026-09-04 (tanda 3: dinámicas)
 
 **6 dinámicas nuevas** (total: 39 de 50). Elegidas por los modificadores que dominan el mapa SEO

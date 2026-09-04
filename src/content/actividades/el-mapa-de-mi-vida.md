@@ -11,7 +11,7 @@ difficulty: 'alta'
 materials: ['Folios grandes o cartulinas', 'Rotuladores de colores', 'Cinta adhesiva']
 featured: false
 publishedAt: 2026-09-03
-related: ['capsula-del-tiempo', 'identidad-en-cristo', 'la-silla-de-la-verdad']
+related: ['capsula-del-tiempo', 'perdonar-cuando-duele', 'la-noche-de-preguntas-dificiles']
 draft: false
 ---
 

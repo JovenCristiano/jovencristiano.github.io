@@ -11,7 +11,7 @@ difficulty: 'alta'
 materials: ['Papeles', 'Bolígrafos', 'Una mochila', 'Objetos pesados (libros, botellas)']
 featured: false
 publishedAt: 2026-09-03
-related: ['identidad-en-cristo', 'el-mural-de-oracion', 'evitar-el-desgaste-del-lider']
+related: ['identidad-en-cristo', 'perdonar-cuando-duele', 'el-mural-de-oracion', 'la-noche-de-preguntas-dificiles']
 draft: false
 ---
 
