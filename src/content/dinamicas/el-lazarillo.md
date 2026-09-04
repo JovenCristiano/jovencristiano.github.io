@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Pañuelos o vendas', 'Objetos para el recorrido (sillas, botellas, mochilas)']
 featured: true
 publishedAt: 2026-09-03
-related: ['el-nudo-humano', 'la-silla-de-la-verdad', 'proposito-para-que-estoy-aqui', 'el-mural-de-oracion']
+related: ['la-caida-de-confianza', 'el-nudo-humano', 'proposito-para-que-estoy-aqui', 'el-mural-de-oracion']
 draft: false
 ---
 

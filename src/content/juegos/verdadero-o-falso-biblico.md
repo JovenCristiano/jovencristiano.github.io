@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: []
 featured: true
 publishedAt: 2026-09-04
-related: ['preguntas-y-respuestas-biblicas', 'carrera-de-versiculos', 'tabu-biblico']
+related: ['preguntas-y-respuestas-biblicas', 'bingo-biblico', 'tabu-biblico']
 draft: false
 ---
 

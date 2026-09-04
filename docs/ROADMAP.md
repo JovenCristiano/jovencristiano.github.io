@@ -44,30 +44,34 @@ sobre el sitio en producción para confirmar la puntuación.
 
 ---
 
-## 🟡 CHECKPOINT 2 — Contenido
+## ✅ CHECKPOINT 2 — Contenido
 
 **Objetivo: 50 recursos de alta calidad.**
 
-Progreso: **45 / 50** — 12 dinámicas · 9 juegos · 4 adultos · 7 temas · 7 actividades · 6 para líderes.
+**Cumplido el 2026-09-04: 50 / 50 recursos.**
+
+14 dinámicas · 10 juegos bíblicos · 6 para adultos · 7 temas · 7 actividades · 6 guías para líderes.
 
 **Las cuatro keywords P0 de 5 000 búsquedas están cubiertas** con su cluster y contenido real.
 
 Hitos intermedios: 10 → 25 → 50. Revisión de calidad en cada hito.
 
-- 🟡 20 dinámicas — **12**
-- 🟡 15 juegos bíblicos — **9**
-- 🟡 10 temas — **7**
-- 🟡 10 actividades — **7**
-- 🟡 10 para adultos — **4**
-- ✅ 5 recursos para líderes — **6**
+- ✅ Dinámicas — **14**
+- ✅ Juegos bíblicos — **10**
+- ✅ Temas — **7**
+- ✅ Actividades — **7**
+- ✅ Para adultos — **6**
+- ✅ Guías para líderes — **6**
 
 Cada pieza pasa el checklist de `CONTENT_PLAN.md` antes de publicarse.
 
-**Criterio de salida:** 50 recursos publicados, cada uno utilizable tal cual por un líder real.
+**Criterio de salida:** ✅ cumplido — 50 recursos publicados, cada uno utilizable tal cual por un
+líder real, y todos con su contenido preparado (listas, preguntas, tarjetas), no solo la
+explicación de en qué consiste la actividad.
 
 ---
 
-## ⬜ CHECKPOINT 3 — SEO
+## 🟡 CHECKPOINT 3 — SEO
 
 - ⬜ `SEO_MASTER_MAP.md` poblado con keywords investigadas
 - ⬜ Clusters definidos y enlazado interno completo (3–6 enlaces por pieza)

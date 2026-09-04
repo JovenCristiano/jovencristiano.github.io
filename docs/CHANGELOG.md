@@ -4,6 +4,26 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (tanda 5: CHECKPOINT 2 cerrado)
+
+**5 recursos** que completan los 50:
+
+- La caída de confianza — con protocolo de seguridad completo
+- Las sillas cooperativas — el juego de las sillas sin eliminar a nadie
+- Bingo bíblico — 40 casillas con sus pistas
+- Las etiquetas (adultos) — prejuicios invisibles en la iglesia
+- Mi historia en tres minutos (adultos) — testimonio con estructura y cronómetro
+
+**CHECKPOINT 2 CERRADO: 50 / 50 recursos.**
+
+Reparto final: 14 dinámicas · 10 juegos bíblicos · 7 temas · 7 actividades · 6 para adultos ·
+6 guías para líderes. Las cuatro keywords P0 de 5 000 búsquedas mensuales tienen cluster propio y
+contenido real, más el cluster secundario de adultos y el de líderes.
+
+**Nota de seguridad:** «La caída de confianza» abre la ficha con el protocolo —nunca desde altura,
+mínimo seis receptores, participación voluntaria, diálogo obligatorio antes de cada caída— porque
+es una dinámica que habitualmente se hace mal y puede causar lesiones reales.
+
 ### Añadido — 2026-09-04 (tanda 4: temas y actividades)
 
 **3 temas y 3 actividades** (total: 45 de 50):

@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Una caja con tapa', 'Papeles pequeños', 'Bolígrafos']
 featured: false
 publishedAt: 2026-09-03
-related: ['la-telarana-de-la-comunidad', 'dos-verdades-y-una-mentira', 'el-mural-de-oracion']
+related: ['la-telarana-de-la-comunidad', 'mi-historia-en-tres-minutos', 'las-etiquetas']
 draft: false
 ---
 

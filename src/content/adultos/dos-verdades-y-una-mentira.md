@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: []
 featured: true
 publishedAt: 2026-09-03
-related: ['encuentra-a-alguien-que', 'la-telarana-de-la-comunidad', 'la-caja-de-las-cargas']
+related: ['encuentra-a-alguien-que', 'mi-historia-en-tres-minutos', 'las-etiquetas']
 draft: false
 ---
 
