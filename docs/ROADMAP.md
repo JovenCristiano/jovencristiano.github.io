@@ -48,14 +48,14 @@ sobre el sitio en producción para confirmar la puntuación.
 
 **Objetivo: 50 recursos de alta calidad.**
 
-Progreso: **21 / 50** — 6 dinámicas · 3 juegos bíblicos · 4 para adultos · 4 temas · 4 actividades.
+Progreso: **27 / 50** — 6 dinámicas · 9 juegos bíblicos · 4 para adultos · 4 temas · 4 actividades.
 
 **Las cuatro keywords P0 de 5 000 búsquedas están cubiertas** con su cluster y contenido real.
 
 Hitos intermedios: 10 → 25 → 50. Revisión de calidad en cada hito.
 
 - 🟡 20 dinámicas — **6**
-- 🟡 15 juegos bíblicos — **3**
+- 🟡 15 juegos bíblicos — **9**
 - 🟡 10 temas — **4**
 - 🟡 10 actividades — **4**
 - 🟡 10 para adultos — **4**

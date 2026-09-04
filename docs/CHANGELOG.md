@@ -4,6 +4,19 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04 (tanda 1 hacia el CHECKPOINT 2)
+
+**6 juegos bíblicos nuevos** (total: 27 de 50). Todos con su contenido ya preparado, que es lo que
+distingue una ficha usable de un artículo que explica en qué consiste un juego:
+
+- Mímica bíblica — **40 escenas** en tres niveles
+- Tabú bíblico — **30 tarjetas** con sus palabras prohibidas
+- Pictionary bíblico — **45 palabras** en tres niveles
+- Verdadero o falso bíblico — **30 afirmaciones con su explicación**, incluidas diez frases que
+  todo el mundo cree bíblicas y no lo son
+- Búsqueda del tesoro bíblica — **8 pistas encadenadas** con su escondite
+- Teléfono descompuesto bíblico — 10 versículos seleccionados por longitud
+
 ### Añadido — 2026-09-03 (cluster de Actividades)
 
 - **Cluster `/actividades/`**, que cubre la keyword P0 «actividades para jóvenes cristianos»

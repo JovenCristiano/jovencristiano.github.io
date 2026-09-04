@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Una caja con candado de 4 dígitos', 'Biblias impresas', 'Sobres', 'Cuerda', 'Cronómetro', 'Un premio para la caja']
 featured: true
 publishedAt: 2026-09-03
-related: ['preguntas-y-respuestas-biblicas', 'carrera-de-versiculos', 'capsula-del-tiempo']
+related: ['busqueda-del-tesoro-biblica', 'preguntas-y-respuestas-biblicas', 'carrera-de-versiculos']
 draft: false
 ---
 

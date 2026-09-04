@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Una Biblia impresa por equipo', 'Lista de referencias preparada', 'Pizarra o papel para el marcador']
 featured: true
 publishedAt: 2026-09-02
-related: ['preguntas-y-respuestas-biblicas', 'escape-room-biblico', 'el-personaje-misterioso', 'el-nudo-humano']
+related: ['preguntas-y-respuestas-biblicas', 'verdadero-o-falso-biblico', 'busqueda-del-tesoro-biblica', 'escape-room-biblico']
 draft: false
 ---
 
