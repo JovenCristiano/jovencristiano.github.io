@@ -31,6 +31,7 @@ decisiones tomadas y las pendientes.
 | [CONTENT_PLAN.md](docs/CONTENT_PLAN.md) | Modelo de contenido y control de calidad |
 | [SEO_MASTER_MAP.md](docs/SEO_MASTER_MAP.md) | Mapa de keywords y clusters |
 | [KEYWORD_RESEARCH.md](docs/KEYWORD_RESEARCH.md) | Cómo investigar keywords y rellenar el mapa |
+| [LINK_BUILDING.md](docs/LINK_BUILDING.md) | Cómo conseguir enlaces externos |
 | [MONETIZATION_PLAN.md](docs/MONETIZATION_PLAN.md) | Escalera de productos |
 | [DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) | Tokens y componentes |
 | [CHANGELOG.md](docs/CHANGELOG.md) | Historial de cambios |

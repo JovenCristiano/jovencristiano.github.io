@@ -4,6 +4,13 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-04
+
+- `docs/LINK_BUILDING.md`: estrategia de enlaces externos. Incluye la lista de prácticas que
+  provocan penalización de Google y por qué se descartan, los activos enlazables del sitio, seis
+  tácticas ordenadas por rentabilidad, tres plantillas de contacto y un plan trimestral con meta
+  realista (5-10 enlaces, no cien).
+
 ### Añadido — 2026-09-04 (enlaces con poemasbiblicos.github.io)
 
 Cuatro enlaces contextuales hacia el sitio hermano, colocados solo donde un poema aporta algo real
