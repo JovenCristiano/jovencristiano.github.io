@@ -4,6 +4,15 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Registrado — 2026-09-04
+
+**Primera indexación confirmada.** Google indexó 5 páginas el 2026-09-03, menos de 24 horas después
+del despliegue: las cuatro categorías P0 (`/dinamicas/`, `/juegos-biblicos/`, `/temas/`,
+`/actividades/`) y la home.
+
+Queda descartado como problema el aviso «No se ha podido obtener» de la pantalla de Sitemaps: el
+rastreo funciona igualmente porque `robots.txt` declara el sitemap.
+
 ### Añadido — 2026-09-04 (CHECKPOINT 3: enlazado interno)
 
 - `scripts/auditar-enlaces.mjs` + `npm run audit:enlaces`. Comprueba lo que el compilador no ve:

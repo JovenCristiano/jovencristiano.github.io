@@ -77,7 +77,24 @@ explicación de en qué consiste la actividad.
 - ✅ Clusters definidos: 6 activos, las 4 keywords P0 cubiertas
 - ✅ Enlazado interno completo y auditado — ver más abajo
 - ✅ Google Search Console verificado y sitemap enviado
-- ⬜ **Primera revisión de indexación** ← depende del tiempo, no del trabajo
+- 🟡 **Primera revisión de indexación** — 5 páginas indexadas el 2026-09-03
+
+### Indexación — primera lectura (2026-09-03)
+
+Google indexó primero, en menos de 24 horas, **las cuatro páginas de categoría P0 y la home**:
+`/dinamicas/`, `/juegos-biblicos/`, `/temas/`, `/actividades/` y `/`.
+
+Dos conclusiones:
+
+1. **El rastreo funciona**, pese a que Search Console siga mostrando «No se ha podido obtener» en la
+   pantalla de Sitemaps. Ese estado es cosmético: el `robots.txt` declara el sitemap y Google lo
+   sigue igual. La otra web del proyecto (poemasbiblicos) lleva meses con ese mismo aviso y está
+   indexada.
+2. **Google priorizó justo las páginas mejor enlazadas internamente.** Es la confirmación práctica
+   de por qué se auditó el enlazado: las páginas con pocos enlaces entrantes se rastrean más tarde.
+
+Siguiente lectura: a las 3-4 semanas, comprobando el porcentaje sobre las 59 URLs y las primeras
+impresiones en Rendimiento.
 
 ### Auditoría de enlazado interno (2026-09-04)
 
