@@ -4,6 +4,17 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Registrado — 2026-09-06
+
+- Segunda extracción de Keyword Planner (403 keywords) archivada en
+  `docs/data/keyword-planner-2026-09-06.csv`.
+- **«joven cristiano» confirmada: 5 000 búsquedas y puja de hasta 21 836.** La primera lista semilla
+  no la incluía; el mapa SEO ya estaba cubriéndola con una página pilar.
+- **Análisis de competencia:** `elc.github.io` ocupa el puesto 4 para «juegos bíblicos para jóvenes
+  cristianos». Descarta que GitHub Pages sea un obstáculo, y muestra que su ventaja no es el texto
+  —tiene menos que nosotros— sino **el PDF imprimible por juego** y ocho años de antigüedad.
+- Huecos nuevos sin cubrir: devocionales para jóvenes (500 · puja 11 265) y «jóvenes con Cristo».
+
 ### Añadido — 2026-09-05
 
 **6 recursos nuevos** (total: 56). Cinco parten de mecánicas de juego que circulan por el nicho

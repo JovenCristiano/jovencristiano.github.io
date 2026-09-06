@@ -99,7 +99,8 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | juegos para jóvenes cristianos | 5 000 | juegos | `/juegos-biblicos/` | pendiente |
 | actividades para jóvenes cristianos | 5 000 | actividades | `/actividades/` | **publicado** |
 | enseñanza para jóvenes cristianos | 5 000 | temas | `/temas/` | **publicado** |
-| joven cristiano | **sin datos** | temas | `/temas/que-significa-ser-joven-cristiano/` | **publicado** |
+| joven cristiano | **5 000** | temas | `/temas/que-significa-ser-joven-cristiano/` | **publicado** |
+| cristianos jóvenes | 5 000 | temas | misma página (gemela de la anterior) | **publicado** |
 | dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
 | juegos cristianos para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` (sección) | **publicado** |
 | dinámicas de integración para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
@@ -122,6 +123,32 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | actividades cristianas para adolescentes | 500 | actividades | `/actividades/adolescentes/` | pendiente |
 | enseñanza dinámica para jóvenes cristianos | 500 | temas | `/temas/dinamicas-con-ensenanza/` | pendiente |
 
+## 1.7 Competencia real: un `github.io` en el puesto 4 (2026-09-06)
+
+`elc.github.io/posts/juegos-biblicos/es/` está **en cuarta posición** para «juegos bíblicos para
+jóvenes cristianos». Es un dato que cambia dos supuestos:
+
+1. **GitHub Pages no es un obstáculo para posicionar.** Queda descartado definitivamente.
+2. **No gana por volumen de texto.** Su página tiene ~1 730 palabras y 6 juegos; cualquiera de
+   nuestras fichas es más extensa y más detallada.
+
+### Qué tiene esa página que nosotros no
+
+| Elemento | Ellos | Nosotros |
+|---|---|---|
+| **PDF imprimible por juego** | Sí | **No** |
+| Versión editable (Google Docs) | Sí | No |
+| Imagen de cómo queda el juego | Sí | No |
+| Índice de navegación interno | Sí | No |
+| Antigüedad del dominio | Desde 2018 | 2 días |
+| `title` optimizado | No — arrastra «Personal Website» | Sí |
+| Meta description propia | No — es la genérica del sitio | Sí |
+| Ficha práctica (edad, duración, materiales) | No | Sí |
+
+**Conclusión operativa:** su ventaja es la **descarga imprimible** y ocho años de antigüedad. Lo
+segundo no se compra; lo primero sí se puede construir, y además coincide con la validación del
+lead magnet (§1.6): ya hay 1 200 búsquedas mensuales con el modificador «pdf».
+
 ## 3 bis. Pujas de anuncios (2026-09-05)
 
 El CSV incluye las columnas «Top of page bid». Contradicen la idea de que hay que buscar keywords
@@ -135,10 +162,30 @@ distintas para monetizar mejor: **las cuatro P0 que ya se atacan son las que má
 | dinámicas para jóvenes cristianos | 5 000 | 9 708 |
 | enseñanza para jóvenes cristianos | 5 000 | 6 319 |
 
-**Pendiente:** «joven cristiano» a secas **no está en el CSV** —no entró en la lista semilla—, así
-que su volumen y su puja son desconocidos. Hay que consultarlo en Keyword Planner antes de tomar
-ninguna decisión basada en esa keyword. Mientras tanto se cubre con una página pilar, porque es
-además el nombre de la marca.
+### Segunda extracción (2026-09-06): «joven cristiano» confirmada
+
+La primera lista semilla **no incluía «joven cristiano» a secas**, y por eso no apareció. Corregido
+con una segunda extracción de 403 keywords, archivada en `docs/data/keyword-planner-2026-09-06.csv`:
+
+| Keyword | Volumen | Puja máxima |
+|---|---|---|
+| **joven cristiano** | **5 000** | **21 836** |
+| cristianos jóvenes | 5 000 | 21 836 |
+| dinámicas cristianas cortas divertidas | 5 000 | 62 533 |
+| actividades para jóvenes cristianos | 5 000 | 19 570 |
+| juegos para jóvenes cristianos | 5 000 | 18 124 |
+
+Es la tercera puja más alta del conjunto y coincide con el nombre de la marca.
+
+### Huecos nuevos detectados
+
+| Keyword | Volumen | Puja máxima | Estado |
+|---|---|---|---|
+| devocionales cristianos para jóvenes | 500 | **11 265** | **sin cubrir** — no hay cluster de devocionales |
+| jóvenes con Cristo | 500 | 18 515 | sin cubrir |
+| temas para hablar con jóvenes cristianos | 50 | **37 703** | parcialmente cubierto por `/temas/` |
+
+«Devocionales» es el hueco más claro: paga bien, tiene volumen y no existe en el sitio.
 
 ## 4. Decisión de negocio — RESUELTA (2026-09-03)
 
