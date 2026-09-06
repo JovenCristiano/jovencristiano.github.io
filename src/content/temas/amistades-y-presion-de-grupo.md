@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Papel', 'Bolígrafos', 'Un vaso de agua', 'Colorante alimentario']
 featured: true
 publishedAt: 2026-09-04
-related: ['identidad-en-cristo', 'redes-sociales-y-comparacion', 'los-zapatos-del-otro', 'noviazgo-y-relaciones']
+related: ['que-significa-ser-joven-cristiano', 'identidad-en-cristo', 'redes-sociales-y-comparacion', 'noviazgo-y-relaciones']
 draft: false
 ---
 

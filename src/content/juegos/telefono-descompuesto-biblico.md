@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: []
 featured: false
 publishedAt: 2026-09-04
-related: ['verdadero-o-falso-biblico', 'carrera-de-versiculos', 'la-cadena-de-nombres']
+related: ['alfabeto-cristiano', 'verdadero-o-falso-biblico', 'folio-rotatorio']
 draft: false
 ---
 

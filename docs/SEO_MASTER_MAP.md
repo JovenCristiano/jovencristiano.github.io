@@ -99,6 +99,7 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | juegos para jóvenes cristianos | 5 000 | juegos | `/juegos-biblicos/` | pendiente |
 | actividades para jóvenes cristianos | 5 000 | actividades | `/actividades/` | **publicado** |
 | enseñanza para jóvenes cristianos | 5 000 | temas | `/temas/` | **publicado** |
+| joven cristiano | **sin datos** | temas | `/temas/que-significa-ser-joven-cristiano/` | **publicado** |
 | dinámicas cristianas para adultos divertidas | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
 | juegos cristianos para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` (sección) | **publicado** |
 | dinámicas de integración para adultos | 5 000 | adultos | `/dinamicas-para-adultos/` | **publicado** |
@@ -120,6 +121,24 @@ Confirma la Etapa 2 del `MONETIZATION_PLAN.md` sin necesidad de más validación
 | dinámicas para jóvenes cristianos pdf | 500 | lead magnet | `/recursos/descarga-dinamicas/` | pendiente |
 | actividades cristianas para adolescentes | 500 | actividades | `/actividades/adolescentes/` | pendiente |
 | enseñanza dinámica para jóvenes cristianos | 500 | temas | `/temas/dinamicas-con-ensenanza/` | pendiente |
+
+## 3 bis. Pujas de anuncios (2026-09-05)
+
+El CSV incluye las columnas «Top of page bid». Contradicen la idea de que hay que buscar keywords
+distintas para monetizar mejor: **las cuatro P0 que ya se atacan son las que más pagan.**
+
+| Keyword | Volumen | Puja máxima |
+|---|---|---|
+| dinámicas cristianas cortas divertidas | 5 000 | 63 191 |
+| actividades para jóvenes cristianos | 5 000 | 19 776 |
+| juegos para jóvenes cristianos | 5 000 | 18 315 |
+| dinámicas para jóvenes cristianos | 5 000 | 9 708 |
+| enseñanza para jóvenes cristianos | 5 000 | 6 319 |
+
+**Pendiente:** «joven cristiano» a secas **no está en el CSV** —no entró en la lista semilla—, así
+que su volumen y su puja son desconocidos. Hay que consultarlo en Keyword Planner antes de tomar
+ninguna decisión basada en esa keyword. Mientras tanto se cubre con una página pilar, porque es
+además el nombre de la marca.
 
 ## 4. Decisión de negocio — RESUELTA (2026-09-03)
 

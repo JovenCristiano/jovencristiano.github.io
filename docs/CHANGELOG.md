@@ -4,6 +4,25 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-05
+
+**6 recursos nuevos** (total: 56). Cinco parten de mecánicas de juego que circulan por el nicho
+—vídeos de YouTube y material de grupos juveniles—; están reescritos desde cero con la estructura
+del sitio, y aportan lo que esas versiones no traen: listas completas, variantes, reflexión, base
+bíblica y normas de seguridad.
+
+- Folio rotatorio — con 20 categorías listas
+- Ordena los libros de la Biblia — con los 66 en su orden y agrupados por bloques
+- Alfabeto cristiano — con soluciones de la A a la Z
+- El globo flotante — mantener el foco pese a las distracciones
+- La bomba de preguntas — 25 preguntas rápidas **y normas de seguridad**
+- Qué significa ser un joven cristiano — página pilar de la keyword de marca
+
+**Seguridad en «La bomba de preguntas».** Inflar un globo hasta que explota junto a la cara de un
+adolescente no es inofensivo: la ficha exige inflador manual, inflado en el centro del círculo,
+participación voluntaria, aviso por alergia al látex y consideración con quien tenga sensibilidad
+al ruido. Incluye además una variante sin globo, con cronómetro, para grupos sensibles.
+
 ### Cambiado — 2026-09-04 (neutralidad doctrinal)
 
 Decisión editorial: **el contenido no toma partido en asuntos que dividen a las iglesias.** El

@@ -3,7 +3,7 @@
 Biblioteca digital de recursos cristianos para jóvenes y líderes juveniles: dinámicas, juegos
 bíblicos, actividades, temas y material listo para usar.
 
-**Estado:** CHECKPOINT 0 cerrado. **CHECKPOINT 2 cerrado:** 50 recursos publicados.
+**Estado:** CHECKPOINT 0 cerrado. **CHECKPOINT 2 cerrado:** 56 recursos publicados.
 
 **En línea:** https://jovencristiano.github.io — cada push a `main` despliega automáticamente.
 

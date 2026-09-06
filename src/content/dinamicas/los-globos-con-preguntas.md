@@ -11,7 +11,7 @@ difficulty: 'facil'
 materials: ['Globos', 'Papelitos con preguntas', 'Bolígrafo']
 featured: true
 publishedAt: 2026-09-04
-related: ['la-cadena-de-nombres', 'el-nudo-humano', 'la-silla-de-la-verdad']
+related: ['el-globo-flotante', 'la-cadena-de-nombres', 'la-bomba-de-preguntas']
 draft: false
 ---
 

@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Espejo pequeño', 'Tarjetas', 'Bolígrafos']
 featured: true
 publishedAt: 2026-09-03
-related: ['proposito-para-que-estoy-aqui', 'el-regalo-envuelto', 'el-mapa-de-mi-vida', 'el-ovillo-de-las-cualidades']
+related: ['que-significa-ser-joven-cristiano', 'proposito-para-que-estoy-aqui', 'el-regalo-envuelto', 'el-mapa-de-mi-vida']
 draft: false
 ---
 
