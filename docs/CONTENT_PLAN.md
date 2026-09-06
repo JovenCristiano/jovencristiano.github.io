@@ -90,6 +90,42 @@ Cada pieza enlaza a:
 Dinámica → Tema relacionado → Reflexión → Guía → Producto
 ```
 
+## 5 bis. Neutralidad doctrinal (regla editorial)
+
+**El contenido no toma partido en asuntos que dividen a las iglesias.** El público es
+transversal —evangélicos, católicos, adventistas y otros—, y una sola frase de una tradición
+concreta hace que las demás descarten el recurso entero.
+
+### Qué SÍ se afirma
+
+- Lo compartido por el conjunto del cristianismo: la persona de Jesús, el valor de la Escritura,
+  el amor al prójimo, el perdón, la oración, la dignidad de cada persona.
+- Los hechos del texto bíblico: qué dice el pasaje, en qué contexto y a quién.
+
+### Qué NO se afirma
+
+| Asunto | Cómo se trata |
+|---|---|
+| Forma del bautismo (inmersión, aspersión, edad) | No se menciona el modo |
+| Día de culto (domingo o sábado) | Los horarios se dan como ejemplo adaptable |
+| Diezmo, dones, lenguas, predestinación | No se entra |
+| Creación literal frente a otras lecturas | Se presentan las posturas y se remite a la iglesia local |
+| Destino eterno de personas concretas | Nunca. Se remite al responsable de la iglesia |
+| Sexualidad y orientación | Se remite a lo que enseñe cada iglesia, con la condición innegociable de no humillar a nadie presente |
+| Versión de la Biblia | «La que use habitualmente tu iglesia» |
+| Cargos: sacerdote, pastor, anciano | Términos neutros: «responsable», «líder de la iglesia» |
+
+### Cómo se resuelve una duda doctrinal en un recurso
+
+La fórmula es siempre la misma: **describir que hay varias posturas, no ridiculizar ninguna y
+remitir al responsable de la iglesia local.** El sitio da herramientas; la doctrina la pone cada
+iglesia.
+
+### Comprobación
+
+`npm run audit:doctrina` marca los términos que exigen revisión manual. No decide por ti: señala
+dónde mirar.
+
 ## 6. Checklist antes de publicar
 
 - [ ] ¿Un líder puede ejecutarlo sin buscar nada más?
@@ -102,6 +138,7 @@ Dinámica → Tema relacionado → Reflexión → Guía → Producto
 - [ ] `related` cumplimentado
 - [ ] Imagen con `alt` descriptivo
 - [ ] CTA con un siguiente paso claro
+- [ ] **Sin afirmaciones doctrinales de una sola tradición** (§5 bis)
 
 ## 7. Uso de IA
 

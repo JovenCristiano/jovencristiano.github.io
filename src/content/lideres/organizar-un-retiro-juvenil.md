@@ -58,6 +58,10 @@ Un fin de semana, de viernes tarde a domingo mediodía:
 | Tarde | 18:00 llegada · 19:00 juego · 21:00 cena | 13:00 comida · 16:00 gran juego · 19:00 charla 3 | 11:30 tiempo de compromiso · 13:00 comida y vuelta |
 | Noche | 22:00 charla 1 · 23:30 tiempo libre | 21:00 cena · 22:30 fogata o noche especial | — |
 
+> **Adapta los días a tu iglesia.** Este horario da por supuesto un fin de semana de viernes a
+> domingo. Si vuestro día de culto es el sábado, desplaza el esquema un día: la estructura —llegada,
+> juego, charlas repartidas, tiempo libre y cierre— funciona igual.
+
 **Tres reglas de horario:**
 
 1. **Deja tiempo libre de verdad.** Las mejores conversaciones de un retiro pasan en los huecos, no

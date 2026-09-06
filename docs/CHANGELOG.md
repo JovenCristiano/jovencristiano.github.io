@@ -4,6 +4,34 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Cambiado — 2026-09-04 (neutralidad doctrinal)
+
+Decisión editorial: **el contenido no toma partido en asuntos que dividen a las iglesias.** El
+público es transversal —evangélicos, católicos, adventistas y otros— y una sola frase de una
+tradición concreta hace que las demás descarten el recurso entero. Regla completa en §5 bis de
+`CONTENT_PLAN.md`.
+
+Ocho correcciones sobre el contenido ya publicado:
+
+| Dónde | Antes | Ahora |
+|---|---|---|
+| Escape room | «aquí se usa Reina-Valera» | «la versión que use habitualmente tu iglesia»; se aclara que las respuestas son cifras que no cambian de traducción |
+| Preguntas difíciles · ciencia | Afirmaba que Génesis responde al «quién», no al «cómo» | Presenta las dos lecturas y remite a la iglesia local |
+| Preguntas difíciles · suicidio | «La salvación no depende de un último acto» | No se improvisa doctrina: se remite al responsable y se prioriza a quien escribió la pregunta |
+| Preguntas difíciles · orientación | «responde con respeto» | Se remite a lo que enseñe cada iglesia, con dos condiciones innegociables: no humillar y no debatir en público |
+| El naufragio | «Un sacerdote de 60 años» | «Un responsable de una iglesia, de 60 años» |
+| Tabú · bautismo | Palabra prohibida «sumergir» | «ceremonia» — no presupone la forma del bautismo |
+| Tabú · diezmo | Tarjeta «Diezmo» | Sustituida por «Esperanza» |
+| Retiro | Horario de viernes a domingo sin más | Nota para desplazar el esquema si el día de culto es el sábado |
+
+### Añadido — 2026-09-04
+
+- `scripts/auditar-doctrina.mjs` + `npm run audit:doctrina`. Señala términos que exigen revisión
+  manual; no decide por su cuenta, porque muchas apariciones son legítimas.
+
+  **Nota:** la primera versión del script daba 50 falsos positivos porque el patrón `NVI` coincidía
+  dentro de «coNVIerte» e «iNVIta». Corregido con límites de palabra.
+
 ### Registrado — 2026-09-04
 
 **Primera indexación confirmada.** Google indexó 5 páginas el 2026-09-03, menos de 24 horas después

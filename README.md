@@ -14,6 +14,7 @@ npm install
 npm run dev            # http://localhost:4321
 npm run build
 npm run audit:enlaces  # audita el enlazado interno
+npm run audit:doctrina # marca terminos que exigen revision doctrinal
 ```
 
 > El dominio vive en `src/site.config.mjs`. Si algún día hay dominio propio, se cambia ahí y solo ahí.

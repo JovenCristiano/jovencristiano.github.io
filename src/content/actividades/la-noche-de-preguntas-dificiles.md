@@ -71,22 +71,30 @@ No son respuestas para leer: son la dirección por donde ir.
    incluye un salto; si no, no sería fe.
 3. **¿Y los que nunca han oído hablar de Jesús?** Reconoce que la Biblia no responde del todo, y
    apunta a Génesis 18:25: el juez de toda la tierra hará lo justo.
-4. **¿La ciencia contradice la Biblia?** Distingue entre lo que la Biblia afirma y lo que le hemos
-   hecho decir. Génesis responde al «quién» y al «por qué», no al «cómo» científico.
+4. **¿La ciencia contradice la Biblia?** Aquí hay cristianos sinceros que lo entienden de formas
+   distintas: unos leen Génesis de manera literal y otros como un texto que responde al «quién» y
+   al «por qué» más que al «cómo». **Presenta las dos y di cuál sostiene vuestra iglesia**, sin
+   ridiculizar la otra. Lo que un adolescente necesita saber es que se puede ser creyente y
+   estudiar ciencias.
 5. **¿Por qué hay tantas iglesias distintas?** Con honestidad: por historia, cultura y también por
    peleas humanas. Lo esencial es compartido.
 6. **¿Es pecado dudar?** No. Tomás dudó y Jesús no lo expulsó: le enseñó las manos. Los Salmos están
    llenos de reproches a Dios.
-7. **¿Qué pasa con alguien que se suicida?** Máximo cuidado. La salvación no depende de un último
-   acto, y la Biblia no dice lo que muchos afirman. Si esta pregunta aparece, habla después en
-   privado con quien la escribió, si lo sabes, y ten a mano ayuda profesional.
+7. **¿Qué pasa con alguien que se suicida?** Máximo cuidado, y no es momento de teología. Las
+   distintas tradiciones cristianas responden de forma diferente: **no improvises una respuesta
+   doctrinal**, di que es una pregunta seria y que la vais a hablar con calma con vuestro pastor o
+   responsable. Lo prioritario no es la respuesta teórica, sino quién la ha escrito: casi siempre
+   hay detrás un duelo o un dolor propio. Ten localizada ayuda profesional y busca a esa persona
+   después.
 8. **¿Puedo ser cristiano y equivocarme siempre en lo mismo?** Sí. La santificación es un proceso.
    Habla de Pedro y de Romanos 7.
 9. **¿Por qué Dios no responde a mis oraciones?** No des la respuesta fácil del «sí, no y espera».
    Reconoce el silencio de Dios como experiencia real y bíblica.
-10. **¿La homosexualidad?** Va a salir. Prepárala antes con tu iglesia, responde con respeto y
-    **nunca de forma que humille a alguien que pueda estar en la sala**. Si no sabes cómo, di que
-    prefieres hablarlo en privado con quien quiera.
+10. **¿La homosexualidad?** Va a salir. **No es una pregunta que se improvise:** háblalo antes con
+    los responsables de tu iglesia y responde según lo que ella enseñe. Dos cosas son innegociables
+    hagas lo que hagas: no humillar a nadie que pueda estar en la sala, y no convertir la respuesta
+    en un debate público. Si no lo tienes claro, di que prefieres hablarlo en privado con quien
+    quiera.
 
 ## Variantes
 

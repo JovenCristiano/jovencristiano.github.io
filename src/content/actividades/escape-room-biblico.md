@@ -29,7 +29,8 @@ el trabajo no llegan.
 1. Consigue una **caja con candado de cuatro dígitos**. Dentro, el premio: chuches, entradas para
    algo, o el postre de esa noche.
 2. Escribe cada prueba en un sobre numerado y escóndelos por la sala.
-3. Una Biblia impresa por equipo, **todas de la misma versión** (aquí se usa Reina-Valera).
+3. Una Biblia impresa por equipo, **todas de la misma versión**, la que use habitualmente tu
+   iglesia. Las cuatro respuestas son cifras que no cambian de una traducción a otra.
 4. Haz tú las cuatro pruebas antes. Si algo no cuadra, lo descubres tú y no ellos.
 
 **La combinación final es 3 · 7 · 4 · 6.**

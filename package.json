@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "audit:enlaces": "node scripts/auditar-enlaces.mjs"
+    "audit:enlaces": "node scripts/auditar-enlaces.mjs",
+    "audit:doctrina": "node scripts/auditar-doctrina.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^8.0.0",

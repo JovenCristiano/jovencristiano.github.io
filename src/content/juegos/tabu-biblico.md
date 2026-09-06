@@ -52,7 +52,7 @@ reconoce sus nombres.
 | **Ángel** | alas · cielo · mensajero |
 | **Oración** | hablar · Dios · rezar |
 | **Iglesia** | edificio · domingo · culto |
-| **Bautismo** | agua · sumergir · iglesia |
+| **Bautismo** | agua · iglesia · ceremonia |
 | **Perdón** | disculpa · culpa · error |
 | **Milagro** | imposible · Jesús · curar |
 | **Fe** | creer · confiar · Dios |
@@ -70,7 +70,7 @@ reconoce sus nombres.
 | **Templo** | Salomón · Jerusalén · adorar |
 | **Profeta** | futuro · hablar · Dios |
 | **Resurrección** | tumba · vivo · tercer día |
-| **Diezmo** | dinero · décimo · iglesia |
+| **Esperanza** | futuro · confiar · fe |
 | **Sábado** | descanso · día · séptimo |
 | **Ayuno** | comida · dejar · orar |
 | **Evangelio** | buena noticia · Jesús · predicar |
@@ -104,8 +104,8 @@ tendrás que dejar en el banquillo?
 
 ## Consejos para el líder
 
-- Las palabras del final —diezmo, ayuno, evangelio— son las que más cuesta explicar. Guárdalas para
-  cuando el grupo esté caliente.
+- Las palabras del final —esperanza, ayuno, evangelio— son las que más cuesta explicar. Guárdalas
+  para cuando el grupo esté caliente.
 - No dejes que el vigilante se ponte quisquilloso: el juego se atasca si se anula todo.
 - Anota las palabras que costaron más. Tienes ahí los temas de tus próximas reuniones.
 - Si alguien explica algo mal desde el punto de vista bíblico, no lo corrijas en caliente: apúntalo

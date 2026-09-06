@@ -51,7 +51,7 @@ criterios con la forma en que Dios mira a las personas.
 7. Una profesora de 50 años que cuida de su madre enferma.
 8. Un joven de 20 años con adicción a las drogas, en tratamiento.
 9. Una agricultora de 45 años, madre de cuatro hijos.
-10. Un sacerdote de 60 años.
+10. Un responsable de una iglesia, de 60 años.
 
 ## Variantes
 
