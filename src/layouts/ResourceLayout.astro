@@ -55,6 +55,17 @@ const article = {
         materials={data.materials}
       />
       <slot />
+
+      <p class="print-btn">
+        <!--
+          Única excepción al presupuesto de 0 KB de JavaScript (§6 ARCHITECTURE): `window.print()`
+          no tiene equivalente en HTML. Son 30 bytes en línea, sin dependencias ni hidratación, y
+          habilita la descarga en PDF que pide el §1.7 del mapa SEO.
+        -->
+        <button type="button" onclick="window.print()">Imprimir o guardar en PDF</button>
+        <span>Se abrirá el diálogo de impresión. Elige «Guardar como PDF» como destino.</span>
+      </p>
+
       <RelatedResources items={related} />
       <CTA
         title="¿Preparando tu próxima reunión?"
@@ -68,4 +79,21 @@ const article = {
 
 <style>
   .lead { font-size: 1.125em; color: var(--color-ink-soft); }
+
+  .print-btn {
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3);
+  }
+  .print-btn button {
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--color-cat);
+    background: transparent; color: var(--color-ink);
+    font-family: var(--font-display); font-weight: 700; font-size: 0.9375rem;
+    cursor: pointer;
+  }
+  .print-btn button:hover { background: color-mix(in srgb, var(--color-cat) 14%, transparent); }
+  .print-btn span { font-size: var(--text-small); color: var(--color-ink-soft); }
 </style>

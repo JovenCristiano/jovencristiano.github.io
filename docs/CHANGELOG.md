@@ -4,6 +4,26 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-06 (material imprimible)
+
+Responde a la carencia detectada en §1.7 del mapa SEO: el competidor que ocupa el puesto 4 ofrece
+PDF imprimible por juego y nosotros no.
+
+- `src/styles/print.css`: cualquier ficha se imprime como material de reunión. Negro sobre blanco,
+  sin cabecera ni pie ni CTA, sin saltos de página a mitad de una idea, cabeceras de tabla repetidas
+  en cada hoja y la URL de origen al final.
+- **Tarjetas recortables:** las tablas envueltas en `.recortable` —las 30 del tabú y las 40 del
+  bingo— se imprimen como rejilla de tarjetas con línea de corte.
+- Botón «Imprimir o guardar en PDF» en todas las fichas.
+
+**Decisión técnica.** No se generan archivos PDF en el despliegue: exigiría un navegador headless en
+CI, cientos de megas por compilación y un punto de fallo más. Se usa el diálogo del navegador, que
+ofrece «Guardar como PDF» en todos los sistemas.
+
+**Excepción al presupuesto de JavaScript.** El botón usa `onclick="window.print()"`, unos 30 bytes
+en línea; no existe equivalente en HTML. `find dist -name "*.js"` sigue devolviendo **cero
+archivos**. Justificación en §6 de `ARCHITECTURE.md`.
+
 ### Registrado — 2026-09-06
 
 - Segunda extracción de Keyword Planner (403 keywords) archivada en

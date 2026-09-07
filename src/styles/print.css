@@ -1,0 +1,155 @@
+/**
+ * Hoja de impresión. Objetivo: que un líder pueda llevarse la ficha en papel a la reunión, o
+ * guardarla como PDF desde el propio navegador.
+ *
+ * El sitio es oscuro; en papel eso sería ilegible y gastaría media impresora, así que aquí se
+ * invierte todo a negro sobre blanco.
+ */
+@media print {
+  /* --- Fuera todo lo que no es el recurso --- */
+  .site-header,
+  .site-footer,
+  .breadcrumb,
+  .cta,
+  .related,
+  .skip-link,
+  .print-btn,
+  .hero,
+  .cluster-head__img,
+  .cluster-head__veil {
+    display: none !important;
+  }
+
+  /* --- Negro sobre blanco --- */
+  :root {
+    --color-bg: #fff;
+    --color-surface: #fff;
+    --color-surface-alt: #fff;
+    --color-ink: #000;
+    --color-ink-soft: #333;
+    --color-ink-faint: #555;
+    --color-border: #999;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+
+  h1, h2, h3, h4, strong, dd {
+    color: #000 !important;
+  }
+
+  /* Los marcadores de lista heredan el color de la categoría; en papel gastarían tinta de color. */
+  .prose li::marker {
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none;
+  }
+
+  /* La URL del recurso, para quien reciba la fotocopia. */
+  main::after {
+    content: 'Ficha descargada de jovencristiano.github.io';
+    display: block;
+    margin-top: 12mm;
+    padding-top: 3mm;
+    border-top: 1px solid #999;
+    font-size: 8pt;
+    color: #555;
+  }
+
+  @page {
+    margin: 15mm;
+  }
+
+  /* --- Nada de saltos de página a mitad de una idea --- */
+  h1, h2, h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  li, tr, blockquote, .meta {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .wrap,
+  .prose,
+  .section {
+    max-width: none !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* --- Ficha práctica: recuadro sobrio --- */
+  .meta {
+    background: #fff !important;
+    border: 1px solid #000 !important;
+    padding: 4mm !important;
+  }
+  .meta dt {
+    color: #000 !important;
+  }
+
+  /* --- Citas bíblicas --- */
+  .prose blockquote {
+    background: #fff !important;
+    border-left: 2pt solid #000 !important;
+    font-style: italic;
+  }
+
+  /* --- Tablas: legibles en papel --- */
+  .prose table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .prose th,
+  .prose td {
+    border: 1px solid #000 !important;
+    padding: 2mm !important;
+    background: #fff !important;
+  }
+  .prose thead {
+    display: table-header-group; /* repite la cabecera en cada página */
+  }
+
+  /*
+   * Tarjetas recortables.
+   * Las tablas de dos columnas —tabú, bingo, pistas del tesoro— se convierten en una rejilla de
+   * tarjetas con línea de corte, en vez de una tabla apretada. Es lo que de verdad quiere quien
+   * imprime: recortar y repartir.
+   */
+  .prose .recortable table {
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm;
+  }
+  .prose .recortable thead {
+    display: none;
+  }
+  .prose .recortable tbody {
+    display: contents;
+  }
+  .prose .recortable tr {
+    display: block;
+    border: 1px dashed #000;
+    padding: 4mm;
+    min-height: 28mm;
+  }
+  .prose .recortable td {
+    display: block;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+  .prose .recortable td:first-child {
+    font-weight: 700;
+    font-size: 13pt;
+    margin-bottom: 2mm;
+  }
+}

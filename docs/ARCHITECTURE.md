@@ -84,12 +84,26 @@ MASTER_PLAN se activan según demanda de contenido, no de antemano.
 
 | Métrica | Objetivo |
 |---|---|
-| JS enviado al cliente | 0 KB en Home y en páginas de recurso |
+| JS enviado al cliente | 0 KB en Home. En las fichas, un único `onclick="window.print()"` en línea (~30 bytes): ver excepción documentada abajo |
 | CSS total | < 20 KB |
 | Lighthouse Performance (móvil) | ≥ 95 |
 | LCP | < 2,0 s en 4G |
 
 Cualquier dependencia que rompa este presupuesto necesita justificación escrita.
+
+### Excepción documentada: el botón de imprimir
+
+Las fichas de recurso llevan `<button onclick="window.print()">`. Es la única línea de JavaScript
+del sitio.
+
+**Por qué se acepta:** abrir el diálogo de impresión no tiene equivalente en HTML, y la descarga en
+PDF es justo la ventaja del competidor mejor posicionado (§1.7 del mapa SEO). Son unos 30 bytes en
+línea, sin dependencias, sin hidratación y sin ningún archivo `.js` servido: `find dist -name
+"*.js"` sigue devolviendo cero.
+
+**Alternativa descartada:** generar PDF reales en el despliegue con un navegador headless. Añadía
+cientos de megas a cada compilación y un punto de fallo más, a cambio de ahorrarle al usuario una
+pulsación.
 
 ## 7. Riesgos identificados
 

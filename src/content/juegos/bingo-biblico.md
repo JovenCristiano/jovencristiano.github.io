@@ -34,6 +34,11 @@ participan todos a la vez.
 
 ## Las 40 casillas y sus pistas
 
+> **Para imprimir:** con el botón del final de la ficha, esta tabla sale como tarjetas recortables,
+> una por pista, listas para meter en la bolsa.
+
+<div class="recortable">
+
 | Palabra | Pista que cantas |
 |---|---|
 | Arca | El barco más famoso de la Biblia |
@@ -76,6 +81,8 @@ participan todos a la vez.
 | Galilea | El mar donde Jesús calmó la tormenta |
 | Pablo | Escribió la mayoría de las cartas |
 | Edén | El jardín del principio |
+
+</div>
 
 ## Instrucciones paso a paso
 

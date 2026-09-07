@@ -42,6 +42,11 @@ reconoce sus nombres.
 
 ## Las 30 tarjetas
 
+> **Para imprimir:** usa el botón del final de la ficha. Al imprimir, esta tabla se convierte
+> automáticamente en tarjetas con línea de corte, listas para recortar y repartir.
+
+<div class="recortable">
+
 | Palabra | Prohibidas |
 |---|---|
 | **Moisés** | Egipto · mar · mandamientos |
@@ -74,6 +79,8 @@ reconoce sus nombres.
 | **Sábado** | descanso · día · séptimo |
 | **Ayuno** | comida · dejar · orar |
 | **Evangelio** | buena noticia · Jesús · predicar |
+
+</div>
 
 ## Variantes
 

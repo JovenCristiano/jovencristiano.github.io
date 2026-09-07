@@ -136,6 +136,16 @@ motores. Se sustituye por fondos sólidos.
 Muestran siempre, de un vistazo: **categoría · edad · duración · participantes · materiales**.
 Esa ficha es el diferencial del sitio frente a un blog; nunca se oculta tras un clic.
 
+## 4 bis. Impresión
+
+`src/styles/print.css` convierte cualquier ficha en material listo para llevar a la reunión. El
+sitio es oscuro; en papel eso sería ilegible y vaciaría el cartucho, así que se invierte a negro
+sobre blanco y se ocultan cabecera, pie, migas, CTA y relacionados.
+
+**Tarjetas recortables.** Una tabla envuelta en `<div class="recortable">` se imprime como rejilla
+de tarjetas con línea de corte, no como tabla. Es lo que de verdad quiere quien imprime el tabú o
+el bingo: recortar y repartir. En pantalla se ve como una tabla normal.
+
 ## 5. Accesibilidad
 
 - Objetivos táctiles ≥ 44 × 44 px.
