@@ -10,7 +10,7 @@ export const SITE = {
   name: 'Joven Cristiano',
   title: 'Joven Cristiano — Recursos cristianos para jóvenes y líderes',
   description:
-    'Dinámicas, juegos bíblicos, actividades y temas cristianos listos para usar con jóvenes. Recursos prácticos para líderes juveniles, iglesias y padres.',
+    'Recursos para el joven cristiano y para quien dirige su grupo: dinámicas, juegos bíblicos, actividades, temas y devocionales listos para usar. Gratis y sin registro.',
   locale: 'es',
   ogImage: '/images/og-default.png',
   /**

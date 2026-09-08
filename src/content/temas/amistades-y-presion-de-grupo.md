@@ -33,6 +33,9 @@ Complementarios: Proverbios 13:20 · Daniel 1:8 · Juan 17:15
 
 No se trata de con quién estás, sino de quién decide por ti cuando estás con ellos.
 
+Buena parte de esa presión viene de un estereotipo heredado. Merece la pena dedicar otra reunión a
+[qué significa ser un joven cristiano](/temas/que-significa-ser-joven-cristiano/) y desmontarlo con ellos delante.
+
 ## Introducción (10 min)
 
 Pon un vaso de agua limpia sobre la mesa y una gota de colorante al lado.

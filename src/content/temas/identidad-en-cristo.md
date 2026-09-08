@@ -102,6 +102,9 @@ la vuelta a la tarjeta y lean la otra en voz alta. Sin discursos. Solo leerla.
 Nadie sale de aquí con la autoestima arreglada, y no pasa nada. La identidad en Cristo no es un
 subidón: es un suelo. Y un suelo se nota sobre todo cuando las otras voces gritan.
 
+Si el grupo se queda con ganas de seguir por ahí, el paso natural es el tema sobre
+[qué significa ser un joven cristiano](/temas/que-significa-ser-joven-cristiano/), que aterriza la identidad en el día a día.
+
 ## Oración
 
 Cierra orando por el grupo con la lista de palabras del principio delante. Ora por cada palabra

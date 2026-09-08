@@ -21,6 +21,15 @@ usarían si supieran que no implica dejar de ser ellos mismos.
 
 Este tema va de aclarar eso, sin idealizar y sin exagerar.
 
+## ¿Qué significa ser un joven cristiano?
+
+Ser un joven cristiano significa seguir a Jesús a una edad concreta, con dudas incluidas, y que eso
+se note sobre todo en cómo tratas a la gente. No es cumplir una lista de prohibiciones, ni encajar
+en un estereotipo, ni esperar a ser adulto para que tu fe cuente.
+
+Debajo tienes la enseñanza completa para dirigirla con un grupo, con texto bíblico, preguntas y
+actividad.
+
 ## Objetivo
 
 Que cada joven pueda decir con sus palabras qué significa —y qué no significa— ser cristiano a su

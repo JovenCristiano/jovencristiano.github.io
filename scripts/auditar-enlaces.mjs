@@ -5,7 +5,8 @@
  *   1. que cada pieza tenga entre 3 y 6 enlaces salientes,
  *   2. que ningún `related` apunte a un recurso inexistente,
  *   3. que no haya páginas huérfanas (sin enlaces entrantes),
- *   4. que ninguna quede con un solo enlace entrante.
+ *   4. que ninguna quede con un solo enlace entrante,
+ *   5. que los enlaces contextuales del cuerpo apunten a una URL que existe.
  *
  * Uso:  npm run audit:enlaces
  * Sale con código 1 si algo falla, para poder usarlo en CI.
@@ -28,7 +29,9 @@ for (const cluster of readdirSync(RAIZ)) {
     const texto = readFileSync(join(dir, archivo), 'utf8');
     const linea = texto.match(/^related: \[(.*)\]$/m);
     const related = linea ? [...linea[1].matchAll(/'([^']+)'/g)].map((m) => m[1]) : [];
-    piezas.set(slug, { cluster, related });
+    // Enlaces contextuales escritos a mano dentro del cuerpo: `[texto](/ruta/)`.
+    const cuerpo = [...texto.matchAll(/\]\((\/[^)\s]*)\)/g)].map((m) => m[1]);
+    piezas.set(slug, { cluster, related, cuerpo });
   }
 }
 
@@ -38,6 +41,22 @@ for (const [slug, { related }] of piezas) {
   for (const destino of related) {
     if (!piezas.has(destino)) rotos.push(`${slug} -> ${destino}`);
     else entrantes.set(destino, entrantes.get(destino) + 1);
+  }
+}
+
+// URLs válidas: la Home, las páginas sueltas, los índices de cluster y cada ficha.
+const BASES = Object.fromEntries(
+  [...readFileSync('src/utils/clusters.ts', 'utf8').matchAll(
+    /id: '([^']+)',[^]*?base: '([^']+)'/g,
+  )].map((m) => [m[1], m[2]]),
+);
+const urlsValidas = new Set(['/', '/sobre-nosotros/', '/contacto/', ...Object.values(BASES)]);
+for (const [slug, { cluster }] of piezas) urlsValidas.add(`${BASES[cluster]}${slug}/`);
+
+const cuerpoRotos = [];
+for (const [slug, { cuerpo }] of piezas) {
+  for (const url of cuerpo) {
+    if (!urlsValidas.has(url)) cuerpoRotos.push(`${slug} -> ${url}`);
   }
 }
 
@@ -56,6 +75,8 @@ const cruces = [...piezas].reduce(
 
 console.log(`\nRecursos: ${piezas.size}`);
 console.log(`Enlaces internos: ${total} (media ${(total / piezas.size).toFixed(1)} por pieza)`);
+const enCuerpo = [...piezas.values()].reduce((n, p) => n + p.cuerpo.length, 0);
+console.log(`Enlaces contextuales en el cuerpo: ${enCuerpo}`);
 console.log(`Cruzan de cluster: ${cruces} (${Math.round((100 * cruces) / total)} %)\n`);
 
 let fallos = 0;
@@ -69,7 +90,8 @@ const informar = (titulo, lista, formato) => {
   for (const item of lista) console.log(`       ${formato(item)}`);
 };
 
-informar('enlaces rotos', rotos, (x) => x);
+informar('enlaces rotos en `related`', rotos, (x) => x);
+informar('enlaces rotos en el cuerpo', cuerpoRotos, (x) => x);
 informar(
   `piezas con menos de ${MIN_SALIENTES} o más de ${MAX_SALIENTES} enlaces salientes`,
   fueraDeRango,

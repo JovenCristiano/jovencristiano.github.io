@@ -4,6 +4,33 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Cambiado — 2026-09-08 (refuerzo de «joven cristiano»)
+
+Tercer paso del plan acordado. La keyword está confirmada en 5 000 búsquedas y puja de 21 836, pero
+la Home no la usaba en ninguna parte y la página pilar solo recibía enlaces desde el bloque
+`related`.
+
+- **H1 de la Home**: «Recursos para el joven cristiano y para quien dirige su grupo». Recoge la
+  keyword exacta y, de paso, nombra a los dos públicos que ahora tiene el sitio.
+- **Segundo CTA del hero** apunta a la página pilar en vez de duplicar el enlace a juegos.
+- **Sección «Qué significa ser un joven cristiano»** en la Home, con enlace contextual a la pilar y
+  a devocionales.
+- **Dos preguntas nuevas en el FAQ**, que entran también en el JSON-LD `FAQPage`.
+- **`SITE.description`** reescrita con la keyword y los devocionales.
+- **H2 de respuesta directa** al principio de la página pilar, en la forma exacta de la consulta
+  («¿Qué significa ser un joven cristiano?»), pensado para fragmento destacado.
+- **5 enlaces contextuales nuevos** hacia la pilar desde identidad, amistades, propósito, redes
+  sociales y «Sobre nosotros». Hasta ahora **ningún recurso enlazaba a otro desde el cuerpo del
+  texto**: todo el enlazado iba por el módulo `related`, que pesa menos y no lleva anchor
+  descriptivo.
+
+### Añadido — 2026-09-08 (auditoría de enlaces del cuerpo)
+
+`audit:enlaces` ahora extrae los `[texto](/ruta/)` del cuerpo y comprueba que la URL exista,
+reconstruyendo las rutas válidas desde `clusters.ts`. Antes un enlace mal escrito a mano solo se
+habría detectado navegando. Verificado rompiendo un enlace a propósito: la auditoría falla y lo
+señala.
+
 ### Añadido — 2026-09-06 (cluster de devocionales)
 
 Cubre el hueco detectado en la segunda extracción de keywords: «devocionales cristianos para

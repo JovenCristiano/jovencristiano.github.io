@@ -103,6 +103,9 @@ tu calendario y pregúntalo de verdad: si nadie hace seguimiento, la actividad s
 No hace falta saber en qué vas a trabajar para saber para qué estás aquí. Lo segundo ya está dicho,
 y se puede empezar mañana.
 
+Este tema funciona especialmente bien después del de
+[qué significa ser un joven cristiano](/temas/que-significa-ser-joven-cristiano/): el propósito se apoya en la identidad, no al revés.
+
 ## Oración
 
 Ora por los papeles de los miedos, sin leerlos otra vez. Después, que cada uno ore en silencio por

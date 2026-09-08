@@ -65,6 +65,14 @@ const faqs = [
     a: 'No siempre. Cada ficha lista los materiales necesarios y muchas dinámicas están pensadas para hacerse sin material alguno.',
   },
   {
+    q: '¿Qué significa ser un joven cristiano?',
+    a: 'Ser un joven cristiano no es cumplir una lista de prohibiciones, sino seguir a Jesús con dudas incluidas, y que eso se note sobre todo en cómo tratas a la gente. Tienes la enseñanza completa en el tema «Qué significa ser un joven cristiano».',
+  },
+  {
+    q: '¿Hay contenido para el joven, y no solo para el líder?',
+    a: 'Sí. Los devocionales son lecturas de cinco minutos escritas para leerse a solas, sin necesidad de grupo ni de materiales. El resto de secciones están pensadas para quien dirige la reunión.',
+  },
+  {
     q: '¿Sirven también para grupos de adultos?',
     a: 'Sí. Hay una sección específica de dinámicas cristianas para adultos, pensada para células, grupos pequeños y reuniones de iglesia.',
   },
@@ -155,6 +163,25 @@ const jsonLd = [
     </section>
   )}
 
+  <section class="section wrap">
+    <div class="pilar">
+      <span class="eyebrow">La pregunta de fondo</span>
+      <h2>Qué significa ser un joven cristiano</h2>
+      <p>
+        «Joven cristiano» es una etiqueta que muchos llevan sin haber decidido nunca qué significa.
+        Unos la heredaron de su familia, otros la asocian a una lista de cosas que no se hacen, y
+        unos cuantos la usarían si supieran que no implica dejar de ser ellos mismos.
+      </p>
+      <p>
+        Todo lo que publicamos aquí parte de ahí: recursos que no idealizan la fe adolescente ni la
+        reducen a normas. Si diriges un grupo, tienes la
+        <a href="/temas/que-significa-ser-joven-cristiano/">enseñanza completa sobre qué significa ser un joven cristiano</a>
+        con texto bíblico, preguntas y actividad. Si has llegado buscando algo para ti, empieza por
+        los <a href="/devocionales/">devocionales</a>.
+      </p>
+    </div>
+  </section>
+
   <section class="section section--alt">
     <div class="wrap faq-wrap">
       <div class="section__head">
@@ -192,6 +219,11 @@ const jsonLd = [
   }
   .steps h3 { font-size: 1.125rem; margin-bottom: var(--space-2); }
   .steps p { margin: 0; color: var(--color-ink-soft); font-size: var(--text-small); }
+
+  .pilar { max-width: 46rem; }
+  .pilar h2 { margin-bottom: var(--space-4); }
+  .pilar p { color: var(--color-ink-soft); margin-bottom: var(--space-4); }
+  .pilar p:last-child { margin-bottom: 0; }
 
   .faq-wrap { max-width: 46rem; }
   .faqs { display: grid; gap: var(--space-3); }

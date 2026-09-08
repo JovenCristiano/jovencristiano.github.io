@@ -107,6 +107,9 @@ se lo impidió es más útil que el reproche.
 Nadie va a dejar las redes, y este tema no va de eso. Va de dejar de usar la vida de otros como
 espejo, porque ese espejo está roto y además no es tuyo.
 
+Si en el debate sale el «yo no encajo en lo que se supone que hay que ser», tienes la conversación
+entera en [qué significa ser un joven cristiano](/temas/que-significa-ser-joven-cristiano/).
+
 ## Oración
 
 Que cada uno ore por la persona con la que más se compara —en silencio, sin decir el nombre—
