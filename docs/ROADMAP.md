@@ -50,7 +50,7 @@ sobre el sitio en producción para confirmar la puntuación.
 
 **Cumplido el 2026-09-04: 50 / 50 recursos.** Ampliado a **56** el 2026-09-05.
 
-15 dinámicas · 14 juegos bíblicos · 6 para adultos · 8 temas · 7 actividades · 6 guías para líderes.
+15 dinámicas · 14 juegos · 6 adultos · 8 temas · 7 actividades · 6 guías · 5 devocionales. **61 en total.**
 
 **Las cuatro keywords P0 de 5 000 búsquedas están cubiertas** con su cluster y contenido real.
 

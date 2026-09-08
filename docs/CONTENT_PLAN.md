@@ -20,6 +20,7 @@ Un recurso solo se publica si un líder juvenil puede **usarlo tal cual el domin
 | `estudios` | `/estudios-biblicos/` | Con 5 piezas listas |
 | `preguntas` | `/preguntas-biblicas/` | Con 5 piezas listas |
 | `lideres` | `/recursos-para-lideres/` | **Activa** — cluster P0 «cómo preparar una reunión juvenil» |
+| `devocionales` | `/devocionales/` | **Activa** — hueco detectado el 2026-09-06 (puja 11 265) |
 | `adultos` | `/dinamicas-para-adultos/` | **Activa** — cluster secundario (§4 SEO_MASTER_MAP) |
 
 ## 3. Frontmatter

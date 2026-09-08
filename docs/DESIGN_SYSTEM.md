@@ -30,6 +30,8 @@ tiene el suyo, lo que permite orientarse sin leer.
 --color-adultos:   #FF4D9D;  /* rosa */
 --color-temas:     #7B61FF;  /* violeta eléctrico */
 --color-actividades: #22D3EE; /* cian neón */
+--color-lideres:     #FF8A3D; /* naranja neón */
+--color-devocionales:#FFD84D; /* amarillo neón */
 
 --color-bg:          #0A0A0F;  /* fondo general */
 --color-surface:     #15151F;  /* tarjetas */

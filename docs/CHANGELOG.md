@@ -4,6 +4,28 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Añadido — 2026-09-06 (cluster de devocionales)
+
+Cubre el hueco detectado en la segunda extracción de keywords: «devocionales cristianos para
+jóvenes», 500 búsquedas y puja de 11 265, sin nada en el sitio.
+
+- **Cluster `/devocionales/`** en amarillo neón `#FFD84D`.
+- **5 devocionales** (total: 61). Formato distinto al resto: se leen a solas, no se dirigen. Texto,
+  idea, reflexión, algo concreto para hoy y oración, en unos cinco minutos:
+  - Cuando no sientes nada al orar
+  - El día que todo sale mal
+  - Cuando te comparas y sales perdiendo
+  - Lo que haces cuando nadie te ve
+  - Cuando Dios parece llegar tarde
+
+**Reutiliza `guiaSchema`.** Un devocional no tiene participantes, materiales ni dificultad, igual
+que una guía para líderes. La tarjeta muestra solo la duración.
+
+**Criterio de contenido.** Estos textos son la primera pieza del sitio dirigida al joven y no al
+líder (`audience: 'jovenes'`). Se han escrito evitando las dos trampas del género: prometer que la
+fe resuelve los problemas y convertir la lectura en culpa. «Cuando Dios parece llegar tarde» dice
+explícitamente que no todas las historias acaban como la de Lázaro.
+
 ### Añadido — 2026-09-06 (material imprimible)
 
 Responde a la carencia detectada en §1.7 del mapa SEO: el competidor que ocupa el puesto 4 ofrece

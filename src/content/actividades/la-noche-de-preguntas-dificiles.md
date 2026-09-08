@@ -11,7 +11,7 @@ difficulty: 'alta'
 materials: ['Papeles iguales', 'Bolígrafos', 'Una caja', 'Biblias']
 featured: true
 publishedAt: 2026-09-04
-related: ['noviazgo-y-relaciones', 'el-taller-de-lectura-biblica', 'ansiedad-y-fe']
+related: ['cuando-dios-parece-llegar-tarde', 'noviazgo-y-relaciones', 'el-taller-de-lectura-biblica']
 draft: false
 ---
 

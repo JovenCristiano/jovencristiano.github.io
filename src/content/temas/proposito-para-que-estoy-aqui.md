@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Papel', 'Bolígrafos', 'Pizarra o cartulina']
 featured: true
 publishedAt: 2026-09-03
-related: ['identidad-en-cristo', 'tarde-de-servicio', 'el-reto-de-los-21-dias', 'amistades-y-presion-de-grupo']
+related: ['cuando-dios-parece-llegar-tarde', 'identidad-en-cristo', 'tarde-de-servicio', 'amistades-y-presion-de-grupo']
 draft: false
 ---
 

@@ -6,7 +6,8 @@ export type ClusterId =
   | 'adultos'
   | 'temas'
   | 'actividades'
-  | 'lideres';
+  | 'lideres'
+  | 'devocionales';
 
 interface Cluster {
   id: ClusterId;
@@ -44,6 +45,17 @@ export const CLUSTERS: Record<ClusterId, Cluster> = {
     intro:
       'Juegos con reglas claras, variantes y una reflexión bíblica que cierra la actividad. Filtrables por edad, duración y materiales.',
     color: 'var(--color-juegos)',
+  },
+  devocionales: {
+    id: 'devocionales',
+    base: '/devocionales/',
+    label: 'Devocionales',
+    title: 'Devocionales cristianos para jóvenes',
+    description:
+      'Devocionales cristianos para jóvenes, cortos y para leer solo: un texto bíblico, una idea que se sostiene y algo concreto que hacer hoy. Cinco minutos cada uno.',
+    intro:
+      'Lecturas breves para leer a solas, no para dirigir un grupo. Cinco minutos: un texto, una idea y algo concreto para hoy.',
+    color: 'var(--color-devocionales)',
   },
   lideres: {
     id: 'lideres',

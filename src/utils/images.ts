@@ -5,6 +5,7 @@ import adultos from '../assets/cat-adultos.jpg';
 import temas from '../assets/cat-temas.jpg';
 import actividades from '../assets/cat-actividades.jpg';
 import lideres from '../assets/cat-lideres.jpg';
+import devocionales from '../assets/cat-devocionales.jpg';
 import type { ClusterId } from './clusters.ts';
 
 /** Imagen de cabecera de cada cluster. Import estático: lo exige `astro:assets`. */
@@ -15,6 +16,7 @@ export const CLUSTER_IMAGE: Record<ClusterId, ImageMetadata> = {
   temas,
   actividades,
   lideres,
+  devocionales,
 };
 
 /** Texto alternativo descriptivo, no decorativo (§5 DESIGN_SYSTEM). */
@@ -25,4 +27,5 @@ export const CLUSTER_ALT: Record<ClusterId, string> = {
   temas: 'Dos manos que se acercan hasta casi rozarse entre columnas de hormigón',
   actividades: 'Grupo de jóvenes riendo juntos alrededor de una mesa en una biblioteca',
   lideres: 'Persona escribiendo en un cuaderno mientras planifica sobre una mesa',
+  devocionales: 'Manos sosteniendo una Biblia abierta durante la lectura',
 };

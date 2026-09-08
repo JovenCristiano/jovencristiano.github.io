@@ -11,7 +11,7 @@ difficulty: 'media'
 materials: ['Biblias impresas', 'Cuadernos pequeños o folios', 'Bolígrafos', 'Marcadores']
 featured: true
 publishedAt: 2026-09-04
-related: ['la-noche-de-preguntas-dificiles', 'carrera-de-versiculos', 'perdonar-cuando-duele', 'el-reto-de-los-21-dias']
+related: ['lo-que-haces-cuando-nadie-te-ve', 'la-noche-de-preguntas-dificiles', 'carrera-de-versiculos', 'el-reto-de-los-21-dias']
 draft: false
 ---
 

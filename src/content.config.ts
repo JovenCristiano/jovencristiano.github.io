@@ -73,10 +73,25 @@ const lideres = defineCollection({
   schema: guiaSchema,
 });
 
+// Los devocionales se leen en solitario: sin participantes, sin materiales, sin dificultad.
+// Reutilizan `guiaSchema` por el mismo motivo que las guías para líderes.
+const devocionales = defineCollection({
+  loader: glob({ pattern, base: './src/content/devocionales' }),
+  schema: guiaSchema,
+});
+
 // Cluster P0: «actividades para jóvenes cristianos» (5 000 búsquedas/mes).
 const actividades = defineCollection({
   loader: glob({ pattern, base: './src/content/actividades' }),
   schema: resourceSchema,
 });
 
-export const collections = { dinamicas, juegos, adultos, temas, actividades, lideres };
+export const collections = {
+  dinamicas,
+  juegos,
+  adultos,
+  temas,
+  actividades,
+  lideres,
+  devocionales,
+};

@@ -181,7 +181,7 @@ Es la tercera puja más alta del conjunto y coincide con el nombre de la marca.
 
 | Keyword | Volumen | Puja máxima | Estado |
 |---|---|---|---|
-| devocionales cristianos para jóvenes | 500 | **11 265** | **sin cubrir** — no hay cluster de devocionales |
+| devocionales cristianos para jóvenes | 500 | **11 265** | ✅ **cubierto** — cluster `/devocionales/` desde el 2026-09-06 |
 | jóvenes con Cristo | 500 | 18 515 | sin cubrir |
 | temas para hablar con jóvenes cristianos | 50 | **37 703** | parcialmente cubierto por `/temas/` |
 
