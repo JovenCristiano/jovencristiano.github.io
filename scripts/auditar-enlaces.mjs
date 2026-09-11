@@ -60,6 +60,25 @@ for (const [slug, { cuerpo }] of piezas) {
   }
 }
 
+// Las páginas .astro (Home, índices de cluster, páginas sueltas) también llevan enlaces
+// internos escritos a mano. Se rompen igual de fácil y hasta ahora no los miraba nadie.
+const astro = [];
+const recorrer = (dir) => {
+  for (const nombre of readdirSync(dir)) {
+    const ruta = join(dir, nombre);
+    if (statSync(ruta).isDirectory()) recorrer(ruta);
+    else if (nombre.endsWith('.astro')) astro.push(ruta);
+  }
+};
+recorrer('src/pages');
+
+for (const ruta of astro) {
+  const texto = readFileSync(ruta, 'utf8');
+  for (const [, url] of texto.matchAll(/href="(\/[^"#?]*)"/g)) {
+    if (!urlsValidas.has(url)) cuerpoRotos.push(`${ruta} -> ${url}`);
+  }
+}
+
 const fueraDeRango = [...piezas].filter(
   ([, p]) => p.related.length < MIN_SALIENTES || p.related.length > MAX_SALIENTES,
 );

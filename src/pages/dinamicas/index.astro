@@ -1,4 +1,141 @@
 ---
 import ClusterIndex from '../../layouts/ClusterLayout.astro';
+
+const faqs = [
+  {
+    q: '¿Qué diferencia hay entre una dinámica y un juego?',
+    a: 'El juego busca que el grupo se lo pase bien; la dinámica busca que salga algo de ahí: confianza, una conversación o una idea. Casi todas las dinámicas de esta página se juegan igual de bien, pero terminan con una reflexión que es la parte importante.',
+  },
+  {
+    q: '¿Qué dinámica cristiana uso con un grupo que no se conoce?',
+    a: 'Empieza por las de integración: la cadena de nombres, el nudo humano o los globos con preguntas. Todas funcionan sin que nadie tenga que exponerse. Las dinámicas de confianza necesitan un grupo que ya se conozca un poco.',
+  },
+  {
+    q: '¿Cuántos participantes hacen falta?',
+    a: 'Cada ficha indica su rango. La mayoría funciona entre 8 y 30 personas. Para grupos de menos de 8, la silla de la verdad y el ovillo de las cualidades están pensadas para grupos pequeños.',
+  },
+  {
+    q: '¿Y si alguien no quiere participar?',
+    a: 'Déjalo mirar sin insistir y sin comentarlo delante de los demás. Obligar a un adolescente a participar en algo que le expone es la forma más rápida de que no vuelva. Casi siempre se acaban sumando en la segunda ronda.',
+  },
+  {
+    q: '¿Hace falta que un adulto dirija la dinámica?',
+    a: 'Alguien tiene que llevar el tiempo y cerrar la reflexión, pero no tiene por qué ser el líder de siempre. Repartir esa tarea entre los jóvenes del grupo suele ser una de las mejores decisiones del año.',
+  },
+];
 ---
-<ClusterIndex cluster="dinamicas" />
+<ClusterIndex cluster="dinamicas" faqs={faqs}>
+  <Fragment slot="guia">
+    <h2>Qué tipo de dinámica necesitas</h2>
+
+    <p>
+      Todas las dinámicas para jóvenes cristianos de esta página están clasificadas por lo que
+      buscan conseguir. Elegir el tipo correcto importa más que elegir la dinámica concreta: una
+      buena dinámica de confianza en un grupo que aún no se conoce sale mal, y no es culpa de la
+      dinámica.
+    </p>
+
+    <h3>De integración: cuando el grupo no se conoce</h3>
+
+    <p>
+      Para el primer día, para cuando entra gente nueva o después del verano. Nadie tiene que
+      contar nada personal y se rompe el hielo por la vía de hacer algo juntos.
+    </p>
+
+    <ul>
+      <li><a href="/dinamicas/la-cadena-de-nombres/">La cadena de nombres</a> — para aprenderse los nombres de verdad, sin material y en 10 minutos.</li>
+      <li><a href="/dinamicas/el-nudo-humano/">El nudo humano</a> — el clásico que nunca falla. De 8 a 16 personas.</li>
+      <li><a href="/dinamicas/los-globos-con-preguntas/">Los globos con preguntas</a> — aguanta hasta 40 participantes.</li>
+      <li><a href="/dinamicas/las-sillas-cooperativas/">Las sillas cooperativas</a> — la silla musical al revés: en vez de eliminar, hay que caber todos.</li>
+    </ul>
+
+    <h3>De confianza: cuando ya se conocen pero no se abren</h3>
+
+    <p>
+      Estas necesitan un grupo con cierto recorrido. Si las pones demasiado pronto, el silencio es
+      incómodo y el grupo se cierra más de lo que estaba.
+    </p>
+
+    <ul>
+      <li><a href="/dinamicas/el-lazarillo/">La dinámica del lazarillo</a> — guiar a alguien con los ojos vendados. La más usada y con razón.</li>
+      <li><a href="/dinamicas/la-caida-de-confianza/">La caída de confianza</a> — dejarse caer hacia atrás. Sin material, pero exige supervisión.</li>
+      <li><a href="/dinamicas/el-ovillo-de-las-cualidades/">El ovillo de las cualidades</a> — decirle en voz alta a cada uno algo bueno. Para grupos de hasta 20.</li>
+      <li><a href="/dinamicas/la-silla-de-la-verdad/">La silla de la verdad</a> — solo para grupos pequeños y con confianza ya construida.</li>
+    </ul>
+
+    <h3>De trabajo en equipo: cuando hay que cooperar</h3>
+
+    <ul>
+      <li><a href="/dinamicas/la-torre-mas-alta/">La torre más alta</a> — 20 folios, cinta y un cronómetro.</li>
+      <li><a href="/dinamicas/cruzar-el-rio/">Cruzar el río</a> — llegar al otro lado con menos apoyos que personas.</li>
+    </ul>
+
+    <h3>De reflexión: cuando quieres llegar a una idea</h3>
+
+    <p>
+      Aquí el juego es solo la excusa. Lo que importa es la conversación de después, así que
+      reserva tiempo real para ella y no la dejes para los últimos tres minutos.
+    </p>
+
+    <ul>
+      <li><a href="/dinamicas/el-regalo-envuelto/">El regalo envuelto</a> — apariencia frente a contenido, en 10 minutos y con dos cajas.</li>
+      <li><a href="/dinamicas/los-zapatos-del-otro/">Los zapatos del otro</a> — ponerse en la situación de alguien distinto.</li>
+      <li><a href="/dinamicas/el-naufragio/">El naufragio</a> — decidir en grupo a quién se salva. La que más debate genera de todas.</li>
+      <li><a href="/dinamicas/el-globo-flotante/">El globo flotante</a> — sostener entre todos lo que no debe caer.</li>
+    </ul>
+
+    <h3>De oración: cuando quieres cerrar</h3>
+
+    <ul>
+      <li><a href="/dinamicas/el-mural-de-oracion/">El mural de oración</a> — escribir peticiones en un mural común. Funciona especialmente bien con quien no se atreve a orar en voz alta.</li>
+    </ul>
+
+    <h2>Cómo dirigir una dinámica cristiana para jóvenes</h2>
+
+    <p>
+      La diferencia entre una dinámica que funciona y una que se cae rara vez está en la dinámica
+      elegida. Está en cuatro cosas que pasan alrededor.
+    </p>
+
+    <h3>Pruébala mentalmente con tu grupo, no con un grupo ideal</h3>
+
+    <p>
+      Antes de decidirte, imagina a las personas concretas que van a venir. Si hay alguien que
+      nunca habla, ¿qué le va a pasar en esta dinámica? Si hay dos que se llevan mal, ¿van a acabar
+      en el mismo equipo? Eso se resuelve antes, no sobre la marcha.
+    </p>
+
+    <h3>No expliques la reflexión al principio</h3>
+
+    <p>
+      Si empiezas diciendo «ahora vamos a hacer una dinámica sobre la confianza», acabas de contar
+      el final. El grupo jugará pendiente de dar la respuesta correcta en vez de vivir la
+      experiencia. Explica solo las reglas.
+    </p>
+
+    <h3>Deja el silencio incómodo</h3>
+
+    <p>
+      Cuando preguntes y nadie conteste, espera. Diez segundos de silencio parecen eternos dirigiendo,
+      pero es justo el rato que alguien necesita para decidirse a hablar. Si lo rellenas tú,
+      aprenderán que no hace falta que contesten.
+    </p>
+
+    <h3>No cierres con una moraleja tuya</h3>
+
+    <p>
+      La tentación es rematar con un resumen redondo. Funciona mucho mejor cerrar con lo que ha
+      dicho el grupo: recoger dos o tres frases que hayan salido y devolvérselas. Se acuerdan de lo
+      que dijeron ellos, no de lo que dijiste tú.
+    </p>
+
+    <h2>Dinámicas para otros contextos</h2>
+
+    <p>
+      Si tu grupo no son adolescentes, tienes
+      <a href="/dinamicas-para-adultos/">dinámicas cristianas para adultos</a> pensadas para células
+      y grupos pequeños. Y si buscas algo más movido y competitivo, los
+      <a href="/juegos-biblicos/">juegos bíblicos</a> encajan mejor para abrir la reunión.
+    </p>
+  </Fragment>
+</ClusterIndex>

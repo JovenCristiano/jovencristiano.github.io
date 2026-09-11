@@ -1,4 +1,172 @@
 ---
 import ClusterIndex from '../../layouts/ClusterLayout.astro';
+
+const faqs = [
+  {
+    q: '¿Qué juegos bíblicos funcionan si no tengo materiales?',
+    a: 'Tres de esta página no necesitan nada: alfabeto cristiano, verdadero o falso bíblico y teléfono descompuesto bíblico. Solo hacen falta las personas y un sitio donde sentarse.',
+  },
+  {
+    q: '¿Cuánto debe durar un juego bíblico en una reunión juvenil?',
+    a: 'Entre 15 y 30 minutos. Por debajo de 15 no da tiempo a que el grupo entre; por encima de 30 se pierde el interés aunque el juego sea bueno. Es mejor cortar con ganas que alargar hasta que se apague.',
+  },
+  {
+    q: '¿Sirven estos juegos si el grupo no conoce la Biblia?',
+    a: 'Sí, pero elige bien. Mímica bíblica, pictionary bíblico y el personaje misterioso funcionan con las historias más conocidas y no castigan al que sabe poco. Carrera de versículos y ordena los libros de la Biblia suponen cierta familiaridad previa.',
+  },
+  {
+    q: '¿Cómo evito que los mismos ganen siempre?',
+    a: 'Forma los equipos tú, mezclando a quien lleva años con quien acaba de llegar, y cambia la composición cada semana. Un grupo donde siempre gana el mismo equipo deja de jugar en dos sesiones.',
+  },
+  {
+    q: '¿Hay que sacar una reflexión de cada juego?',
+    a: 'No siempre. Jugar por jugar también construye grupo. Forzar una moraleja en cada partida hace que los jóvenes vean el juego como el cebo de un sermón, y dejan de fiarse.',
+  },
+];
 ---
-<ClusterIndex cluster="juegos" />
+<ClusterIndex cluster="juegos" faqs={faqs}>
+  <Fragment slot="guia">
+    <h2>Cómo elegir el juego bíblico adecuado</h2>
+
+    <p>
+      La mayoría de juegos que fallan no son malos juegos: están mal elegidos para ese grupo, ese
+      espacio o ese día. Antes de decidir, responde a cuatro preguntas.
+    </p>
+
+    <h3>1. ¿Cuántos sois?</h3>
+
+    <p>
+      Es el factor que más decide. Con <strong>menos de 10</strong> no funcionan los juegos por
+      equipos: se notan demasiado las ausencias y nadie puede esconderse. Van mejor
+      <a href="/juegos-biblicos/la-bomba-de-preguntas/">la bomba de preguntas</a> o
+      <a href="/juegos-biblicos/verdadero-o-falso-biblico/">verdadero o falso bíblico</a>, donde
+      cada uno responde por su cuenta.
+    </p>
+
+    <p>
+      Con <strong>más de 30</strong> pasa lo contrario: todo lo que exija turno individual se
+      convierte en veinte minutos de gente esperando.
+      <a href="/juegos-biblicos/bingo-biblico/">Bingo bíblico</a> y
+      <a href="/juegos-biblicos/telefono-descompuesto-biblico/">teléfono descompuesto bíblico</a>
+      aguantan bien grupos grandes porque todo el mundo está haciendo algo a la vez.
+    </p>
+
+    <h3>2. ¿Qué espacio tienes?</h3>
+
+    <p>
+      En un salón con sillas y poco sitio, olvida lo que implique moverse.
+      <a href="/juegos-biblicos/tabu-biblico/">Tabú bíblico</a>,
+      <a href="/juegos-biblicos/pictionary-biblico/">pictionary bíblico</a> y
+      <a href="/juegos-biblicos/preguntas-y-respuestas-biblicas/">preguntas y respuestas bíblicas</a>
+      se juegan sentados. Si tienes patio o una sala grande,
+      <a href="/juegos-biblicos/busqueda-del-tesoro-biblica/">la búsqueda del tesoro bíblica</a>
+      aprovecha el espacio como ninguno.
+    </p>
+
+    <h3>3. ¿Cuánto tiempo tienes de verdad?</h3>
+
+    <p>
+      No el que dura la reunión: el que queda después de que la gente llegue tarde, se salude y se
+      siente. Casi siempre son veinte minutos menos de los que pensabas. Los juegos de esta página
+      indican su duración real en la ficha, con el montaje incluido.
+    </p>
+
+    <h3>4. ¿Buscas romper el hielo o repasar la Biblia?</h3>
+
+    <p>
+      No es lo mismo y conviene decidirlo antes. Un rompehielos busca que la gente hable; un juego
+      de repaso busca que recuerde. Mezclar los dos objetivos en la misma partida suele dejar las
+      dos cosas a medias.
+    </p>
+
+    <h2>Juegos bíblicos sin materiales</h2>
+
+    <p>
+      Para el sábado por la noche en que te toca improvisar. Estos tres no necesitan comprar,
+      imprimir ni preparar nada:
+    </p>
+
+    <ul>
+      <li>
+        <a href="/juegos-biblicos/alfabeto-cristiano/">Alfabeto cristiano</a> — una letra, una
+        categoría bíblica y a ver quién se queda en blanco. De 6 a 40 personas.
+      </li>
+      <li>
+        <a href="/juegos-biblicos/verdadero-o-falso-biblico/">Verdadero o falso bíblico</a> — se
+        juega de pie, moviéndose a un lado u otro de la sala. Admite hasta 50.
+      </li>
+      <li>
+        <a href="/juegos-biblicos/telefono-descompuesto-biblico/">Teléfono descompuesto bíblico</a>
+        — un versículo que se deforma al pasar de oído en oído, y una conversación muy buena
+        después sobre cómo se transmiten las cosas.
+      </li>
+    </ul>
+
+    <h2>Juegos para repasar la Biblia de verdad</h2>
+
+    <p>
+      Si lo que quieres es que el grupo aprenda a manejar el texto y no solo pasar el rato, estos
+      cuatro trabajan contenido bíblico en serio:
+    </p>
+
+    <ul>
+      <li>
+        <a href="/juegos-biblicos/carrera-de-versiculos/">Carrera de versículos</a> — buscar citas
+        contrarreloj. Enseña a moverse por la Biblia impresa, que es una habilidad que se está
+        perdiendo.
+      </li>
+      <li>
+        <a href="/juegos-biblicos/ordena-los-libros-de-la-biblia/">Ordena los libros de la Biblia</a>
+        — los 66 libros en orden, por equipos y contra el reloj.
+      </li>
+      <li>
+        <a href="/juegos-biblicos/preguntas-y-respuestas-biblicas/">Preguntas y respuestas bíblicas</a>
+        — el formato concurso de toda la vida, con marcador.
+      </li>
+      <li>
+        <a href="/juegos-biblicos/el-personaje-misterioso/">El personaje misterioso</a> — adivinar
+        quién eres preguntando al resto. Repasa personajes sin que parezca un examen.
+      </li>
+    </ul>
+
+    <h2>Cinco errores al dirigir juegos con adolescentes</h2>
+
+    <p>
+      Están sacados de lo que más se repite cuando un juego se cae en una reunión real.
+    </p>
+
+    <ol>
+      <li>
+        <strong>Explicar las reglas de pie, con el grupo ya disperso.</strong> Si no tienes su
+        atención antes de empezar, no la vas a recuperar a mitad de partida. Explica sentados y
+        empieza solo cuando haya silencio.
+      </li>
+      <li>
+        <strong>Dejar que se hagan los equipos solos.</strong> Los grupos se forman por amistad y
+        el que acaba de llegar se queda fuera. Hazlos tú, aunque protesten los primeros dos
+        minutos.
+      </li>
+      <li>
+        <strong>Alargar el juego porque está funcionando.</strong> Es justo al revés: se corta
+        cuando todavía quieren más. Así la semana siguiente vienen.
+      </li>
+      <li>
+        <strong>Premiar solo al ganador.</strong> Si el premio es lo único que importa, el 80 % del
+        grupo juega sabiendo que ha perdido a los cinco minutos.
+      </li>
+      <li>
+        <strong>Encadenar la reflexión sin transición.</strong> Pasar de gritar a hablar de Dios en
+        dos segundos no funciona. Deja que bajen las pulsaciones, que se sienten, y entonces habla.
+      </li>
+    </ol>
+
+    <h2>Y si buscas algo que no sea un juego</h2>
+
+    <p>
+      Los juegos abren la reunión, pero rara vez la sostienen entera. Si necesitas algo con más
+      recorrido, tienes <a href="/dinamicas/">dinámicas para jóvenes cristianos</a> con reflexión
+      más pausada, <a href="/actividades/">actividades</a> que ocupan una tarde completa y
+      <a href="/temas/">temas</a> con la enseñanza ya preparada de principio a fin.
+    </p>
+  </Fragment>
+</ClusterIndex>

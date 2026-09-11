@@ -4,6 +4,35 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Anadido — 2026-09-10 (paginas de categoria con contenido real)
+
+Primeros datos de Search Console tras una semana: 9 impresiones en 3 meses, 0 clics, posicion
+media ~35. Las 8 consultas reales son todas de **juegos** o **dinamicas**; ninguna de temas,
+actividades, lideres, devocionales ni «joven cristiano».
+
+Medido antes de tocar nada: las paginas de categoria tenian **~30 palabras de prosa real**
+(el resto eran menu, titulos de tarjeta y pie). Son las unicas 5 paginas indexadas, asi que
+Google estaba juzgando el sitio por lo mas flojo que tiene, mientras los 61 recursos de
+800-1 500 palabras seguian sin indexar.
+
+- **`ClusterLayout` acepta ahora un slot `guia` y una prop `faqs`.** El FAQ visible y el JSON-LD
+  `FAQPage` salen de la misma fuente para que no puedan desincronizarse. Se anade tambien
+  `CollectionPage` en todas las categorias.
+- **`/juegos-biblicos/`**: 369 -> 1 510 palabras. Como elegir segun grupo, espacio y tiempo;
+  juegos sin materiales; juegos de repaso biblico; cinco errores al dirigir; 5 FAQ.
+- **`/dinamicas/`**: 394 -> 1 552 palabras. Los cinco tipos de dinamica (integracion, confianza,
+  trabajo en equipo, reflexion, oracion), como dirigirlas y 5 FAQ.
+- **35 enlaces contextuales nuevos** hacia las fichas, que ademas ayudan a que se indexen.
+
+**La guia va debajo de la rejilla**, no encima. Quien llega busca el listado; enterrarlo bajo mil
+palabras castiga la experiencia. Las 5 categorias sin guia no muestran hueco alguno.
+
+### Anadido — 2026-09-10 (la auditoria cubre las paginas .astro)
+
+`audit:enlaces` recorre ahora `src/pages/**/*.astro` y valida los `href` internos. Con 35 enlaces
+nuevos escritos a mano hacia slugs concretos, un error de tecleo no lo habria visto nadie.
+Verificado rompiendo un enlace a proposito antes de darlo por bueno.
+
 ### Cambiado — 2026-09-08 (refuerzo de «joven cristiano»)
 
 Tercer paso del plan acordado. La keyword está confirmada en 5 000 búsquedas y puja de 21 836, pero
