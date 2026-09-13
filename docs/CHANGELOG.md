@@ -4,6 +4,17 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Anadido — 2026-09-13 (pagina de contacto operativa)
+
+`jovencristianocontact@gmail.com`. Era el ultimo hueco visible del sitio: la pagina decia
+literalmente «pendiente de configurar», que es peor que no tener pagina de contacto.
+
+- Correo en una caja destacada, con `mailto:` y `word-break` para que no desborde en movil.
+- Seccion «Sobre que escribirnos» con cuatro motivos concretos, incluida la licencia de uso
+  (libre en tu grupo o iglesia; escribir solo para reproducirlo en otra web).
+- JSON-LD `ContactPage` + `Organization` con `contactPoint`. Un correo verificable es una de las
+  senales de confianza que Google mira en un sitio nuevo, y AdSense lo exige.
+
 ### Anadido — 2026-09-13 (guias en temas y actividades)
 
 Se completan las cuatro categorias del publico juvenil, que es el nicho del sitio. Mismo patron

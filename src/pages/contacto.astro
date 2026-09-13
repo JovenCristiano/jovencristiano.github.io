@@ -1,10 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import { SITE } from '../site.config.mjs';
+
+const EMAIL = 'jovencristianocontact@gmail.com';
+
+/** Un correo verificable es una de las señales de confianza que Google mira en un sitio nuevo. */
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contacto',
+    url: `${SITE.url}/contacto/`,
+    inLanguage: 'es',
+    mainEntity: {
+      '@type': 'Organization',
+      name: SITE.name,
+      url: SITE.url,
+      email: EMAIL,
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: EMAIL,
+        contactType: 'customer support',
+        availableLanguage: 'Spanish',
+      },
+    },
+  },
+];
 ---
 <BaseLayout
   title="Contacto"
   description="Escríbenos si quieres proponer un recurso, señalar un error o colaborar con Joven Cristiano. Respondemos a líderes juveniles, iglesias y educadores."
+  jsonLd={jsonLd}
 >
   <div class="wrap section prose">
     <Breadcrumb items={[{ label: 'Contacto', href: '/contacto/' }]} />
@@ -12,7 +39,47 @@ import Breadcrumb from '../components/Breadcrumb.astro';
     <p>
       ¿Quieres proponer una dinámica, señalar un error o colaborar? Escríbenos y te respondemos.
     </p>
-    <!-- PENDIENTE: dirección de correo definitiva del proyecto. -->
-    <p><strong>Correo:</strong> pendiente de configurar.</p>
+
+    <p class="mail">
+      <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+    </p>
+
+    <h2>Sobre qué escribirnos</h2>
+
+    <ul>
+      <li>
+        <strong>Proponer un recurso.</strong> Si tienes una dinámica que te funciona en tu grupo y
+        quieres que la publiquemos, cuéntanos cómo se juega y con cuánta gente la has probado.
+      </li>
+      <li>
+        <strong>Señalar un error.</strong> Una cita bíblica mal referenciada, unas instrucciones que
+        no se entienden o un enlace roto. Se agradece y se corrige.
+      </li>
+      <li>
+        <strong>Pedir un tema.</strong> Si buscaste algo y no lo encontraste, dínoslo: es la mejor
+        pista que tenemos sobre qué falta.
+      </li>
+      <li>
+        <strong>Usar el material.</strong> Puedes usarlo en tu grupo o tu iglesia sin pedir permiso.
+        Escríbenos solo si quieres reproducirlo en otra web o publicación.
+      </li>
+    </ul>
+
+    <p>
+      Respondemos a líderes juveniles, iglesias, profesores y padres. Contestamos en unos días; si
+      escribes para pedir un recurso concreto, ten en cuenta que prepararlo lleva su tiempo.
+    </p>
   </div>
 </BaseLayout>
+
+<style>
+  .mail {
+    background: var(--color-surface);
+    border: 1px solid color-mix(in srgb, var(--color-brand) 35%, var(--color-border));
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    margin-block: var(--space-5);
+  }
+  /* En móvil una dirección larga no debe desbordar la caja. */
+  .mail a { font-weight: 700; word-break: break-word; }
+</style>
