@@ -1,4 +1,143 @@
 ---
 import ClusterIndex from '../../layouts/ClusterLayout.astro';
+
+const faqs = [
+  {
+    q: '¿Qué diferencia hay entre una actividad y una dinámica?',
+    a: 'La dinámica ocupa 20 o 30 minutos dentro de una reunión. La actividad es la reunión entera, o una tarde, e incluye varias fases: preparación, desarrollo por partes y un cierre reflexivo. Se usan para trabajar un tema a fondo, no para romper el hielo.',
+  },
+  {
+    q: '¿Cuánta preparación necesitan?',
+    a: 'Más que una dinámica, y conviene no engañarse con eso. El escape room bíblico y la tarde de servicio piden preparación de días, no de horas. Cada ficha indica lo que hay que tener listo antes.',
+  },
+  {
+    q: '¿Sirven para un retiro o un campamento?',
+    a: 'Son justamente el formato que mejor encaja ahí. En un retiro tienes bloques largos que llenar, y una actividad de 90 minutos con fases sostiene un bloque entero mucho mejor que encadenar dinámicas sueltas.',
+  },
+  {
+    q: '¿Y si el grupo es muy pequeño?',
+    a: 'El mapa de mi vida funciona desde 4 personas y gana con grupos pequeños, porque hay tiempo para que cada uno cuente lo suyo. El escape room bíblico necesita al menos 6 para formar equipos.',
+  },
+  {
+    q: '¿Hace falta salir del local?',
+    a: 'Solo la tarde de servicio en el barrio. Todas las demás se hacen en el sitio de siempre, aunque algunas piden más espacio del habitual.',
+  },
+];
 ---
-<ClusterIndex cluster="actividades" />
+<ClusterIndex cluster="actividades" faqs={faqs}>
+  <Fragment slot="guia">
+    <h2>Cuándo usar una actividad y no otra cosa</h2>
+
+    <p>
+      Las actividades para jóvenes cristianos de esta página son de recorrido largo: ocupan una
+      reunión completa o una tarde entera. Merecen la pena en tres situaciones concretas.
+    </p>
+
+    <p>
+      <strong>Cuando el tema lo pide.</strong> Hay asuntos que no se resuelven en veinte minutos.
+      Las dudas de fe, el propósito o el servicio necesitan tiempo para que la gente baje la
+      guardia y hable de verdad.
+    </p>
+
+    <p>
+      <strong>Cuando tienes un bloque largo que llenar.</strong> Un retiro, un campamento o una
+      tarde de sábado. Encadenar cuatro dinámicas sueltas deja al grupo entretenido pero sin hilo;
+      una actividad con fases sostiene el bloque entero.
+    </p>
+
+    <p>
+      <strong>Cuando el grupo ya se conoce.</strong> Casi todas piden cierta confianza previa. Con
+      un grupo recién formado es mejor empezar por
+      <a href="/dinamicas/">dinámicas de integración</a> y dejar estas para más adelante.
+    </p>
+
+    <h2>Las actividades por lo que trabajan</h2>
+
+    <h3>Identidad y propósito</h3>
+
+    <ul>
+      <li>
+        <a href="/actividades/el-mapa-de-mi-vida/">El mapa de mi vida</a> — dibujar el propio
+        recorrido y contarlo. Para grupos pequeños, de 4 a 15, porque cada uno necesita su turno.
+      </li>
+      <li>
+        <a href="/actividades/capsula-del-tiempo/">La cápsula del tiempo</a> — escribir a quien
+        serás dentro de un año. La que más se agradece a largo plazo, sobre todo si de verdad la
+        abres cuando toca.
+      </li>
+    </ul>
+
+    <h3>Fe y dudas</h3>
+
+    <ul>
+      <li>
+        <a href="/actividades/la-noche-de-preguntas-dificiles/">La noche de preguntas difíciles</a>
+        — un espacio donde se puede preguntar cualquier cosa de forma anónima. Es la actividad que
+        más cambia la relación de un grupo con su líder, y la que más miedo da poner.
+      </li>
+      <li>
+        <a href="/actividades/el-taller-de-lectura-biblica/">Taller: leer la Biblia por tu cuenta</a>
+        — enseñar el método, no el contenido. Para que no dependan de que alguien se lo explique.
+      </li>
+    </ul>
+
+    <h3>Discipulado y servicio</h3>
+
+    <ul>
+      <li>
+        <a href="/actividades/el-reto-de-los-21-dias/">El reto de los 21 días</a> — no es una
+        reunión sino tres semanas de seguimiento. La única de esta página que se extiende en el
+        tiempo.
+      </li>
+      <li>
+        <a href="/actividades/tarde-de-servicio/">Tarde de servicio en el barrio</a> — de 3 a 4
+        horas fuera del local. Exige la preparación más seria de todas y es la que más recuerdan
+        los grupos años después.
+      </li>
+    </ul>
+
+    <h3>Juegos y retos</h3>
+
+    <ul>
+      <li>
+        <a href="/actividades/escape-room-biblico/">Escape room bíblico</a> — pruebas encadenadas
+        con contenido bíblico. Prepararlo lleva tiempo, pero se reutiliza cada año cambiando las
+        pistas.
+      </li>
+    </ul>
+
+    <h2>Cuatro cosas que decidir antes</h2>
+
+    <ol>
+      <li>
+        <strong>El tiempo real, no el previsto.</strong> Una actividad de 90 minutos con un grupo
+        que llega tarde y se dispersa se convierte en 60. Ten decidido de antemano qué fase
+        recortas si hace falta, para no improvisar el recorte sobre la marcha.
+      </li>
+      <li>
+        <strong>Quién lleva cada fase.</strong> En una actividad larga, dirigirlo todo tú es
+        agotador y además desaprovecha al grupo. Reparte fases entre dos o tres personas.
+      </li>
+      <li>
+        <strong>Qué pasa con quien no quiere participar.</strong> En una dinámica de veinte minutos
+        se disimula; en una tarde entera, no. Ten pensado un papel alternativo real, no un castigo
+        disfrazado.
+      </li>
+      <li>
+        <strong>Cómo cierras.</strong> Una actividad larga que termina porque se acabó el tiempo
+        deja la sensación de que no sirvió para nada. Reserva quince minutos finales y protégelos.
+      </li>
+    </ol>
+
+    <h2>Otros formatos para tu grupo</h2>
+
+    <p>
+      Si lo que necesitas es media hora y no una tarde, las
+      <a href="/dinamicas/">dinámicas</a> y los
+      <a href="/juegos-biblicos/">juegos bíblicos</a> encajan mejor. Si buscas la enseñanza ya
+      preparada, los <a href="/temas/">temas para jóvenes cristianos</a> la traen entera. Y para el
+      trabajo previo —planificar el año, organizar un retiro— tienes las guías de
+      <a href="/recursos-para-lideres/">recursos para líderes</a>.
+    </p>
+  </Fragment>
+</ClusterIndex>

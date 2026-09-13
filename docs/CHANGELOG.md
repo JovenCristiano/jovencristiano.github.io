@@ -4,6 +4,27 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Anadido — 2026-09-13 (guias en temas y actividades)
+
+Se completan las cuatro categorias del publico juvenil, que es el nicho del sitio. Mismo patron
+que juegos y dinamicas: slot `guia` + `faqs` con su `FAQPage`.
+
+- **`/temas/`**: 294 -> 1 442 palabras. Que trae cada tema, por donde empezar segun el momento del
+  grupo (nuevo, con ansiedad, con conflictos, preguntando por noviazgo) y como dirigir un tema con
+  adolescentes. 5 FAQ.
+- **`/actividades/`**: 283 -> 1 261 palabras. Cuando usar una actividad y no una dinamica, las
+  siete agrupadas por lo que trabajan y cuatro decisiones previas. 5 FAQ.
+- Ambas apuntan a las keywords «temas para jovenes cristianos» y «actividades para jovenes
+  cristianos» (5 000 busquedas cada una).
+
+**Nota de metodo.** Los datos de 24 h mostraron tres consultas de adultos y propuse reforzar ese
+cluster. Correccion del propietario: el nicho es **joven cristiano**, y adultos se queda como
+secundario. Registrado aqui para que la decision no se vuelva a discutir en cada lectura de datos.
+
+**Falsa alarma verificada.** La comprobacion de desbordamiento horizontal dio positivo en `/temas/`,
+pero el viewport del navegador reportaba 0 px de ancho por estar el panel oculto. Medido de nuevo a
+1280 y a 375 px: sin desbordamiento.
+
 ### Anadido — 2026-09-10 (paginas de categoria con contenido real)
 
 Primeros datos de Search Console tras una semana: 9 impresiones en 3 meses, 0 clics, posicion

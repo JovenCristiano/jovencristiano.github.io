@@ -1,4 +1,146 @@
 ---
 import ClusterIndex from '../../layouts/ClusterLayout.astro';
+
+const faqs = [
+  {
+    q: '¿Qué temas interesan de verdad a un joven cristiano?',
+    a: 'Los que tienen que ver con lo que está viviendo esta semana: identidad, ansiedad, amistades, noviazgo, redes sociales y dudas de fe. Un tema que no conecta con algo real de su vida se escucha con educación y se olvida al salir.',
+  },
+  {
+    q: '¿Cuánto dura preparar uno de estos temas?',
+    a: 'El tema viene entero: idea principal, desarrollo, preguntas, actividad y oración. Leértelo con calma y decidir qué partes encajan con tu grupo son unos 20 minutos. No hace falta escribir nada.',
+  },
+  {
+    q: '¿Puedo dirigir un tema si no tengo formación bíblica?',
+    a: 'Sí. Estos temas están escritos para que los dirija alguien que no es pastor ni teólogo: las citas van con su contexto y las preguntas están formuladas para abrir conversación, no para examinar a nadie.',
+  },
+  {
+    q: '¿Qué hago si un joven pregunta algo que no sé responder?',
+    a: 'Decir «no lo sé, vamos a buscarlo» es la mejor respuesta que puedes dar, y la que más credibilidad te da con un grupo adolescente. Inventarse una respuesta se nota, y una vez que se nota ya no te creen en lo demás.',
+  },
+  {
+    q: '¿En qué orden conviene darlos?',
+    a: 'Si el grupo es nuevo, empieza por identidad y por qué significa ser un joven cristiano: son la base sobre la que se apoyan los demás. Noviazgo y perdón funcionan mejor cuando ya hay confianza en el grupo.',
+  },
+];
 ---
-<ClusterIndex cluster="temas" />
+<ClusterIndex cluster="temas" faqs={faqs}>
+  <Fragment slot="guia">
+    <h2>Qué encontrarás en cada tema</h2>
+
+    <p>
+      Todos los temas para jóvenes cristianos de esta página siguen la misma estructura, porque es
+      la que permite dirigir una reunión sin haber preparado nada más:
+    </p>
+
+    <ul>
+      <li><strong>Objetivo</strong> — qué debería llevarse el grupo, en una frase.</li>
+      <li><strong>Texto bíblico</strong> — el pasaje principal y dos o tres complementarios.</li>
+      <li><strong>Introducción</strong> — cómo abrir para que la gente entre en el tema.</li>
+      <li><strong>Desarrollo</strong> — la enseñanza dividida en bloques, con lo que hay que decir.</li>
+      <li><strong>Preguntas para el grupo</strong> — cinco, ordenadas de la más fácil a la más personal.</li>
+      <li><strong>Actividad</strong> — algo que hacer, no solo escuchar.</li>
+      <li><strong>Aplicación y oración</strong> — un paso concreto para la semana y el cierre.</li>
+    </ul>
+
+    <p>Entre 45 y 60 minutos cada uno, que es lo que suele durar una reunión juvenil real.</p>
+
+    <h2>Por dónde empezar según tu grupo</h2>
+
+    <h3>Si el grupo acaba de formarse</h3>
+
+    <p>
+      Empieza por la base. <a href="/temas/que-significa-ser-joven-cristiano/">Qué significa ser un
+      joven cristiano</a> desmonta el estereotipo antes de construir nada encima, y
+      <a href="/temas/identidad-en-cristo/">identidad en Cristo</a> trabaja la pregunta que está
+      debajo de casi todas las demás a esa edad.
+    </p>
+
+    <h3>Si el grupo lo está pasando mal</h3>
+
+    <p>
+      <a href="/temas/ansiedad-y-fe/">Ansiedad y fe</a> es el que más se usa y por una razón: la
+      ansiedad es hoy el problema más extendido entre adolescentes, y en la iglesia se trata poco y
+      mal. Este tema evita las dos salidas fáciles, la de espiritualizarlo todo y la de reducirlo a
+      un asunto médico.
+    </p>
+
+    <h3>Si lo que hay son conflictos</h3>
+
+    <p>
+      <a href="/temas/perdonar-cuando-duele/">Perdonar cuando duele</a> y
+      <a href="/temas/amistades-y-presion-de-grupo/">amistades y presión de grupo</a> tocan lo que
+      de verdad ocupa la cabeza de un adolescente entre semana. El segundo funciona especialmente
+      bien cuando notas que el grupo se comporta distinto dentro y fuera de la iglesia.
+    </p>
+
+    <h3>Si preguntan por el noviazgo</h3>
+
+    <p>
+      <a href="/temas/noviazgo-y-relaciones/">Noviazgo cristiano</a> es el tema que más se pide y el
+      que peor se suele dar. Está escrito para hablar en serio sin convertirlo en una lista de
+      prohibiciones, que es lo que hace que los jóvenes dejen de preguntar y busquen la respuesta
+      en otra parte.
+    </p>
+
+    <h3>Si el problema es el móvil</h3>
+
+    <p>
+      <a href="/temas/redes-sociales-y-comparacion/">Redes sociales y comparación</a> no va de
+      demonizar las redes, entre otras cosas porque nadie las va a dejar. Va de por qué compararse
+      ahí siempre se pierde.
+    </p>
+
+    <h3>Si preguntan para qué están aquí</h3>
+
+    <p>
+      <a href="/temas/proposito-para-que-estoy-aqui/">Propósito: para qué estoy aquí</a> separa la
+      pregunta vocacional —en qué voy a trabajar— de la pregunta de sentido, que es la que de
+      verdad están haciendo.
+    </p>
+
+    <h2>Cómo dirigir un tema con adolescentes</h2>
+
+    <h3>Habla menos de lo que crees que tienes que hablar</h3>
+
+    <p>
+      El error más común es tratar el tema como una predicación con preguntas al final. Si el grupo
+      habla menos de la mitad del tiempo, se ha convertido en una clase, y en una clase los
+      adolescentes desconectan a los doce minutos.
+    </p>
+
+    <h3>No cierres una pregunta con la respuesta correcta</h3>
+
+    <p>
+      Cuando alguien dice algo discutible, la tentación es corregirlo enseguida. Pregunta antes qué
+      opinan los demás. El grupo se autocorrige más de lo que esperas, y lo que se corrige entre
+      ellos se sostiene; lo que corriges tú se olvida.
+    </p>
+
+    <h3>Cuenta algo tuyo, incluida una duda actual</h3>
+
+    <p>
+      Un líder sin fisuras no le da permiso a nadie para tenerlas. No hace falta confesar nada
+      grave: basta con reconocer una pregunta que todavía no tienes resuelta.
+    </p>
+
+    <h3>Deja la aplicación en una sola cosa</h3>
+
+    <p>
+      Salir con cinco propósitos equivale a salir con ninguno. Uno concreto, para esta semana, y la
+      semana siguiente se pregunta qué tal fue. Esa pregunta de seguimiento es la que convierte un
+      tema en un cambio.
+    </p>
+
+    <h2>Si buscas otro formato</h2>
+
+    <p>
+      Un tema ocupa la reunión entera y se apoya en la palabra. Si prefieres empezar por algo que
+      se hace y no que se escucha, las
+      <a href="/dinamicas/">dinámicas para jóvenes cristianos</a> llegan a ideas parecidas por la
+      vía de la experiencia, y las <a href="/actividades/">actividades</a> te dan formatos de una
+      tarde entera. Para que cada joven siga por su cuenta entre semana, tienes los
+      <a href="/devocionales/">devocionales</a>.
+    </p>
+  </Fragment>
+</ClusterIndex>
