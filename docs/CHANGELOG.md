@@ -4,6 +4,44 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Anadido — 2026-09-13 (coleccion de articulos: 10 piezas)
+
+Articulos de cola larga que captan la busqueda y **reparten hacia las fichas**. Coleccion propia
+(`src/content/articulos`) con esquema sin campos practicos y un campo `keyword` obligatorio.
+
+| # | Articulo | Keyword | Cluster |
+|---|---|---|---|
+| 1 | Dinamicas biblicas para adolescentes | dinamicas biblicas para adolescentes | dinamicas |
+| 2 | Dinamicas con reflexion | dinamicas para jovenes cristianos con reflexion | dinamicas |
+| 3 | Dinamicas cortas y divertidas | dinamicas cristianas cortas divertidas | dinamicas |
+| 4 | Juegos biblicos para adolescentes | juegos biblicos para adolescentes | juegos |
+| 5 | Actividades biblicas para adolescentes | actividades biblicas para adolescentes | actividades |
+| 6 | Clases cristianas para adolescentes | clases cristianas para adolescentes | temas |
+| 7 | Dinamicas para celulas con ensenanza | dinamicas para celulas con ensenanza | dinamicas |
+| 8 | Dinamicas para jovenes cristianos en PDF | dinamicas para jovenes cristianos pdf | dinamicas |
+| 9 | Juegos y dinamicas para campamentos | juegos y dinamicas para campamentos cristianos | actividades |
+| 10 | Como motivar a un grupo de jovenes | como motivar a un grupo de jovenes en la iglesia | lideres |
+
+**Decision de alcance.** Se pidio un articulo por cada keyword de la extraccion del Planner.
+Cuatro de las siete visibles —«dinamicas para jovenes cristianas», «juegos para jovenes
+cristianos», «joven cristiano» y «cristianos jovenes»— **ya tienen pagina propia** en el sitio
+(los indices de cluster, la Home y la pagina pilar). Escribir un articulo para ellas habria puesto
+dos paginas propias a competir por la misma consulta. Se sustituyeron por modificadores libres:
+adolescentes, con reflexion, cortas, celulas, clases, PDF, campamentos y motivacion.
+
+Tambien se descarto «juegos para jovenes adventistas» (500 busquedas): es terminologia de una
+denominacion concreta y choca con §5 bis, Neutralidad doctrinal.
+
+### Anadido — 2026-09-13 (`npm run audit:articulos`)
+
+Auditoria anticanibalizacion: keyword unica entre articulos, ningun articulo persiguiendo la
+keyword que ya defiende un indice de cluster, y minimo 3 enlaces a fichas por articulo (su trabajo
+es repartir, no acumular). Verificada provocando los dos fallos antes de darla por buena.
+
+`audit:enlaces` cuenta ahora como entrantes los enlaces que salen de paginas `.astro`, y exige a
+los articulos 1 enlace contextual entrante en vez de 2: son paginas de entrada desde buscador, no
+de destino interno.
+
 ### Anadido — 2026-09-13 (pagina de contacto operativa)
 
 `jovencristianocontact@gmail.com`. Era el ultimo hueco visible del sitio: la pagina decia

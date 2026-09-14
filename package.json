@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "audit:enlaces": "node scripts/auditar-enlaces.mjs",
+    "audit:articulos": "node scripts/auditar-articulos.mjs",
     "audit:doctrina": "node scripts/auditar-doctrina.mjs"
   },
   "dependencies": {
