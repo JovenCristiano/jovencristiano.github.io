@@ -9,29 +9,44 @@ import { CLUSTER_IMAGE, CLUSTER_ALT } from '../utils/images.ts';
 
 // Orden de la Home según §7 del MASTER_PLAN. El buscador y los productos
 // entran cuando el contenido y la oferta los justifiquen (§16, §17).
-const dinamicas = await getPublished('dinamicas');
-const juegos = await getPublished('juegos');
-const temas = await getPublished('temas');
-const actividades = await getPublished('actividades');
-const devocionales = await getPublished('devocionales');
+/**
+ * Los contadores se derivan de PRIMARY_CLUSTERS, no de una lista escrita a mano.
+ *
+ * Antes eran un objeto literal que había que acordarse de ampliar al añadir un cluster.
+ * Se olvidó con `lideres` y la tarjeta mostró «0 recursos» en producción sin que fallara
+ * ningún test: `counts[id] ?? 0` convertía el olvido en un cero plausible.
+ */
+const porCluster = await Promise.all(
+  PRIMARY_CLUSTERS.map(async (c) => ({
+    cluster: c.id,
+    entries: await getPublished(c.id),
+  })),
+);
 
-const counts: Record<string, number> = {
-  dinamicas: dinamicas.length,
-  juegos: juegos.length,
-  temas: temas.length,
-  actividades: actividades.length,
-  devocionales: devocionales.length,
-};
+const counts: Record<string, number> = Object.fromEntries(
+  porCluster.map(({ cluster, entries }) => [cluster, entries.length]),
+);
 
-const destacados = [
-  ...dinamicas.map((e) => ({ cluster: 'dinamicas' as const, entry: e })),
-  ...juegos.map((e) => ({ cluster: 'juegos' as const, entry: e })),
-  ...temas.map((e) => ({ cluster: 'temas' as const, entry: e })),
-  ...actividades.map((e) => ({ cluster: 'actividades' as const, entry: e })),
-  ...devocionales.map((e) => ({ cluster: 'devocionales' as const, entry: e })),
-]
-  .sort((a, b) => Number(b.entry.data.featured) - Number(a.entry.data.featured))
-  .slice(0, 6);
+
+/**
+ * Destacados en rueda: se coge uno de cada categoría por vuelta, no los seis primeros
+ * de la lista concatenada. Ordenar una lista concatenada por `featured` daba seis
+ * dinámicas, porque es el primer cluster y el orden es estable: la sección prometía
+ * variedad y enseñaba una sola categoría.
+ */
+const colas = porCluster.map(({ cluster, entries }) => ({
+  cluster,
+  restantes: [...entries].sort((a, b) => Number(b.data.featured) - Number(a.data.featured)),
+}));
+
+const destacados: { cluster: ClusterId; entry: (typeof colas)[number]['restantes'][number] }[] = [];
+while (destacados.length < 6 && colas.some((c) => c.restantes.length > 0)) {
+  for (const cola of colas) {
+    if (destacados.length >= 6) break;
+    const entry = cola.restantes.shift();
+    if (entry) destacados.push({ cluster: cola.cluster, entry });
+  }
+}
 
 const pasos = [
   {
@@ -162,6 +177,21 @@ const jsonLd = [
       </ul>
     </section>
   )}
+
+  <section class="section wrap">
+    <div class="pilar">
+      <span class="eyebrow">Guías</span>
+      <h2>Artículos para resolver un caso concreto</h2>
+      <p>
+        Diez guías que reúnen los recursos por lo que necesitas resolver: un grupo de adolescentes,
+        una célula que se reúne en un salón, quince minutos sueltos, un campamento de varios días o
+        un grupo que se ha apagado.
+      </p>
+      <p>
+        <a href="/articulos/">Ver los artículos</a>
+      </p>
+    </div>
+  </section>
 
   <section class="section wrap">
     <div class="pilar">

@@ -20,6 +20,7 @@ const year = new Date().getFullYear();
       <h2>Recursos</h2>
       <ul>
         {Object.values(CLUSTERS).map((c) => <li><a href={c.base}>{c.label}</a></li>)}
+        <li><a href="/articulos/">Artículos</a></li>
       </ul>
     </nav>
 

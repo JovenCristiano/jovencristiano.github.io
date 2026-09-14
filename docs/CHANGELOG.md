@@ -4,6 +4,31 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Corregido — 2026-09-13 (la Home decia «0 recursos» en Para lideres)
+
+Reportado por el propietario viendolo en produccion.
+
+`counts` era un objeto literal escrito a mano que habia que acordarse de ampliar al anadir un
+cluster. Se olvido con `lideres`, y `counts[id] ?? 0` convirtio el olvido en un cero plausible:
+la tarjeta decia «0 recursos» teniendo 6, y no fallaba ningun test ni el build.
+
+**Arreglada la causa, no el sintoma**: los contadores y los destacados se derivan ahora de
+`PRIMARY_CLUSTERS`. Anadir un cluster ya no exige tocar la Home, asi que el fallo no puede
+repetirse.
+
+### Corregido — 2026-09-13 (no habia camino hacia los articulos)
+
+Los 10 articulos estaban publicados y en el menu, pero **ni la Home ni el pie enlazaban a
+`/articulos/`**. Para quien entra por la portada, no existian. Anadido un bloque en la Home y una
+entrada en el pie.
+
+### Cambiado — 2026-09-13 (destacados de la Home en rueda)
+
+Los 6 destacados eran los 6 primeros de una lista concatenada por cluster y ordenada por
+`featured`. Como el orden es estable y `dinamicas` va primero, salian **seis dinamicas**: la
+seccion prometia variedad y ensenaba una sola categoria. Ahora se coge uno de cada categoria por
+vuelta.
+
 ### Anadido — 2026-09-13 (coleccion de articulos: 10 piezas)
 
 Articulos de cola larga que captan la busqueda y **reparten hacia las fichas**. Coleccion propia
