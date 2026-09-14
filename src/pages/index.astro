@@ -4,8 +4,9 @@ import Hero from '../components/Hero.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import ResourceCard from '../components/ResourceCard.astro';
 import { SITE } from '../site.config.mjs';
+import { getCollection } from 'astro:content';
 import { CLUSTERS, PRIMARY_CLUSTERS, getPublished, urlFor, type ClusterId } from '../utils/clusters.ts';
-import { CLUSTER_IMAGE, CLUSTER_ALT } from '../utils/images.ts';
+import { CLUSTER_IMAGE, CLUSTER_ALT, ARTICULOS_IMAGE, ARTICULOS_ALT } from '../utils/images.ts';
 
 // Orden de la Home según §7 del MASTER_PLAN. El buscador y los productos
 // entran cuando el contenido y la oferta los justifiquen (§16, §17).
@@ -22,6 +23,8 @@ const porCluster = await Promise.all(
     entries: await getPublished(c.id),
   })),
 );
+
+const articulos = (await getCollection('articulos')).filter((e) => !e.data.draft);
 
 const counts: Record<string, number> = Object.fromEntries(
   porCluster.map(({ cluster, entries }) => [cluster, entries.length]),
@@ -134,6 +137,21 @@ const jsonLd = [
           color={cluster.color}
         />
       ))}
+      {/*
+        Los artículos no son un cluster, pero sí una puerta de entrada, así que entran en la
+        misma rejilla. Color de marca: es el único tono libre de la paleta y los distingue de
+        las siete categorías sin inventar un octavo neón.
+      */}
+      <CategoryCard
+        href="/articulos/"
+        label="Artículos"
+        text="Guías que reúnen los recursos por situación: adolescentes, células, campamentos o quince minutos sueltos."
+        image={ARTICULOS_IMAGE}
+        alt={ARTICULOS_ALT}
+        count={articulos.length}
+        noun={['guía', 'guías']}
+        color="var(--color-brand)"
+      />
     </ul>
   </section>
 

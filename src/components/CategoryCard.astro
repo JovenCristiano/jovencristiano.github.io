@@ -9,9 +9,11 @@ interface Props {
   image: ImageMetadata;
   alt: string;
   count: number;
+  /** Sustantivo contado. «recurso» por defecto; los artículos no son recursos. */
+  noun?: [string, string];
   color: string;
 }
-const { href, label, text, image, alt, count, color } = Astro.props;
+const { href, label, text, image, alt, count, color, noun = ['recurso', 'recursos'] } = Astro.props;
 ---
 <li class="cat" style={`--color-cat: ${color}`}>
   <div class="cat__media">
@@ -20,7 +22,7 @@ const { href, label, text, image, alt, count, color } = Astro.props;
   <div class="cat__body">
     <h3><a href={href}>{label}</a></h3>
     <p>{text}</p>
-    <span class="cat__count">{count} {count === 1 ? 'recurso' : 'recursos'}</span>
+    <span class="cat__count">{count} {count === 1 ? noun[0] : noun[1]}</span>
   </div>
 </li>
 
