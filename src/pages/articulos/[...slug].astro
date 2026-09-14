@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import ResourceLayout from '../../layouts/ResourceLayout.astro';
+import { CLUSTERS, resolveRelated } from '../../utils/clusters.ts';
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('articulos')).filter((e) => !e.data.draft);
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+// El artículo toma el color del cluster al que reparte autoridad, para que se lea
+// como parte de esa sección y no como una tercera cosa suelta.
+const meta = CLUSTERS[entry.data.cluster];
+const related = await resolveRelated(entry.data.related);
+---
+<ResourceLayout
+  data={entry.data}
+  crumbs={[
+    { label: 'Artículos', href: '/articulos/' },
+    { label: entry.data.title, href: `/articulos/${entry.id}/` },
+  ]}
+  related={related}
+  color={meta.color}
+>
+  <Content />
+</ResourceLayout>

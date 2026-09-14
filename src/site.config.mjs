@@ -33,6 +33,7 @@ export const NAV = [
   { href: '/recursos-para-lideres/', label: 'Para líderes' },
   { href: '/temas/', label: 'Temas' },
   { href: '/devocionales/', label: 'Devocionales' },
+  { href: '/articulos/', label: 'Artículos' },
   { href: '/dinamicas-para-adultos/', label: 'Para adultos' },
   { href: '/sobre-nosotros/', label: 'Sobre nosotros' },
 ];

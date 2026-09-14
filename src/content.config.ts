@@ -86,6 +86,34 @@ const actividades = defineCollection({
   schema: resourceSchema,
 });
 
+/**
+ * Artículos: contenido editorial que ataca una keyword de cola larga concreta y reparte
+ * autoridad hacia las fichas. No son recursos, así que no llevan los campos prácticos.
+ *
+ * `keyword` es obligatorio y **único** por artículo (lo verifica `npm run audit:articulos`).
+ * Es la defensa contra la canibalización: dos artículos que persiguen la misma consulta
+ * compiten entre sí y no posiciona ninguno.
+ */
+const articuloSchema = z.object({
+  title: z.string().max(60),
+  description: z.string().min(120).max(158),
+  keyword: z.string(),
+  category: z.string(),
+  tags: z.array(z.string()).min(3).max(6),
+  audience: z.enum(['lideres', 'jovenes', 'padres', 'maestros']),
+  cluster: z.enum(['dinamicas', 'juegos', 'temas', 'actividades', 'lideres', 'devocionales']),
+  featured: z.boolean().default(false),
+  publishedAt: z.date(),
+  updatedAt: z.date().optional(),
+  related: z.array(z.string()).max(6).default([]),
+  draft: z.boolean().default(false),
+});
+
+const articulos = defineCollection({
+  loader: glob({ pattern, base: './src/content/articulos' }),
+  schema: articuloSchema,
+});
+
 export const collections = {
   dinamicas,
   juegos,
@@ -94,4 +122,5 @@ export const collections = {
   actividades,
   lideres,
   devocionales,
+  articulos,
 };

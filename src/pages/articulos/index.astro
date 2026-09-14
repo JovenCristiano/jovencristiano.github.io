@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ResourceCard from '../../components/ResourceCard.astro';
+import { CLUSTERS } from '../../utils/clusters.ts';
+import { SITE } from '../../site.config.mjs';
+
+const entries = (await getCollection('articulos'))
+  .filter((e) => !e.data.draft)
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Artículos',
+    url: `${SITE.url}/articulos/`,
+    inLanguage: 'es',
+  },
+];
+---
+<BaseLayout
+  title="Artículos para líderes de jóvenes cristianos"
+  description="Guías y selecciones de recursos cristianos para jóvenes: dinámicas con reflexión, juegos bíblicos para adolescentes, actividades y enseñanzas listas para usar."
+  jsonLd={jsonLd}
+>
+  <div class="wrap section">
+    <Breadcrumb items={[{ label: 'Artículos', href: '/articulos/' }]} />
+    <h1>Artículos</h1>
+    <p class="intro">
+      Selecciones y guías que reúnen los recursos de la web por lo que necesitas resolver: un grupo
+      de adolescentes, una célula, quince minutos sueltos o una reunión entera.
+    </p>
+
+    {entries.length === 0 ? (
+      <p class="empty">Estamos preparando los primeros artículos.</p>
+    ) : (
+      <ul class="grid-cards">
+        {entries.map((entry) => (
+          <ResourceCard
+            href={`/articulos/${entry.id}/`}
+            title={entry.data.title}
+            category={entry.data.category}
+            color={CLUSTERS[entry.data.cluster].color}
+          />
+        ))}
+      </ul>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .intro { color: var(--color-ink-soft); max-width: var(--measure); margin-bottom: var(--space-7); }
+  .empty { color: var(--color-ink-soft); }
+</style>

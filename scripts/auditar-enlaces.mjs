@@ -50,7 +50,16 @@ const BASES = Object.fromEntries(
     /id: '([^']+)',[^]*?base: '([^']+)'/g,
   )].map((m) => [m[1], m[2]]),
 );
-const urlsValidas = new Set(['/', '/sobre-nosotros/', '/contacto/', ...Object.values(BASES)]);
+// `articulos` no está en clusters.ts a propósito: no es una categoría de recursos y no debe
+// aparecer en la Home ni en los listados de cluster. Su ruta se declara aquí.
+BASES.articulos = '/articulos/';
+
+const urlsValidas = new Set([
+  '/',
+  '/sobre-nosotros/',
+  '/contacto/',
+  ...Object.values(BASES),
+]);
 for (const [slug, { cluster }] of piezas) urlsValidas.add(`${BASES[cluster]}${slug}/`);
 
 const cuerpoRotos = [];
@@ -72,10 +81,18 @@ const recorrer = (dir) => {
 };
 recorrer('src/pages');
 
+// Índice inverso URL -> slug, para contar como entrantes los enlaces que salen de .astro.
+// Un artículo enlazado desde la guía de un cluster NO es huérfano, aunque ninguna ficha
+// lo mencione en su `related`.
+const slugPorUrl = new Map();
+for (const [slug, { cluster }] of piezas) slugPorUrl.set(`${BASES[cluster]}${slug}/`, slug);
+
 for (const ruta of astro) {
   const texto = readFileSync(ruta, 'utf8');
   for (const [, url] of texto.matchAll(/href="(\/[^"#?]*)"/g)) {
     if (!urlsValidas.has(url)) cuerpoRotos.push(`${ruta} -> ${url}`);
+    const destino = slugPorUrl.get(url);
+    if (destino) entrantes.set(destino, entrantes.get(destino) + 1);
   }
 }
 
@@ -83,7 +100,15 @@ const fueraDeRango = [...piezas].filter(
   ([, p]) => p.related.length < MIN_SALIENTES || p.related.length > MAX_SALIENTES,
 );
 const huerfanas = [...entrantes].filter(([, n]) => n === 0);
-const debiles = [...entrantes].filter(([, n]) => n > 0 && n < MIN_ENTRANTES);
+
+/**
+ * Los artículos son páginas de entrada: su trabajo es recibir la visita desde Google y
+ * repartirla hacia las fichas, no acumular enlaces entrantes. Además, `/articulos/` los
+ * lista todos con un `href` generado en bucle que este script no puede ver.
+ * Por eso se les exige 1 enlace contextual entrante, no 2.
+ */
+const minEntrantes = (slug) => (piezas.get(slug).cluster === 'articulos' ? 1 : MIN_ENTRANTES);
+const debiles = [...entrantes].filter(([slug, n]) => n > 0 && n < minEntrantes(slug));
 
 const total = [...piezas.values()].reduce((n, p) => n + p.related.length, 0);
 const cruces = [...piezas].reduce(
