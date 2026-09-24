@@ -1,16 +1,128 @@
 ---
 import ClusterIndex from '../../layouts/ClusterLayout.astro';
+
+const faqs = [
+  {
+    q: '¿Cuánto se tarda en preparar una reunión juvenil?',
+    a: 'Entre 45 y 90 minutos si partes de material ya escrito, y bastante más si escribes tú el contenido. La guía de preparación reparte ese tiempo por bloques para que no se te vaya entero en buscar la actividad.',
+  },
+  {
+    q: '¿Hace falta ser pastor para dirigir un grupo juvenil?',
+    a: 'No. La mayoría de los grupos juveniles los sostienen voluntarios sin formación teológica. Lo que sí hace falta es constancia y alguien que te cubra cuando no puedas: un grupo que depende de una sola persona se cae el día que esa persona se cansa.',
+  },
+  {
+    q: '¿Cada cuánto conviene reunirse?',
+    a: 'Una vez por semana es lo habitual y lo sostenible. Dos veces suena a más compromiso y suele acabar en un líder agotado y un grupo que va a medias a las dos.',
+  },
+  {
+    q: '¿Qué hago si solo vienen tres o cuatro?',
+    a: 'Dirigir la reunión igual. Cancelar por poca asistencia le enseña al grupo que venir no importa, y los tres que sí vinieron son justamente los que hay que cuidar. Con grupos pequeños funcionan mejor las dinámicas de conversación que los juegos por equipos.',
+  },
+  {
+    q: '¿Cuándo hay que planificar el año?',
+    a: 'Antes de que empiece, aunque sea en borrador. Un calendario decidido en septiembre evita las doce decisiones de urgencia del sábado por la noche, que es donde se quema la mayoría de los líderes.',
+  },
+];
 ---
-<ClusterIndex cluster="lideres">
+<ClusterIndex cluster="lideres" faqs={faqs}>
   <Fragment slot="guia">
-    <h2>Si tu grupo se ha apagado</h2>
+    <h2>Qué son estas guías</h2>
 
     <p>
-      Es el problema que más se consulta y el que peor se resuelve buscando actividades nuevas.
-      <a href="/articulos/como-motivar-a-un-grupo-de-jovenes/">Cómo motivar a un grupo de jóvenes en
-      la iglesia</a> separa las cuatro causas reales de la desmotivación —no pintan nada, no se
-      conocen, lo que se habla no les sirve, o el líder está quemado— porque cada una se arregla de
-      una manera distinta.
+      El resto de la web es material para la reunión. Esta sección es <strong>el trabajo de
+      antes</strong>: lo que nadie te enseña cuando te ponen al frente de un grupo juvenil y que
+      decide más que la actividad que elijas para el domingo.
+    </p>
+
+    <p>
+      No son actividades para el grupo. Son para ti.
+    </p>
+
+    <h2>Por dónde empezar según en qué punto estés</h2>
+
+    <h3>Si acabas de empezar</h3>
+
+    <p>
+      <a href="/recursos-para-lideres/como-preparar-una-reunion-juvenil/">Cómo preparar una reunión
+      juvenil</a> y <a href="/recursos-para-lideres/como-dirigir-un-grupo-pequeno/">cómo dirigir un
+      grupo pequeño</a>. Las dos cosas que vas a necesitar la primera semana, antes que ninguna
+      otra.
+    </p>
+
+    <h3>Si el curso está por empezar</h3>
+
+    <p>
+      <a href="/recursos-para-lideres/planificar-el-ano-del-grupo-juvenil/">Planificar el año del
+      grupo juvenil</a>. Un calendario decidido en frío te ahorra las doce decisiones de urgencia
+      del sábado por la noche, que es donde se quema casi todo el mundo.
+    </p>
+
+    <h3>Si entra gente nueva y no se queda</h3>
+
+    <p>
+      <a href="/recursos-para-lideres/integrar-a-los-que-llegan-nuevos/">Integrar a los que llegan
+      nuevos</a>. El que se va no suele avisar: deja de venir. Y casi siempre la señal estaba a la
+      vista tres semanas antes, en los descansos.
+    </p>
+
+    <h3>Si estás organizando un retiro</h3>
+
+    <p>
+      <a href="/recursos-para-lideres/organizar-un-retiro-juvenil/">Organizar un retiro juvenil</a>
+      cubre la logística, los permisos y el equipo. Para el programa de dentro tienes
+      <a href="/articulos/juegos-y-dinamicas-para-campamentos-cristianos/">juegos y dinámicas para
+      campamentos</a>, que ordena las actividades por momentos.
+    </p>
+
+    <h3>Si ya no puedes más</h3>
+
+    <p>
+      <a href="/recursos-para-lideres/evitar-el-desgaste-del-lider/">Cómo no quemarte como líder
+      juvenil</a>. Es la guía que más tarde se lee y la que antes haría falta. Y si el que está
+      apagado es el grupo y no tú,
+      <a href="/articulos/como-motivar-a-un-grupo-de-jovenes/">cómo motivar a un grupo de
+      jóvenes</a> separa las cuatro causas, porque cada una se arregla distinto.
+    </p>
+
+    <h2>Cuatro cosas que nadie te dice al empezar</h2>
+
+    <h3>Tu trabajo no es que la reunión salga bien</h3>
+
+    <p>
+      Es que el grupo exista dentro de dos años. Son objetivos distintos y a veces opuestos: una
+      reunión impecable dirigida solo por ti construye menos que una mediocre en la que cuatro
+      personas tuvieron algo que hacer.
+    </p>
+
+    <h3>Reparte antes de necesitarlo</h3>
+
+    <p>
+      Un grupo que depende de una sola persona se cae el día que esa persona se cansa, se muda o se
+      casa. Da responsabilidades reales cuando todo va bien, no cuando ya no puedes.
+    </p>
+
+    <h3>La asistencia no mide lo que crees</h3>
+
+    <p>
+      Quince personas calladas es peor grupo que seis que hablan. Si vas a medir algo, mide cuántos
+      participan y cuántos vuelven al mes siguiente.
+    </p>
+
+    <h3>Nadie te va a preguntar cómo estás</h3>
+
+    <p>
+      Se da por supuesto que el líder está bien. Búscate a alguien fuera del grupo con quien poder
+      decir que una semana fue mala. Eso sostiene más años de ministerio que cualquier técnica.
+    </p>
+
+    <h2>El material para las reuniones</h2>
+
+    <p>
+      Cuando tengas resuelto el cómo, el qué está en el resto de la web:
+      <a href="/dinamicas/">dinámicas</a> para abrir y generar conversación,
+      <a href="/juegos-biblicos/">juegos bíblicos</a> para los ratos movidos,
+      <a href="/temas/">temas</a> con la enseñanza ya preparada y
+      <a href="/actividades/">actividades</a> para las reuniones largas.
     </p>
   </Fragment>
 </ClusterIndex>

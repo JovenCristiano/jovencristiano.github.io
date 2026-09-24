@@ -1,4 +1,134 @@
 ---
 import ClusterIndex from '../../layouts/ClusterLayout.astro';
+
+const faqs = [
+  {
+    q: '¿Qué es un devocional para jóvenes?',
+    a: 'Es una lectura breve para hacer a solas: un texto bíblico, una idea que se sostiene y algo concreto que hacer ese día. Los de esta página duran unos cinco minutos y no necesitan grupo, materiales ni que nadie los dirija.',
+  },
+  {
+    q: '¿A qué hora conviene hacerlo?',
+    a: 'A la que puedas sostener. La mañana funciona porque nadie ha empezado a reclamarte todavía, pero un devocional a las once de la noche que sí haces vale más que uno a las siete que no.',
+  },
+  {
+    q: '¿Y si un día no siento nada al leerlo?',
+    a: 'Pasa a menudo y no significa que lo estés haciendo mal. Hay un devocional dedicado exactamente a eso, «Cuando no sientes nada al orar», porque es de las cosas que más hacen abandonar y de las que menos se hablan.',
+  },
+  {
+    q: '¿Sirven para leer en grupo?',
+    a: 'Se pueden usar para abrir una reunión, pero no están pensados para eso: están escritos en segunda persona, para leerse en silencio. Si necesitas material para dirigir un grupo, los temas y las dinámicas encajan mejor.',
+  },
+  {
+    q: '¿Hace falta leerlos en orden?',
+    a: 'No. Cada uno es independiente. Elige por lo que te esté pasando esta semana, no por la lista.',
+  },
+];
 ---
-<ClusterIndex cluster="devocionales" />
+<ClusterIndex cluster="devocionales" faqs={faqs}>
+  <Fragment slot="guia">
+    <h2>Para quién son estos devocionales</h2>
+
+    <p>
+      Todo lo demás en esta web está escrito para quien dirige: instrucciones, materiales, tiempos.
+      Esta sección es la excepción. <strong>Estos textos están escritos para el joven</strong>, para leerse a
+      solas, sin grupo y sin que nadie los explique.
+    </p>
+
+    <p>
+      Cinco minutos: un texto bíblico, una idea, algo concreto para hoy y una oración corta.
+    </p>
+
+    <h2>Cuál leer según cómo estés</h2>
+
+    <h3>Si llevas tiempo orando y no sientes nada</h3>
+
+    <p>
+      <a href="/devocionales/cuando-no-sientes-nada-al-orar/">Cuando no sientes nada al orar</a>.
+      Es de las cosas que más gente abandona por el camino y de las que menos se hablan en voz
+      alta, porque parece que confesarlo es reconocer que algo va mal en ti.
+    </p>
+
+    <h3>Si hoy ha sido un día horrible</h3>
+
+    <p>
+      <a href="/devocionales/el-dia-que-todo-sale-mal/">El día que todo sale mal</a>. Sobre Elías
+      debajo del enebro, pidiendo morirse justo después de su mayor victoria. Lo que hizo Dios con
+      él no fue citarle un versículo: fue mandarle dormir y darle de comer.
+    </p>
+
+    <h3>Si el móvil te deja peor de lo que estabas</h3>
+
+    <p>
+      <a href="/devocionales/cuando-te-comparas-y-sales-perdiendo/">Cuando te comparas y sales
+      perdiendo</a>. La comparación está amañada de origen: comparas tu día entero con el mejor
+      segundo del de otro, elegido entre cuarenta intentos.
+    </p>
+
+    <h3>Si notas que hay dos versiones de ti</h3>
+
+    <p>
+      <a href="/devocionales/lo-que-haces-cuando-nadie-te-ve/">Lo que haces cuando nadie te ve</a>.
+      Sobre la distancia entre el del grupo de la iglesia y el de las once de la noche, sin
+      convertirlo en un sermón sobre la culpa.
+    </p>
+
+    <h3>Si llevas meses pidiendo algo y no pasa nada</h3>
+
+    <p>
+      <a href="/devocionales/cuando-dios-parece-llegar-tarde/">Cuando Dios parece llegar tarde</a>.
+      Marta le reprochó a Jesús que llegara tarde y tenía razón en los hechos. Este es el único que
+      dice explícitamente que <strong>no todas las historias acaban como la de Lázaro</strong>, porque prometer
+      lo contrario sería mentirte.
+    </p>
+
+    <h2>Cómo sostener el hábito</h2>
+
+    <p>
+      La mayoría de la gente no deja el devocional por falta de fe. Lo deja porque se lo planteó
+      mal desde el principio.
+    </p>
+
+    <h3>Empieza por cinco minutos, no por media hora</h3>
+
+    <p>
+      El plan ambicioso aguanta cuatro días. Cinco minutos que puedes cumplir un martes cualquiera
+      valen más que treinta que solo funcionan cuando todo va bien.
+    </p>
+
+    <h3>Engánchalo a algo que ya haces</h3>
+
+    <p>
+      Después de desayunar, antes de dormir, en el bus. Un hábito nuevo se sostiene mejor colgado
+      de uno viejo que dependiendo de que te acuerdes.
+    </p>
+
+    <h3>Cuando falles, sigue al día siguiente</h3>
+
+    <p>
+      Fallar un día no rompe nada. Lo que rompe es la lógica de «ya he cortado la racha, empiezo el
+      lunes que viene». Nadie empieza el lunes que viene.
+    </p>
+
+    <h3>No busques que te emocione</h3>
+
+    <p>
+      Si mides el devocional por lo que sientes, lo vas a dejar en cuanto tengas una semana plana.
+      Y las semanas planas son la mayoría.
+    </p>
+
+    <h2>Si diriges un grupo</h2>
+
+    <p>
+      Estos textos no están pensados para leerlos en voz alta: están escritos en segunda persona,
+      para el silencio. Si buscas material para una reunión, los
+      <a href="/temas/">temas para jóvenes cristianos</a> traen la enseñanza entera con preguntas y
+      actividad, y las <a href="/dinamicas/">dinámicas</a> abren la conversación por la vía de
+      hacer algo.
+    </p>
+
+    <p>
+      Lo que sí funciona muy bien: <strong>recomendar uno concreto a alguien del grupo</strong> que esté pasando
+      por eso. Vale más que mandarlos a todos.
+    </p>
+  </Fragment>
+</ClusterIndex>
