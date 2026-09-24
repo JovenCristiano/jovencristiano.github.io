@@ -4,6 +4,48 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Anadido — 2026-09-23 (guias en devocionales y recursos para lideres)
+
+Completa el patron en las seis categorias del publico juvenil. Eran las dos ultimas con prosa de
+relleno.
+
+- **`/devocionales/`**: 30 -> 1 292 palabras. No lista los cinco por orden: los ordena por **como
+  estas** (orando sin sentir nada, un dia horrible, comparandote en el movil). Y anade como
+  sostener el habito, que es donde se abandona.
+- **`/recursos-para-lideres/`**: 60 -> 1 291 palabras. Por donde empezar segun el momento, y cuatro
+  cosas que nadie te dice al empezar.
+
+Ambas con 5 FAQ y su `FAQPage`. **El cluster de adultos se queda sin guia a proposito**: decision
+del propietario, el nicho es jovenes. Se mantiene publicado porque retirarlo no subiria a las
+paginas de jovenes —no compiten por las mismas consultas— y perderia 6 piezas ya indexadas.
+
+**Fallo corregido antes de subir.** En `/devocionales/` se escribio `**negrita**` de Markdown
+dentro de un `.astro`, donde no se renderiza: habrian salido los asteriscos en pantalla.
+Convertido a `<strong>` y verificado en el navegador.
+
+### Cambiado — 2026-09-23 (pagina pilar ampliada)
+
+La pagina esta en posicion ~14 para «que significa ser joven cristiano», y Google ya muestra como
+descripcion el parrafo de respuesta directa anadido el 10 de septiembre. El propio SERP revela las
+consultas vecinas —«como debe ser el joven cristiano», «el papel del joven cristiano»—, que son la
+misma intencion y por tanto entran como secciones de esta pagina, no como paginas nuevas.
+
+1 086 -> 1 736 palabras. Tres secciones: los cinco terrenos de 1 Timoteo 4:12, el papel en
+casa/fuera/comunidad, y lo que **no** significa.
+
+Al releer aparecio duplicacion dentro de la propia pagina: el bloque 4 del desarrollo repetia
+punto por punto la seccion nueva. Reconvertido en instrucciones para dirigirlo. Se anade
+`updatedAt`, que alimenta `dateModified` en el JSON-LD.
+
+### Nota de estado — 2026-09-23
+
+**Primer clic del sitio.** 35 impresiones y 1 clic en 7 dias, CTR 2,9 %, posicion media 22,4. Un
+clic es ruido, no tendencia; lo util es que el CTR es coherente con esa posicion.
+
+Cuatro enlaces externos desde poemasbiblicos (los primeros del sitio). Las seis categorias
+juveniles tienen guia. **Proxima revision acordada: 21 de octubre**, mirando paginas indexadas
+(>25), impresiones (>200/mes) y si alguna consulta baja de la posicion 10.
+
 ### Corregido — 2026-09-13 (la Home decia «0 recursos» en Para lideres)
 
 Reportado por el propietario viendolo en produccion.
