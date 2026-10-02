@@ -4,6 +4,32 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Cambiado — 2026-10-02 (dominio propio: jovencristiano.org)
+
+Migracion de `jovencristiano.github.io` a dominio propio. Se hace ahora y no mas adelante por un
+motivo concreto: con 9 paginas indexadas y casi nada de autoridad **no hay tracción que perder**, y
+los enlaces externos que se consigan a partir de ahora ya apuntaran al dominio definitivo en vez de
+tener que redirigirse despues.
+
+- **DNS en Cloudflare**: 4 registros A, 4 AAAA y un CNAME para `www`, todos en **DNS only**. Con el
+  proxy de Cloudflare activado, GitHub no puede emitir el certificado y el sitio queda inaccesible
+  por HTTPS. Cloudflare insiste en activarlo con un aviso: ignorarlo.
+- **`SITE.url`** pasa a `https://jovencristiano.org`. Un solo cambio actualiza las 82 URLs del
+  sitemap, los canonical y el JSON-LD, que era el objetivo de centralizarlo desde el dia uno.
+- **`public/CNAME`** anadido. El despliegue va por GitHub Actions y el dominio vive en la
+  configuracion de Pages, pero tener el archivo en el artefacto lo hace duradero.
+- **Pie de impresion corregido**: decia «Ficha descargada de jovencristiano.github.io» y se imprimia
+  en cada PDF. Detectado al comprobar que no quedara ninguna referencia al dominio viejo en `dist/`.
+
+**Verificado en produccion:** `jovencristiano.org` responde 200 por HTTPS, `www` redirige al
+dominio raiz, y el dominio antiguo redirige con 301 **tambien en las URLs profundas** — eso es lo
+que conserva las 9 paginas indexadas y los 4 enlaces externos desde poemasbiblicos.
+
+**NO renombrar ni borrar el repositorio `JovenCristiano.github.io`**: ese 301 depende de el.
+
+Pendiente del propietario: crear la propiedad de `jovencristiano.org` en Search Console, enviar el
+sitemap alli y usar la herramienta de cambio de direccion desde la propiedad antigua, sin borrarla.
+
 ### Anadido — 2026-09-23 (guias en devocionales y recursos para lideres)
 
 Completa el patron en las seis categorias del publico juvenil. Eran las dos ultimas con prosa de

@@ -1,12 +1,14 @@
 /**
  * Configuración de sitio en un único lugar.
  *
- * `url` corresponde al sitio de usuario de GitHub Pages de la cuenta `JovenCristiano`
- * (repositorio `JovenCristiano.github.io`). Al migrar a dominio propio se cambia SOLO aquí:
- * ningún otro archivo duplica el dominio y `base: '/'` mantiene intactas las rutas internas.
+ * Dominio propio desde el 02/10/2026. Se sirve desde GitHub Pages (repositorio
+ * `JovenCristiano.github.io`), que redirige con 301 desde `jovencristiano.github.io`.
+ *
+ * NO renombrar ni borrar ese repositorio: ese 301 es lo que conserva las páginas ya
+ * indexadas y los enlaces externos que apuntan a la dirección antigua.
  */
 export const SITE = {
-  url: 'https://jovencristiano.github.io',
+  url: 'https://jovencristiano.org',
   name: 'Joven Cristiano',
   title: 'Joven Cristiano — Recursos cristianos para jóvenes y líderes',
   description:

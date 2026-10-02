@@ -54,7 +54,7 @@
 
   /* La URL del recurso, para quien reciba la fotocopia. */
   main::after {
-    content: 'Ficha descargada de jovencristiano.github.io';
+    content: 'Ficha descargada de jovencristiano.org';
     display: block;
     margin-top: 12mm;
     padding-top: 3mm;

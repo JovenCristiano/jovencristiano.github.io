@@ -21,7 +21,7 @@ biblioteca premium y plataforma interactiva.
 | Astro | 7.x instalado, `npm run build` correcto |
 | Documentación | Completa para CHECKPOINT 0 |
 | Contenido | 3 recursos de muestra (2 dinámicas, 1 juego) |
-| Sitio en producción | ✅ https://jovencristiano.github.io |
+| Sitio en producción | ✅ https://jovencristiano.org (dominio propio desde 2026-10-02) |
 
 Checkpoint actual: **CHECKPOINT 1 — MVP web**. El CHECKPOINT 0 se cerró el 2026-09-03 con el
 primer despliegue correcto.
@@ -62,7 +62,7 @@ npm run build   # genera dist/
 3. Herramienta de analítica (§23) y de email marketing (Etapa 2 de monetización).
 4. Plataforma de venta del primer producto digital (Etapa 3).
 
-**Resuelto:** cuenta de GitHub → `JovenCristiano`; `SITE.url` = `https://jovencristiano.github.io`.
+**Resuelto:** cuenta de GitHub → `JovenCristiano`; `SITE.url` = `https://jovencristiano.org` desde el 2026-10-02.
 
 ## 5. Documentos del proyecto
 
