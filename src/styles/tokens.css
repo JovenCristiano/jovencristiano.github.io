@@ -1,3 +1,27 @@
+/**
+ * Fuentes autoalojadas. Antes se cargaban desde fonts.googleapis.com y Lighthouse medía
+ * **1.011 ms de bloqueo de render**: dos dominios externos (DNS + TLS + CSS + woff2) antes
+ * de poder pintar nada.
+ *
+ * Las dos son fuentes variables, así que un único archivo cubre todos los pesos:
+ * 58 KB en total frente a seis peticiones. Subconjunto latino, que cubre el español entero.
+ */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url('/fonts/montserrat.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/figtree.woff2') format('woff2');
+}
+
 /* Tokens del sistema visual — fuente única: docs/DESIGN_SYSTEM.md.
    Tema oscuro. Ningún color, espacio o tamaño se escribe suelto en un componente. */
 :root {

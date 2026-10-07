@@ -26,13 +26,12 @@ const { path = Astro.url.pathname, ...seo } = Astro.props;
 
     <meta name="theme-color" content="#0A0A0F" />
 
-    <!-- Montserrat para titulares, Figtree para lectura. `display=swap`: nunca bloquea el render. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap"
-    />
+    <!--
+      Fuentes autoalojadas en /fonts (ver tokens.css). El `preload` las pide a la vez que el
+      CSS en lugar de esperar a que el navegador analice la hoja de estilos y las descubra.
+    -->
+    <link rel="preload" href="/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {SITE.googleSiteVerification && (
       <meta name="google-site-verification" content={SITE.googleSiteVerification} />
