@@ -4,6 +4,29 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Nota de estado — 2026-10-07 (CHECKPOINT 3 cerrado: 75 de 82 indexadas)
+
+**De 9 paginas indexadas a 75 en cinco dias**, sin un solo enlace externo nuevo. El rastreo masivo
+ocurrio el 3 y 4 de octubre, justo despues de que Search Console leyera el sitemap por primera vez
+el 2 de octubre.
+
+**Correccion de diagnostico.** Durante cinco semanas se sostuvo que la falta de indexacion se debia
+a la falta de autoridad, y se repitio que «el cuello de botella son los enlaces externos». Para la
+indexacion **era falso**. El cuello de botella era que el sitemap nunca se habia leido: Google solo
+conocia las paginas enlazadas directamente desde la home, y para el resto decia literalmente
+«Google no reconoce esta URL».
+
+Peor aun, el 2026-09-03 se escribio en el ROADMAP que el aviso «No se ha podido obtener» era
+**cosmetico**, comparandolo con poemasbiblicos. Esa conclusion costo un mes. Queda tachada y
+corregida en el documento, no borrada.
+
+Lo que el sitio tenia bien en todo momento: codigo, cabeceras, tipos MIME, redirecciones y
+robots.txt, verificado varias veces incluso con user-agent de Googlebot. **Correcto no es lo mismo
+que descubierto.**
+
+Lo que sigue dependiendo de los enlaces es la **posicion**, no la indexacion: 75 paginas indexadas
+con posicion media 22 significa que ahora si el limite es de autoridad.
+
 ### Cambiado — 2026-10-02 (dominio propio: jovencristiano.org)
 
 Migracion de `jovencristiano.github.io` a dominio propio. Se hace ahora y no mas adelante por un
