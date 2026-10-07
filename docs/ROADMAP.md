@@ -24,7 +24,7 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 
 ---
 
-## 🟡 CHECKPOINT 1 — MVP web
+## ✅ CHECKPOINT 1 — MVP web
 
 - ✅ Home según el orden del §7 del MASTER_PLAN
 - ✅ Navegación y footer
@@ -35,12 +35,39 @@ Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho
 - ✅ `sitemap-index.xml` + `robots.txt`
 - ✅ Página 404
 - ✅ Identidad visual completa (negro y neón, color por categoría)
-- ⬜ **Medir Lighthouse en móvil** ← único punto pendiente
+- ✅ **Lighthouse móvil** medido en producción el 2026-10-07
 
-**Criterio de salida:** Lighthouse móvil ≥ 95 en Performance y ≥ 95 en SEO; 0 KB de JS en Home.
+### Lighthouse móvil en producción (2026-10-07)
 
-Verificado por medición directa: **0 KB de JavaScript** y CSS de 14,9 KB. Falta pasar Lighthouse
-sobre el sitio en producción para confirmar la puntuación.
+| Categoría | Primera medición | Tras autoalojar las fuentes |
+|---|---|---|
+| Rendimiento | 88 | **100** |
+| Accesibilidad | 100 | **100** |
+| Buenas prácticas | 100 | **100** |
+| SEO | 100 | **100** |
+
+| Métrica | Antes | Después |
+|---|---|---|
+| FCP | 3,0 s | **0,9 s** |
+| LCP | 3,0 s | **1,5 s** |
+| TBT | 0 ms | 0 ms |
+| CLS | 0 | 0 |
+
+La primera medición dio **88 en Rendimiento** por 2.080 ms de recursos que bloqueaban el render.
+El CSS propio pesa 1,6 y 3 KB: el tiempo se iba entero en `fonts.googleapis.com` (1.011 ms), dos
+dominios externos antes de poder pintar. `display=swap` evitaba el texto invisible pero no el
+bloqueo.
+
+Al autoalojar las fuentes el bloqueo desaparece por completo. Montserrat y Figtree son variables,
+así que un archivo cubre todos los pesos: **58 KB en dos peticiones locales** frente a seis a
+dominios de terceros.
+
+TBT 0 ms y CLS 0 son consecuencia directa del presupuesto de 0 KB de JavaScript.
+
+**Nota:** Lighthouse varía entre ejecuciones. Un 100 no significa 100 siempre; significa que no
+queda ningún problema estructural.
+
+**Criterio de salida:** ✅ cumplido el 2026-10-07 — Rendimiento 100 y SEO 100 en móvil, 0 KB de JS.
 
 ---
 

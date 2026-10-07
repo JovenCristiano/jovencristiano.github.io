@@ -4,6 +4,18 @@ Formato: [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [No publicado]
 
+### Nota de estado — 2026-10-07 (CHECKPOINT 1 cerrado: Lighthouse 100)
+
+Medido en produccion sobre movil. Rendimiento **88 -> 100** tras autoalojar las fuentes;
+Accesibilidad, Buenas practicas y SEO ya estaban en 100.
+
+FCP 3,0 s -> 0,9 s. LCP 3,0 s -> 1,5 s. TBT 0 ms y CLS 0 en ambas medidas, que es consecuencia
+directa del presupuesto de 0 KB de JavaScript.
+
+Con esto quedan cerrados los CHECKPOINTS 0, 1, 2 y 3. El siguiente es el 4 (audiencia y lista de
+correo), pero su criterio de salida —conversion visita-email >= 1 %— necesita visitas que todavia
+no existen.
+
 ### Nota de estado — 2026-10-07 (CHECKPOINT 3 cerrado: 75 de 82 indexadas)
 
 **De 9 paginas indexadas a 75 en cinco dias**, sin un solo enlace externo nuevo. El rastreo masivo
